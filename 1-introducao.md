@@ -14,4 +14,10 @@ Essas duas classificações (Figura 1) ainda não são suficientes, dado a enorm
 
 Figura 1 - Tipos de chatbot
 
+![image](https://github.com/user-attachments/assets/a3714d9e-feae-4e9e-93bc-99d7be771cb5)
+
 Fonte: Giseldo Neo
+
+[1] Weizenbaum, J. (1966). ELIZA - A Computer Program For the Study of Natural Language Communication Between Man And Machine. Communications of the ACM, 9(1).
+
+[2] Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is all you need. Advances in Neural Information Processing Systems, 2017-Decem(Nips), 5999–6009.
