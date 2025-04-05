@@ -1,6 +1,11 @@
 # Chatbot ELIZA em Python
 
-A seguir, apresentamos uma implementação simplificada de um chatbot no estilo ELIZA usando Python. Esse código demonstra o uso de expressões regulares para identificar padrões (palavras-chave) na entrada do usuário e gerar respostas de acordo com regras de transformação definidas manualmente.
+A seguir, apresentamos uma implementação simplificada de um chatbot no estilo ELIZA usando Python. 
+Esse código demonstra o uso de expressões regulares para identificar padrões (palavras-chave) na entrada do usuário e gerar respostas de acordo com regras de transformação definidas manualmente.
+
+<a target="_blank" href="https://colab.research.google.com/github/giseldo/chatbotbook/blob/main/notebook/eliza.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 ```Python
 import re  
@@ -63,9 +68,12 @@ def response(entrada_usuario):
 print(response("I am feeling sad."))
 ```
 
-No código acima, definimos vários padrões regex que representam as “palavras-chave” de interesse (por exemplo, saudações, frases com “I am”, “I need”, referências à família, etc.). Quando a função response é chamada com uma string de entrada, ela itera por essas regras na ordem e usa padrao.search(entrada) para verificar se o padrão aparece na frase do usuário.
+No código acima, definimos vários padrões regex que representam as “palavras-chave” de interesse (por exemplo, saudações, frases com “I am”, “I need”, referências à família, etc.). 
+Quando a função response é chamada com uma string de entrada, ela itera por essas regras na ordem e usa padrao.search(entrada) para verificar se o padrão aparece na frase do usuário.
 
-Ao encontrar um match, seleciona-se uma resposta. Observe que muitas respostas contêm placeholders como {1} – esses marcadores serão substituídos pelo conteúdo capturado na entrada do usuário. Por exemplo, se o usuário digitar "I am sad", a regex do padrão 2 capturará o grupo ("I am", "sad"), e a resposta escolhida "Why do you think you are 1?" será formatada como "Why do you think you are sad?". Caso nenhuma regra específica seja acionada, o chatbot retorna aleatoriamente uma das respostas genéricas em respostas_padrao (como "I see.").
+Ao encontrar um match, seleciona-se uma resposta. Observe que muitas respostas contêm placeholders como {1} – esses marcadores serão substituídos pelo conteúdo capturado na entrada do usuário. 
+Por exemplo, se o usuário digitar "I am sad", a regex do padrão 2 capturará o grupo ("I am", "sad"), e a resposta escolhida "Why do you think you are 1?" será formatada como "Why do you think you are sad?". 
+Caso nenhuma regra específica seja acionada, o chatbot retorna aleatoriamente uma das respostas genéricas em respostas_padrao (como "I see.").
 
 Demonstração: Suponha a seguinte interação usando o chatbot implementado
 
