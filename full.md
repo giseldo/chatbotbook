@@ -8,8 +8,7 @@ title: Chatbots
 
 # Introdução
 
-Um chatbot é um programa de computador que simula uma conversa humana,
-geralmente utilizando texto ou áudio. Eles oferecem respostas diretas a
+Um chatbot é um programa de computador que simula uma conversa humana, geralmente utilizando texto ou áudio. Eles oferecem respostas diretas a
 perguntas e auxiliam em diversas tarefas, servindo tanto para conversas
 gerais quanto para ações específicas, como abrir uma conta bancária.
 
