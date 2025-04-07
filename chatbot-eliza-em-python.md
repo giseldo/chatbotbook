@@ -1,2 +1,0 @@
-# Chatbot ELIZA em Python
-
