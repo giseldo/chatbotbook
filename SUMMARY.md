@@ -6,3 +6,4 @@
 * [Chatbot ELIZA em Python](chatbot-eliza-em-python.md)
 * [Histórico](historico.md)
 * [Problemática](problematica.md)
+* [Validação](validacao.md)
