@@ -1,0 +1,39 @@
+\babel@toc {brazil}{}\relax 
+\contentsline {chapter}{\numberline {1}Chatbots: Definições e Contexto}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introdução}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Chatbots e Agentes: Definições e Distinções}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Gerenciamento do Diálogo e Fluxo Conversacional}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Depois do ELIZA}{5}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Abordagens}{7}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Problemática}{8}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Eliza Explicado}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introdução}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Processamento de Entradas e Palavras-Chave}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Regras de Transformação de Frases}{12}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Implementação Original e Variações Modernas}{12}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Comparação com Modelos de Linguagem Modernos}{13}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Mecanismo de Pesos: Palavras-Chave vs. Atenção Neural}{13}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Contextualização e Geração de Linguagem}{13}{subsection.2.5.2}%
+\contentsline {chapter}{\numberline {3}Artificial Intelligence Markup Language (AIML)}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Tags do AIML 1.0: Explicação e Exemplos}{19}{section.3.1}%
+\contentsline {paragraph}{\texttt {<aiml>}}{19}{section*.2}%
+\contentsline {paragraph}{\texttt {<category>}}{19}{section*.3}%
+\contentsline {paragraph}{\texttt {<pattern>}}{19}{section*.4}%
+\contentsline {paragraph}{\texttt {<template>}}{20}{section*.5}%
+\contentsline {paragraph}{\texttt {<star/>}}{20}{section*.6}%
+\contentsline {paragraph}{\texttt {<that>}}{20}{section*.7}%
+\contentsline {paragraph}{\texttt {<topic>}}{20}{section*.8}%
+\contentsline {paragraph}{\texttt {<random>} e \texttt {<li>}}{20}{section*.9}%
+\contentsline {paragraph}{\texttt {<condition>}}{21}{section*.10}%
+\contentsline {paragraph}{\texttt {<set>} e \texttt {<get>}}{21}{section*.11}%
+\contentsline {paragraph}{\texttt {<srai>}}{21}{section*.12}%
+\contentsline {paragraph}{\texttt {<think>}}{21}{section*.13}%
+\contentsline {paragraph}{\texttt {<person>}, \texttt {<person2>}, \texttt {<gender>}}{21}{section*.14}%
+\contentsline {paragraph}{\texttt {<formal>}, \texttt {<uppercase>}, \texttt {<lowercase>}}{22}{section*.15}%
+\contentsline {paragraph}{\texttt {<sentence>}}{22}{section*.16}%
+\contentsline {chapter}{\numberline {4}Chatbot ELIZA em Python}{23}{chapter.4}%
+\contentsline {subsection}{\numberline {4.0.1}Exemplo de Interação}{25}{subsection.4.0.1}%
+\contentsline {chapter}{\numberline {5}LangChain}{26}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Por que usar LangChain?}{26}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Arquitetura do LangChain}{26}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Exemplo Básico: Consultando um LLM}{27}{section.5.3}%
