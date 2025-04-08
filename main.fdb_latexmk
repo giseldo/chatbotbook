@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1744073652.98765 "main.aux" "main.bbl" "main" 1744074525.44121 0
+["bibtex main"] 1744073652.98765 "main.aux" "main.bbl" "main" 1744075576.20763 0
   "./ref.bib" 1744041405 270683 1a011c495fff59be804d90d273746c1a ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1744074523 12360 1478c1b0d2963a6ed9ca0fcf2a57605c "pdflatex"
+  "main.aux" 1744075574 12360 1478c1b0d2963a6ed9ca0fcf2a57605c "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1744074517.09294 "c:/Projetos/livro_chatbot/main.tex" "main.pdf" "main" 1744074525.44245 0
+["pdflatex"] 1744075569.84604 "c:/Projetos/chatbotbook_v2/main.tex" "main.pdf" "main" 1744075576.20876 0
   "04-figuras/image10.png" 1744056018 19263 01c267517094f40e85ce6ecb66f17c7f ""
   "04-figuras/image12.png" 1744056018 116844 9c7f26a37e71c4dff103107d98273435 ""
   "04-figuras/image13.png" 1744056018 27743 6d6af3d093b85816e44bde2403a4b4c5 ""
@@ -211,7 +211,7 @@
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Projetos/livro_chatbot/main.tex" 1744074515 61889 a65d028f2050aeee4288263c15372504 ""
+  "c:/Projetos/chatbotbook_v2/main.tex" 1744075567 62067 7c0fa97796991ea9063cec2674bdb2cd ""
   "fig/capa.png" 1744050484 458701 20ee44113844012d598026ebce5ed542 ""
   "fig/chatbot.png" 1743994112 46452 86b121f1a0f23e7c32a417b2d82498c9 ""
   "fig/colab-badge.png" 1743994112 2681 0394804d745ce1ab2feaab77ebc7b941 ""
@@ -219,11 +219,11 @@
   "fig/fluxo.png" 1743994112 24743 29a8d73370df0b3c2e0b70c7a0506af5 ""
   "fig/ia.png" 1743994112 30244 bac780da75b17a62db0995b1c46d4f2e ""
   "fig/trends.png" 1743994112 51576 ca652a44bf2ada566f21f01079f0f073 ""
-  "main.aux" 1744074523 12360 1478c1b0d2963a6ed9ca0fcf2a57605c "pdflatex"
+  "main.aux" 1744075574 12360 1478c1b0d2963a6ed9ca0fcf2a57605c "pdflatex"
   "main.bbl" 1744073653 8883 4912dd5398efaf9435c9e7b3daf35b30 "bibtex main"
-  "main.out" 1744074523 4845 65cc20eb436444f8a879dbb282be67d9 "pdflatex"
-  "main.tex" 1744074515 61889 a65d028f2050aeee4288263c15372504 ""
-  "main.toc" 1744074523 3201 6483cf0b85492e254603816c9d06ce4f "pdflatex"
+  "main.out" 1744075574 4845 65cc20eb436444f8a879dbb282be67d9 "pdflatex"
+  "main.tex" 1744075567 62067 7c0fa97796991ea9063cec2674bdb2cd ""
+  "main.toc" 1744075574 3201 6483cf0b85492e254603816c9d06ce4f "pdflatex"
   (generated)
   "main.aux"
   "main.log"

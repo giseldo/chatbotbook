@@ -1,6 +1,6 @@
-PWD c:\Projetos\livro_chatbot
+PWD c:\Projetos\chatbotbook_v2
 INPUT C:\Users\gigi\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Projetos\livro_chatbot\main.tex
+INPUT c:\Projetos\chatbotbook_v2\main.tex
 OUTPUT main.log
 INPUT C:\Users\gigi\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
 INPUT C:\Users\gigi\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
@@ -466,6 +466,10 @@ INPUT C:\Users\gigi\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1bch.fd
 INPUT C:\Users\gigi\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1bch.fd
 INPUT C:\Users\gigi\AppData\Local\Programs\MiKTeX\fonts\tfm\bitstrea\charter\bchr8c.tfm
 INPUT C:\Users\gigi\AppData\Local\Programs\MiKTeX\fonts\vf\bitstrea\charter\bchr8c.vf
+INPUT .\fig\colab-badge.png
+INPUT .\fig\colab-badge.png
+INPUT .\fig\colab-badge.png
+INPUT .\fig\colab-badge.png
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl
