@@ -13,9 +13,12 @@
 \geometry{
   left=4cm, % Aumente a margem esquerda para caber as notas
   right=2cm, % Margem direita menor, já que não terá notas
+  bottom=2cm, % Margem direita menor, já que não terá notas
   marginparwidth=2.5cm, % Largura das notas
   marginparsep=0.5cm % Separação entre texto e nota
 }
+
+
 
 % \makeatletter
 % \renewcommand{\verbatim@font}{\ttfamily\footnotesize}
@@ -72,7 +75,14 @@
 	captionpos=b
 }
 
-\title{Construíndo bons chatbots}
+% \lstset{
+%   basicstyle=\ttfamily\small,
+%   breaklines=true,
+%   frame=single,
+%   language=text
+% }
+
+\title{Chatbot Book}
 \author{Giseldo Neo}
 \date{\today}
 
@@ -81,9 +91,9 @@
 \begin{titlepage}
 	\begin{center}
 		\vspace*{2cm}
-		\includegraphics[width=0.6\textwidth]{fig/capa.png}
+		\includegraphics[width=0.8\textwidth]{fig/capa.png}
 		\vfill
-		\Huge \textbf{Construíndo bons chatbots} \\
+		\Huge \textbf{Chatbot Book} \\
 		\vspace{1cm}
 		\Large \textit{Giseldo Neo} \\
 		% \vspace{2cm}
@@ -231,7 +241,7 @@ Um fluxograma para um chatbot que vende roupas está representada na Figura~\ref
     \label{fig:representacaodeumaarvore}
 	{
 	
-	\cite{Raj2019}.}
+	Retirado de \cite{Raj2019}.}
 \end{figure}
 
 \section{Depois do ELIZA}
@@ -246,7 +256,9 @@ No contexto brasileiro, um dos primeiros chatbots documentados capaz de interagi
 	\caption{Interface de chatbot para inscrição no ENEM 2019.}
 	\includegraphics[width=0.5\linewidth]{fig/enem.png}
 	\label{fig:enem}
-	{\footnotesize Fonte: Captura de tela realizada por Giseldo Neo.}
+	{\footnotesize 
+	
+	Fonte: Captura de tela realizada por Giseldo Neo.}
 \end{figure}
 
 O desenvolvimento de chatbots avançados tem atraído investimentos de grandes corporações. Notavelmente, a IBM desenvolveu um sistema de resposta a perguntas em domínio aberto utilizando sua plataforma Watson \cite{Ferrucci2012}. Esse tipo de tarefa representa um desafio computacional e de inteligência artificial (IA) considerável. Em 2011, o sistema baseado em Watson demonstrou sua capacidade ao competir e vencer competidores humanos no programa de perguntas e respostas JEOPARDY! \cite{Ferrucci2012}.
@@ -465,7 +477,9 @@ O Artificial Intelligence Markup Language (AIML) é uma especificação baseada 
     \includegraphics[width=0.8\textwidth]{./04-figuras/image8} % Ajuste o caminho se necessário
     \label{fig:interpretador}
     \vspace{0.2cm} % Espaçamento opcional
-    {\footnotesize Adaptado de \cite{Silva2007}}
+    {\footnotesize 
+	
+	Adaptado de \cite{Silva2007}}
 \end{figure}
 
 A técnica central empregada pelo AIML é a correspondência de padrões (\emph{pattern matching}). Este método é amplamente utilizado no desenvolvimento de chatbots, particularmente em sistemas orientados a perguntas e respostas \cite{Abdul-Kader2015}. Uma das metas de projeto do AIML é possibilitar a fusão de bases de conhecimento de múltiplos chatbots especializados em domínios distintos. Teoricamente, um interpretador poderia agregar essas bases, eliminando automaticamente categorias redundantes para formar um \emph{chatbot} mais abrangente \cite{Wallace2000}.
@@ -478,7 +492,9 @@ AIML é frequentemente associado aos chatbots de terceira geração \cite{Maria2
     \includegraphics[width=0.7\textwidth]{./04-figuras/image9} % Ajuste o caminho se necessário
     \label{fig:representacaovisual}
     \vspace{0.2cm} % Espaçamento opcional
-    {\footnotesize \cite{Wallace2003}}
+    {\footnotesize 
+	
+	Retirado de \cite{Wallace2003}}
 \end{figure}
 
 \cite{Wallace2000} estabeleceu analogias entre o funcionamento de interpretadores AIML e a teoria do Raciocínio Baseado em Casos (RBC). Nessa perspectiva, as categorias AIML funcionam como "casos", onde o algoritmo identifica o padrão que melhor se alinha à entrada do usuário. Cada categoria estabelece um vínculo direto entre um padrão de estímulo e um modelo de resposta. Consequentemente, chatbots AIML inserem-se na tradição da robótica minimalista, reativa ou de estímulo-resposta \cite{Wallace2000}, conforme esquematizado na Figura~\ref{fig:teoriaestimulo}. Vale notar que a própria técnica de RBC já foi integrada a interpretadores AIML como um mecanismo para consultar fontes de dados externas e expandir a base de conhecimento do agente \cite{Kraus2008}.
@@ -489,7 +505,9 @@ AIML é frequentemente associado aos chatbots de terceira geração \cite{Maria2
     \includegraphics[width=0.7\textwidth]{./04-figuras/image10} % 
     \label{fig:teoriaestimulo}
     \vspace{0.2cm}
-    {\footnotesize \cite{Lima2017}}
+    {\footnotesize 
+	
+	Retirado de \cite{Lima2017}}
 \end{figure}
 
 chatbots que utilizam AIML são classificados como sistemas "baseados em recuperação" (\emph{retrieval-based}). Tais modelos operam a partir de um repositório de respostas predefinidas, selecionando a mais apropriada com base na entrada do usuário e no contexto conversacional, guiando assim o fluxo da interação. Esta abordagem é frequentemente empregada na construção de chatbots destinados a operar em domínios de conhecimento restritos \cite{Borah2019}.
@@ -509,7 +527,9 @@ A Figura~\ref{fig:exemplodeumabase} demonstra a estrutura elementar de um arquiv
 	\end{verbatim}	
 	\label{fig:exemplodeumabase}
 	\vspace{0.2cm} % Espaçamento opcional
-    {\footnotesize \cite{Wallace2000}}
+    {\footnotesize 
+	
+	Retirado de \cite{Wallace2000}}
 \end{figure}
 
 \begin{figure}
@@ -518,7 +538,9 @@ A Figura~\ref{fig:exemplodeumabase} demonstra a estrutura elementar de um arquiv
     \includegraphics[width=0.8\textwidth]{./04-figuras/image12} % Ajuste o caminho se necessário
     \label{fig:representacaovisualabstrata}
     \vspace{0.2cm} % Espaçamento opcional
-    {\footnotesize \url{https://www.pandorabots.com/docs/aiml-fundamentals/}}
+    {\footnotesize 
+	
+	Retirado de \url{https://www.pandorabots.com/docs/aiml-fundamentals/}}
 \end{figure}
 
 O profissional responsável pela criação, manutenção e curadoria da base de conhecimento de um \emph{chatbot} AIML é denominado \emph{botmaster} \cite{Wallace2000}. Suas atribuições englobam a edição da base (frequentemente via ferramentas auxiliares), a análise de logs de diálogo para identificar padrões de interação e a subsequente criação ou refino de respostas. Este papel pode ser exercido por indivíduos com diferentes perfis, incluindo \emph{webmasters}, desenvolvedores, redatores, engenheiros ou outros interessados na construção de chatbots \cite{Wallace2000}.
@@ -533,7 +555,9 @@ Embora \cite{Hohn2019} argumente que o AIML padrão carece de um conceito explí
     \includegraphics[width=0.5\textwidth]{./04-figuras/image13} % Ajuste o caminho se necessário
     \label{fig:sodatagsrai}
     \vspace{0.2cm} % Espaçamento opcional
-    {\footnotesize \cite{DeGasperis2013}}
+    {\footnotesize 
+	
+	Retirado de \cite{DeGasperis2013}}
 \end{figure}
 
 chatbots baseados em AIML têm obtido sucesso significativo em competições como o Prêmio Loebner. Notavelmente, o \emph{chatbot} Mitsuku\footnote{\url{https://www.pandorabots.com/mitsuku/}}, desenvolvido por Steve Worswick, conquistou múltiplos títulos recentes\footnote{\url{https://aisb.org.uk/category/loebner-prize/}}, seguindo vitórias anteriores do ALICE. \cite{Wallace2000}.
@@ -548,8 +572,6 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 
 \textbf{Descrição:} Tag raiz que engloba todo o conteúdo AIML. 
 
-\textbf{Exemplo:}
-
 \begin{verbatim}
 	<aiml version="1.0">
 		<!-- Categorias aqui -->
@@ -559,8 +581,6 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 \paragraph{\texttt{<category>}} 
 
 \textbf{Descrição:} Unidade básica de conhecimento, contendo um padrão e uma resposta. 
-
-\textbf{Exemplo:}
 
 \begin{verbatim}
 	<category>
@@ -573,8 +593,6 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 
 \textbf{Descrição:} Define o padrão de entrada do usuário, com curingas como \texttt{*} e \texttt{\_}. 
 
-\textbf{Exemplo:}
-
 \begin{verbatim}
 	<category>
 		<pattern>EU GOSTO DE *</pattern>
@@ -585,8 +603,6 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 \paragraph{\texttt{<template>}} 
 
 \textbf{Descrição:} Define a resposta do bot ao padrão correspondente. 
-
-\textbf{Exemplo:}
 
 \begin{verbatim}
 	<category>
@@ -599,8 +615,6 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 
 \textbf{Descrição:} Captura o conteúdo do curinga \texttt{*} ou \texttt{\_}. 
 
-\textbf{Exemplo:}
-
 \begin{verbatim}
 	<category>
 		<pattern>MEU NOME É *</pattern>
@@ -611,8 +625,6 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 \paragraph{\texttt{<that>}} 
 
 \textbf{Descrição:} Considera a última resposta do bot para decidir a próxima. 
-
-\textbf{Exemplo:}
 
 \begin{verbatim}
 <category>
@@ -626,8 +638,6 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 
 \textbf{Descrição:} Define um contexto ou tópico para categorias. 
 
-\textbf{Exemplo:}
-
 \begin{verbatim}
 <category>
   <pattern>VAMOS FALAR SOBRE ESPORTE</pattern>
@@ -638,8 +648,6 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 \paragraph{\texttt{<random>} e \texttt{<li>}} 
 
 \textbf{Descrição:} Escolhe aleatoriamente uma resposta de uma lista. 
-
-\textbf{Exemplo:}
 
 \begin{verbatim}
 <category>
@@ -657,8 +665,6 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 
 \textbf{Descrição:} Adiciona lógica condicional baseada em variáveis. 
 
-\textbf{Exemplo:}
-
 \begin{verbatim}
 <category>
   <pattern>COMO EU ESTOU</pattern>
@@ -675,8 +681,6 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 
 \textbf{Descrição:} Define e recupera variáveis. 
 
-\textbf{Exemplo:}
-
 \begin{verbatim}
 	<category>
 		<pattern>MEU NOME É *</pattern>
@@ -687,8 +691,6 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 \paragraph{\texttt{<srai>}} 
 
 \textbf{Descrição:} Redireciona a entrada para outro padrão. 
-
-\textbf{Exemplo:}
 
 \begin{verbatim}
 	<category>
@@ -701,8 +703,6 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 
 \textbf{Descrição:} Executa ações sem exibir o conteúdo. 
 
-\textbf{Exemplo:}
-
 \begin{verbatim}
 	<category>
 		<pattern>EU SOU TRISTE</pattern>
@@ -713,8 +713,6 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 \paragraph{\texttt{<person>}, \texttt{<person2>}, \texttt{<gender>}} 
 
 \textbf{Descrição:} Transforma pronomes ou ajusta gênero. 
-
-\textbf{Exemplo:}
 
 \begin{verbatim}
 	<category>
@@ -727,8 +725,6 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 
 \textbf{Descrição:} Formata texto (capitaliza, maiúsculas, minúsculas). 
 
-\textbf{Exemplo:}
-
 \begin{verbatim}
 <category>
   <pattern>MEU NOME É joão</pattern>
@@ -739,8 +735,6 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 \paragraph{\texttt{<sentence>}} 
 
 \textbf{Descrição:} Formata como frase (primeira letra maiúscula, ponto final). 
-
-\textbf{Exemplo:}
 
 \begin{verbatim}
 <category>
@@ -754,6 +748,8 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 %%%%%%%%%%%%%%%%
 
 \chapter{Chatbot ELIZA em Python}
+
+\section{Introdução}
 
 Apresenta-se, nesta seção, uma implementação simplificada em Python de um chatbot inspirado no paradigma ELIZA. Esta implementação demonstra a utilização de expressões regulares para a identificação de padrões textuais (palavras-chave) na entrada fornecida pelo usuário e a subsequente geração de respostas, fundamentada em regras de transformação predefinidas manualmente.
 
@@ -841,7 +837,7 @@ Quando uma correspondência (match) é encontrada, uma resposta associada à reg
 Na ausência de correspondência com qualquer regra específica, o sistema seleciona aleatoriamente uma resposta genérica a partir de um conjunto predefinido (denominado, por exemplo, \texttt{respostas\_padrao}), tal como \textit{``I see.''}.
 
 % Usando \paragraph para um subtítulo menos proeminente, ou use \subsubsection se preferir
-\subsection{Exemplo de Interação}
+\section{Exemplo de Interação}
 
 \begin{verbatim}
 Usuário: Hello
@@ -866,7 +862,7 @@ Observa-se na interação que o chatbot inicialmente respondeu à saudação (\t
 %%%%CAPITULO%%%%
 %%%%%%%%%%%%%%%%
 
-\chapter{LangChain}
+\chapter{Usando chatGPT com LangChain}
 
 LangChain é uma biblioteca de software de código aberto projetada para simplificar a interação com Large Language Models (LLMs) e construir aplicativos de processamento de linguagem natural robustos. Ele fornece uma camada de abstração de alto nível sobre as complexidades de trabalhar diretamente com modelos de linguagem, tornando mais acessível a criação de aplicativos de compreensão e geração de linguagem.
 
@@ -896,17 +892,9 @@ Camada de Modelo: Aqui é onde os próprios LLMs residem. O LangChain suporta um
 
 \section{Exemplo Básico: Consultando um LLM}
 
-Vamos ver um exemplo simples de como usar o LangChain para consultar um LLM e obter uma resposta. Neste exemplo, usaremos um modelo de linguagem de uso geral, como o GPT-3, para responder a uma pergunta.
+Vamos ver um exemplo simples de como usar o LangChain para consultar um LLM e obter uma resposta. Neste exemplo, usaremos o gpt-4o-mini da OpenAI, para responder a uma pergunta.
 
-Primeiro, importe as bibliotecas necessárias e configure o cliente LangChain. Em seguida, carregue o modelo de linguagem desejado. Para este exemplo, usaremos o modelo GPT-3. Agora, você pode usar o modelo para fazer uma consulta. Vamos perguntar ao modelo sobre a capital da França.
-
-Instale as dendências necessárias:
-
-\begin{verbatim}
-	$ pip install langchain transformers torch langchain_community
-\end{verbatim}
-
-Código-Fonte:
+Primeiro, importe as bibliotecas necessárias e configure o cliente LangChain. Em seguida, carregue o modelo de linguagem desejado. Agora, você pode usar o modelo para fazer uma consulta. Vamos perguntar quem é o presidente do Brasil.
 
 \vspace{\baselineskip}
 \href{https://colab.research.google.com/github/giseldo/chatbotbook_v2/blob/main/notebook/langchain.ipynb}{
@@ -919,7 +907,8 @@ Código-Fonte:
 
 	OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 
-	model = init_chat_model("gpt-4o-mini", model_provider="openai", openai_api_key=OPENAI_API_KEY)
+	model = init_chat_model("gpt-4o-mini", model_provider="openai", 
+		openai_api_key=OPENAI_API_KEY)
 
 	response = model.invoke([
 		{"role":"user", "content": "quem é o presidente do Brasil?"}
@@ -933,6 +922,196 @@ Código-Fonte:
 
 Este exemplo básico demonstra a simplicidade de usar o LangChain para interagir com LLMs. No entanto, o LangChain oferece muito mais recursos e funcionalidades para construir aplicativos de chatbot mais robustos.
 
+% \documentclass[11pt, a4paper]{article}
+
+% \usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+% \usepackage[brazilian]{babel} % Ou [portuguese] dependendo da sua instalação
+
+% \usepackage{geometry}
+% \geometry{a4paper, margin=1in} % Ajusta as margens
+% \usepackage{parskip} % Adiciona espaço entre parágrafos em vez de indentação
+
+
+\chapter{Criando Chatbots com LLMs Através da Engenharia de Prompts}
+
+Modelos de Linguagem Grandes (LLMs), como a família GPT, são incrivelmente poderosos na compreensão e geração de texto. Uma maneira eficaz e relativamente rápida de criar um chatbot funcional é através da \textbf{engenharia de prompts}. Em vez de codificar regras complexas e árvores de decisão manualmente, você "programa" o LLM fornecendo-lhe um conjunto detalhado de instruções iniciais (o prompt).
+
+\section{O que é um Prompt neste Contexto?}
+
+O prompt é o texto inicial que você fornece ao LLM. Ele define:
+
+\begin{enumerate}
+    \item \textbf{O Papel do Chatbot:} Quem ele é (um atendente de pizzaria, um consultor de moda, etc.).
+    \item \textbf{O Objetivo da Conversa:} O que ele precisa alcançar (vender uma pizza, ajudar a escolher uma roupa, abrir uma conta, etc.).
+    \item \textbf{As Regras da Conversa:} A sequência exata de perguntas a fazer, as opções válidas para cada pergunta, e como lidar com diferentes respostas do usuário (lógica condicional).
+    \item \textbf{O Tom e Estilo:} Se o chatbot deve ser formal, informal, amigável, etc. (embora não especificado nos exemplos, pode ser adicionado).
+    \item \textbf{O Formato da Saída Final:} Como as informações coletadas devem ser apresentadas no final.
+\end{enumerate}
+
+\subsection{Como Funciona?}
+
+\begin{enumerate}
+    \item \textbf{Definição:} Você escreve um prompt detalhado que descreve o fluxo da conversa passo a passo.
+    \item \textbf{Instrução:} Você alimenta este prompt no LLM.
+    \item \textbf{Execução:} O LLM usa o prompt como seu guia mestre. Ele inicia a conversa com o usuário seguindo o primeiro passo definido no prompt, faz as perguntas na ordem especificada, valida as respostas (se instruído), segue os caminhos condicionais e, finalmente, gera a saída desejada.
+    \item \textbf{Iteração:} Se o chatbot não se comportar exatamente como esperado, você ajusta e refina o prompt até que ele siga as regras perfeitamente.
+\end{enumerate}
+
+\subsection{Vantagens:}
+
+\begin{itemize}
+    \item \textbf{Rapidez:} Muito mais rápido do que desenvolver um chatbot tradicional do zero.
+    \item \textbf{Flexibilidade:} Fácil de modificar o comportamento alterando o prompt.
+    \item \textbf{Capacidade Conversacional:} Aproveita a habilidade natural do LLM para conversas fluidas.
+\end{itemize}
+
+\subsection{Limitações:}
+
+\begin{itemize}
+    \item \textbf{Controle Fino:} Pode ser mais difícil garantir que \emph{sempre} siga \emph{exatamente} um caminho lógico muito complexo, embora prompts detalhados minimizem isso.
+    \item \textbf{Estado:} Gerenciar estados complexos ao longo de conversas muito longas pode exigir técnicas de prompt mais avançadas.
+\end{itemize}
+
+\subsection{Aplicando aos Exemplos:}
+
+A seguir, mostramos como os fluxos de conversa que você descreveu podem ser traduzidos em prompts para um LLM. Cada prompt instrui o modelo a agir como o chatbot específico e seguir as regras definidas.
+
+\section{Exemplos de Prompts}
+
+\subsection{Exemplo 1: Pizzaria}
+
+\textbf{Prompt para o LLM:}
+
+\begin{lstlisting}
+Você é um chatbot de atendimento de uma pizzaria. Sua tarefa é anotar o pedido de pizza de um cliente. Siga EXATAMENTE estes passos:
+
+1.  Pergunte ao cliente qual o tipo de massa desejado. As únicas opções válidas são "pan" ou "fina".
+    * Exemplo de pergunta: "Olá! Qual tipo de massa você prefere para sua pizza: pan ou fina?"
+2.  Depois que o cliente escolher a massa, pergunte qual o recheio desejado. As únicas opções válidas são "queijo", "calabresa" ou "bacon".
+    * Exemplo de pergunta: "Ótima escolha! E qual recheio você gostaria: queijo, calabresa ou bacon?"
+3.  APENAS SE o cliente escolheu a massa "pan" no passo 1, pergunte qual o recheio da borda. As únicas opções válidas são "gorgonzola" ou "cheddar".
+    * Exemplo de pergunta (apenas para massa pan): "Para a massa pan, temos borda recheada! Você prefere com gorgonzola ou cheddar?"
+4.  Após coletar todas as informações necessárias (massa, recheio e recheio da borda, se aplicável), exiba um resumo claro do pedido com todas as opções escolhidas pelo cliente.
+    * Exemplo de resumo: "Perfeito! Seu pedido ficou assim: Pizza com massa [massa escolhida], recheio de [recheio escolhido] [se aplicável: e borda recheada com [recheio da borda escolhido]]."
+
+Inicie a conversa agora seguindo o passo 1.
+\end{lstlisting}
+
+\subsection{Exemplo 2: Loja de Roupas}
+
+\textbf{Prompt para o LLM:}
+\begin{lstlisting}
+Você é um chatbot de vendas de uma loja de roupas. Seu objetivo é ajudar o cliente a escolher uma calça ou uma camisa. Siga EXATAMENTE estes passos:
+
+1.  Pergunte ao cliente se ele está procurando por uma "calça" ou uma "camisa".
+    * Exemplo de pergunta: "Bem-vindo(a) à nossa loja! Você está procurando por uma calça ou uma camisa hoje?"
+2.  SE o cliente responder "calça":
+    a.  Pergunte o tamanho da calça. As únicas opções válidas são "34", "35" ou "36".
+        * Exemplo de pergunta: "Para calças, qual tamanho você usa: 34, 35 ou 36?"
+    b.  Depois do tamanho, pergunte o tipo de fit da calça. As únicas opções válidas são "slim fit", "regular fit" ou "skinny fit".
+        * Exemplo de pergunta: "E qual tipo de fit você prefere: slim fit, regular fit ou skinny fit?"
+3.  SE o cliente responder "camisa":
+    a.  Pergunte o tamanho da camisa. As únicas opções válidas são "P", "M" ou "G".
+        * Exemplo de pergunta: "Para camisas, qual tamanho você prefere: P, M ou G?"
+    b.  Depois do tamanho, pergunte o tipo de gola. As únicas opções válidas são "V", "redonda" ou "polo".
+        * Exemplo de pergunta: "E qual tipo de gola você gostaria: V, redonda ou polo?"
+4.  Após coletar todas as informações (tipo de peça e suas especificações), apresente um resumo das opções escolhidas e informe que o pedido está sendo processado.
+    * Exemplo de resumo (Calça): "Entendido! Você escolheu uma calça tamanho [tamanho] com fit [fit]. Seu pedido está sendo processado."
+    * Exemplo de resumo (Camisa): "Entendido! Você escolheu uma camisa tamanho [tamanho] com gola [gola]. Seu pedido está sendo processado."
+
+Inicie a conversa agora seguindo o passo 1.
+\end{lstlisting}
+
+\subsection{Exemplo 3: Empresa de Turismo}
+
+\textbf{Prompt para o LLM:}
+\begin{lstlisting}
+Você é um agente de viagens virtual de uma empresa de turismo. Sua tarefa é ajudar um cliente a escolher e configurar um pacote turístico. Siga EXATAMENTE estes passos:
+
+1.  Pergunte ao cliente para qual das cidades disponíveis ele gostaria de viajar. As únicas opções são "Maceió", "Aracaju" ou "Fortaleza".
+    * Exemplo de pergunta: "Olá! Temos ótimos pacotes para Maceió, Aracaju e Fortaleza. Qual desses destinos te interessa mais?"
+2.  SE o cliente escolher "Maceió":
+    a.  Pergunte se ele já conhece as belezas naturais da cidade. (A resposta não altera o fluxo, é apenas conversacional).
+        * Exemplo de pergunta: "Maceió é linda! Você já conhece as belezas naturais de lá?"
+    b.  Sugira os dois pacotes disponíveis: "Nove Ilhas" e "Orla de Alagoas". Pergunte qual ele prefere.
+        * Exemplo de pergunta: "Temos dois pacotes incríveis em Maceió: 'Nove Ilhas' e 'Orla de Alagoas'. Qual deles você prefere?"
+    c.  Vá para o passo 5.
+3.  SE o cliente escolher "Aracaju":
+    a.  Pergunte qual dos dois passeios disponíveis ele prefere: "Passarela do Caranguejo" ou "Orla de Aracaju".
+        * Exemplo de pergunta: "Em Aracaju, temos passeios pela 'Passarela do Caranguejo' e pela 'Orla de Aracaju'. Qual te atrai mais?"
+    b.  Informe ao cliente que para Aracaju, no momento, só temos transporte via ônibus. Pergunte se ele deseja continuar mesmo assim.
+        * Exemplo de pergunta: "Importante: para Aracaju, nosso transporte é apenas de ônibus. Podemos continuar com a reserva?"
+    c.  Se ele confirmar, vá para o passo 5. Se não, agradeça e encerre.
+4.  SE o cliente escolher "Fortaleza":
+    a.  Informe que o pacote disponível é o "Falésias Cearenses".
+        * Exemplo de informação: "Para Fortaleza, temos o pacote especial 'Falésias Cearenses'."
+    b.  Pergunte se ele prefere ir de "ônibus" ou "avião" para o Ceará.
+        * Exemplo de pergunta: "Como você prefere viajar para o Ceará: de ônibus ou avião?"
+    c.  Vá para o passo 5.
+5.  Depois de definir o destino, pacote/passeio e transporte (se aplicável), pergunte qual a forma de pagamento preferida. As únicas opções são "cartão" ou "débito".
+    * Exemplo de pergunta: "Para finalizar, como você prefere pagar: cartão ou débito?"
+6.  Ao final, apresente um resumo completo das opções escolhidas (destino, pacote/passeio, transporte se aplicável, forma de pagamento) e informe que o pedido está sendo processado.
+    * Exemplo de resumo: "Confirmado! Seu pacote para [Destino] inclui [Pacote/Passeio], transporte por [Ônibus/Avião, se aplicável], com pagamento via [Forma de Pagamento]. Seu pedido está sendo processado!"
+
+Inicie a conversa agora seguindo o passo 1.
+\end{lstlisting}
+
+\subsection{Exemplo 4: Banco Financeiro}
+
+\textbf{Prompt para o LLM:}
+\begin{lstlisting}
+Você é um assistente virtual de um banco e sua função é auxiliar usuários na abertura de uma conta corrente. Siga EXATAMENTE estes passos:
+
+1.  Pergunte ao usuário se ele já possui conta em outros bancos. Respostas esperadas: "sim" ou "não".
+    * Exemplo de pergunta: "Bem-vindo(a) ao nosso banco! Para começar, você já possui conta corrente em alguma outra instituição bancária?"
+2.  APENAS SE a resposta for "sim", pergunte se ele gostaria de fazer a portabilidade da conta para o nosso banco. Respostas esperadas: "sim" ou "não".
+    * Exemplo de pergunta: "Entendido. Você gostaria de solicitar a portabilidade da sua conta existente para o nosso banco?"
+3.  Pergunte o nome completo do futuro correntista.
+    * Exemplo de pergunta: "Por favor, informe o seu nome completo para o cadastro."
+4.  Pergunte qual será o valor do depósito inicial na conta. Informe que pode ser "zero" ou qualquer outro valor.
+    * Exemplo de pergunta: "Qual valor você gostaria de depositar inicialmente? Pode ser R$ 0,00 ou outro valor à sua escolha."
+5.  Pergunte se o usuário tem interesse em solicitar um empréstimo pré-aprovado junto com a abertura da conta. Respostas esperadas: "sim" ou "não".
+    * Exemplo de pergunta: "Você teria interesse em verificar uma oferta de empréstimo pré-aprovado neste momento?"
+6.  Ao final, apresente um resumo com as informações coletadas: nome do correntista, se solicitou portabilidade (sim/não), se solicitou empréstimo (sim/não) e o valor do depósito inicial.
+    * Exemplo de resumo: "Perfeito! Finalizamos a solicitação. Resumo da abertura: Correntista: [Nome Completo], Portabilidade Solicitada: [Sim/Não], Empréstimo Solicitado: [Sim/Não], Depósito Inicial: R$ [Valor]."
+
+Inicie a conversa agora seguindo o passo 1.
+\end{lstlisting}
+
+\subsection{Exemplo 5: Universidade}
+
+\textbf{Prompt para o LLM:}
+\begin{lstlisting}
+Você é um assistente de matrícula de uma universidade. Sua tarefa é ajudar um aluno a se matricular em até duas disciplinas eletivas. Siga EXATAMENTE estes passos:
+
+1.  Apresente as duas disciplinas eletivas disponíveis: "Inteligência Artificial Avançado" e "Aprendizagem de Máquina".
+    * Exemplo de apresentação: "Olá! Temos duas disciplinas eletivas disponíveis para matrícula: 'Inteligência Artificial Avançado' e 'Aprendizagem de Máquina'."
+2.  Verifique se o aluno possui o pré-requisito obrigatório "Introdução à Programação", que é necessário para AMBAS as disciplinas. Pergunte se ele já cursou e foi aprovado nesta disciplina. Respostas esperadas: "sim" ou "não".
+    * Exemplo de pergunta: "Para cursar qualquer uma delas, é necessário ter sido aprovado em 'Introdução à Programação'. Você já cumpriu esse pré-requisito?"
+3.  SE a resposta for "não", informe que ele não pode se matricular nas eletivas no momento e encerre a conversa.
+    * Exemplo de mensagem: "Entendo. Infelizmente, sem o pré-requisito 'Introdução à Programação', não é possível se matricular nestas eletivas agora. Procure a coordenação para mais informações."
+4.  SE a resposta for "sim" (possui o pré-requisito):
+    a.  Pergunte em qual(is) das duas disciplinas ele deseja se matricular. Ele pode escolher uma ou ambas.
+        * Exemplo de pergunta: "Ótimo! Em qual(is) disciplina(s) você gostaria de se matricular: 'Inteligência Artificial Avançado', 'Aprendizagem de Máquina' ou ambas?"
+    b.  APENAS SE o aluno escolher "Inteligência Artificial Avançado" (seja sozinha ou junto com a outra), pergunte se ele já cursou a disciplina "Inteligência Artificial". Respostas esperadas: "sim" ou "não".
+        * Exemplo de pergunta (se escolheu IA Avançado): "Para cursar 'Inteligência Artificial Avançado', é recomendado ter cursado 'Inteligência Artificial' anteriormente. Você já cursou essa disciplina?"
+        * (Nota: O prompt original não especifica o que fazer se ele NÃO cursou IA. Vamos assumir que ele ainda pode se matricular, mas a pergunta serve como um aviso ou coleta de dados).
+    c.  Após coletar as escolhas e a informação sobre IA (se aplicável), informe as disciplinas em que o aluno foi efetivamente matriculado. Liste apenas as disciplinas que ele escolheu E para as quais ele confirmou ter os pré-requisitos verificados neste fluxo (no caso, 'Introdução à Programação').
+        * Exemplo de finalização (matriculado em ambas, confirmou IA): "Matrícula realizada com sucesso! Você está matriculado em: Inteligência Artificial Avançado e Aprendizagem de Máquina."
+        * Exemplo de finalização (matriculado apenas em Aprendizagem de Máquina): "Matrícula realizada com sucesso! Você está matriculado em: Aprendizagem de Máquina."
+        * Exemplo de finalização (matriculado em IA Avançado, mesmo sem ter cursado IA antes): "Matrícula realizada com sucesso! Você está matriculado em: Inteligência Artificial Avançado."
+
+Inicie a conversa agora seguindo o passo 1.
+\end{lstlisting}
+
+\bigskip 
+
+Lembre-se que a qualidade da resposta do LLM depende muito da clareza e do detalhamento do prompt. Quanto mais específico você for nas instruções, mais provável será que o chatbot se comporte exatamente como desejado.
+
+%%%%%%%%%%%%%%%%%%%
+%%% REFERÊNCIAS %%%
+%%%%%%%%%%%%%%%%%%%
 \bibliographystyle{plain}
 \bibliography{ref}
 
