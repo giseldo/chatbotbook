@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 0 "main.aux" "main.bbl" "main" 0 -1
+["bibtex main"] 1744151965.08364 "main.aux" "main.bbl" "main" 1744151965.5619 2
   "./ref.bib" 1744041405 270683 1a011c495fff59be804d90d273746c1a ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1744149405 13157 3e1e3cb7e71d5cb5f4636cc3bd0fa07c "pdflatex"
+  "main.aux" 1744151965 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1744149400.60574 "c:/Projetos/chatbotbook_v2/main.tex" "main.pdf" "main" 1744149408.3356 2
+["pdflatex"] 1744151850.85858 "c:/Projetos/chatbotbook_v2/main.tex" "main.pdf" "main" 1744151858.03143 2
   "04-figuras/image10.png" 1744056018 19263 01c267517094f40e85ce6ecb66f17c7f ""
   "04-figuras/image12.png" 1744056018 116844 9c7f26a37e71c4dff103107d98273435 ""
   "04-figuras/image13.png" 1744056018 27743 6d6af3d093b85816e44bde2403a4b4c5 ""
@@ -30,7 +30,6 @@
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/tfm/bitstrea/charter/bchro8r.tfm" 1136786654 4808 f8233db62d0ad46442d31435fc0cac0d ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/tfm/bitstrea/charter/bchro8t.tfm" 1136786654 6964 299ddb5960cc0ae680f6c836e2974273 ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1000.tfm" 993062122 3148 7e594c8240c71e432203f65ab5f95a51 ""
-  "C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1440.tfm" 993062128 3168 3bd7b08ba4330af81521911744311212 ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993062508 1436 c7f957a372ef2fbe93c0982f96625e12 ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -150,7 +149,6 @@
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsmath.sty" 1686931788 88371 d84032c0f422c3d1e282266c01bef237 ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsopn.sty" 1686931788 4474 b811654f4bf125f11506d13d13647efb ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amstext.sty" 1686931788 2444 0d0c1ee65478277e8015d65b86983da2 ""
-  "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/anyfontsize/anyfontsize.sty" 1195733377 3901 468c107ba2ff895578a5a95fe5d4bdbe ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/arabi/bblopts.cfg" 1705750854 902 c30e5c373bc58bde21f8f63a3091626f ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/atveryend/atveryend.sty" 1576101110 19336 ce7ae9438967282886b3b036cfad1e4d ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/auxhook/auxhook.sty" 1576538732 3935 57aa3c3e203a5c2effb4d2bd2efbc323 ""
@@ -213,7 +211,7 @@
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Projetos/chatbotbook_v2/main.tex" 1744149384 76873 bf5567b01bbcb198c058edc9cba1a10b ""
+  "c:/Projetos/chatbotbook_v2/main.tex" 1744151848 77348 076951ad06914849a6cb7badae1d9f7b ""
   "fig/capa.png" 1744079400 4390166 391a690f2263433d881855b79b1c9788 ""
   "fig/chatbot.png" 1743994112 46452 86b121f1a0f23e7c32a417b2d82498c9 ""
   "fig/colab-badge.png" 1743994112 2681 0394804d745ce1ab2feaab77ebc7b941 ""
@@ -221,11 +219,11 @@
   "fig/fluxo.png" 1743994112 24743 29a8d73370df0b3c2e0b70c7a0506af5 ""
   "fig/ia.png" 1743994112 30244 bac780da75b17a62db0995b1c46d4f2e ""
   "fig/trends.png" 1743994112 51576 ca652a44bf2ada566f21f01079f0f073 ""
-  "main.aux" 1744149405 13157 3e1e3cb7e71d5cb5f4636cc3bd0fa07c "pdflatex"
-  "main.bbl" 1744149371 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
-  "main.out" 1744149405 7336 266d8d807c292d0e7d8c8a27812b50b2 "pdflatex"
-  "main.tex" 1744149384 76873 bf5567b01bbcb198c058edc9cba1a10b ""
-  "main.toc" 1744149405 4396 346682d30bab9c387df8232c8aeb3b5d "pdflatex"
+  "main.aux" 1744151965 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.bbl" 1744151965 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
+  "main.out" 0 -1 0 "pdflatex"
+  "main.tex" 1744151848 77348 076951ad06914849a6cb7badae1d9f7b ""
+  "main.toc" 0 -1 0 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

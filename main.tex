@@ -6,8 +6,8 @@
 
 % \usepackage{setspace}
 % \onehalfspacing
-\usepackage{anyfontsize}
-\fontsize{14pt}{16pt}\selectfont
+% \usepackage{anyfontsize}
+% \fontsize{14pt}{16pt}\selectfont
 
 \usepackage{geometry} % Para controlar as margens
 \geometry{
@@ -17,8 +17,6 @@
   marginparwidth=2.5cm, % Largura das notas
   marginparsep=0.5cm % Separação entre texto e nota
 }
-
-
 
 % \makeatletter
 % \renewcommand{\verbatim@font}{\ttfamily\footnotesize}
@@ -47,7 +45,6 @@
 \usepackage{listings}
 \usepackage{xcolor}
 
-% Configuração para código AIML
 \lstset{
     language=XML,
     basicstyle=\ttfamily\small,
@@ -59,6 +56,22 @@
     breaklines=true,
     frame=single,
     tabsize=2
+	extendedchars=true,
+	inputencoding=utf8,
+	literate=
+	{á}{{\'a}}1
+	{à}{{\`a}}1
+	{ã}{{\~a}}1
+	{â}{{\^a}}1
+	{é}{{\'e}}1
+	{ê}{{\^e}}1
+	{í}{{\'i}}1
+	{ó}{{\'o}}1
+	{õ}{{\~o}}1
+	{ô}{{\^o}}1
+	{ú}{{\'u}}1
+	{ü}{{\"u}}1
+	{ç}{{\c{c}}}1
 }
 
 \lstset{
@@ -73,6 +86,22 @@
 	numbers=left,
 	numberstyle=\scriptsize\color{gray},
 	captionpos=b
+	extendedchars=true,
+	inputencoding=utf8,
+	literate=
+	{á}{{\'a}}1
+	{à}{{\`a}}1
+	{ã}{{\~a}}1
+	{â}{{\^a}}1
+	{é}{{\'e}}1
+	{ê}{{\^e}}1
+	{í}{{\'i}}1
+	{ó}{{\'o}}1
+	{õ}{{\~o}}1
+	{ô}{{\^o}}1
+	{ú}{{\'u}}1
+	{ü}{{\"u}}1
+	{ç}{{\c{c}}}1
 }
 
 % \lstset{
@@ -983,7 +1012,7 @@ A seguir, mostramos como os fluxos de conversa que você descreveu podem ser tra
 
 \textbf{Prompt para o LLM:}
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Python]
 Você é um chatbot de atendimento de uma pizzaria. Sua tarefa é anotar o pedido de pizza de um cliente. Siga EXATAMENTE estes passos:
 
 1.  Pergunte ao cliente qual o tipo de massa desejado. As únicas opções válidas são "pan" ou "fina".
@@ -996,13 +1025,17 @@ Você é um chatbot de atendimento de uma pizzaria. Sua tarefa é anotar o pedid
     * Exemplo de resumo: "Perfeito! Seu pedido ficou assim: Pizza com massa [massa escolhida], recheio de [recheio escolhido] [se aplicável: e borda recheada com [recheio da borda escolhido]]."
 
 Inicie a conversa agora seguindo o passo 1.
+
 \end{lstlisting}
+	
+
+
 
 \subsection{Exemplo 2: Loja de Roupas}
 
 \textbf{Prompt para o LLM:}
 \begin{lstlisting}
-	
+
 	Você é um chatbot de vendas de uma loja de roupas. Seu objetivo é ajudar o cliente a escolher uma calça ou uma camisa. Siga EXATAMENTE estes passos:
 
 	1.  Pergunte ao cliente se ele está procurando por uma "calça" ou uma "camisa".
@@ -1018,7 +1051,7 @@ Inicie a conversa agora seguindo o passo 1.
 		b.  Depois do tamanho, pergunte o tipo de gola. As únicas opções válidas são "V", "redonda" ou "polo".
 			* Exemplo de pergunta: "E qual tipo de gola você gostaria: V, redonda ou polo?"
 	4.  Após coletar todas as informações (tipo de peça e suas especificações), apresente um resumo das opções escolhidas e informe que o pedido está sendo processado.
-		* Exemplo de resumo (Calça): "Entendido! Você escolheu uma calça tamanho [tamanho] com fit [fit]. Seu pedido está sendo processado."
+		* Exemplo de resumo (Cal\c{c}a): "Entendido! Voc\^e escolheu uma cal\c{c}a tamanho [tamanho] com fit [fit]. Seu pedido est\'a sendo processado."
 		* Exemplo de resumo (Camisa): "Entendido! Você escolheu uma camisa tamanho [tamanho] com gola [gola]. Seu pedido está sendo processado."
 	
 
@@ -1063,20 +1096,20 @@ Inicie a conversa agora seguindo o passo 1.
 
 \textbf{Prompt para o LLM:}
 \begin{lstlisting}
-Você é um assistente virtual de um banco e sua função é auxiliar usuários na abertura de uma conta corrente. Siga EXATAMENTE estes passos:
+	Você é um assistente virtual de um banco e sua função é auxiliar usuários na abertura de uma conta corrente. Siga EXATAMENTE estes passos:
 
-1.  Pergunte ao usuário se ele já possui conta em outros bancos. Respostas esperadas: "sim" ou "não".
-    * Exemplo de pergunta: "Bem-vindo(a) ao nosso banco! Para começar, você já possui conta corrente em alguma outra instituição bancária?"
-2.  APENAS SE a resposta for "sim", pergunte se ele gostaria de fazer a portabilidade da conta para o nosso banco. Respostas esperadas: "sim" ou "não".
-    * Exemplo de pergunta: "Entendido. Você gostaria de solicitar a portabilidade da sua conta existente para o nosso banco?"
-3.  Pergunte o nome completo do futuro correntista.
-    * Exemplo de pergunta: "Por favor, informe o seu nome completo para o cadastro."
-4.  Pergunte qual será o valor do depósito inicial na conta. Informe que pode ser "zero" ou qualquer outro valor.
-    * Exemplo de pergunta: "Qual valor você gostaria de depositar inicialmente? Pode ser R$ 0,00 ou outro valor à sua escolha."
-5.  Pergunte se o usuário tem interesse em solicitar um empréstimo pré-aprovado junto com a abertura da conta. Respostas esperadas: "sim" ou "não".
-    * Exemplo de pergunta: "Você teria interesse em verificar uma oferta de empréstimo pré-aprovado neste momento?"
-6.  Ao final, apresente um resumo com as informações coletadas: nome do correntista, se solicitou portabilidade (sim/não), se solicitou empréstimo (sim/não) e o valor do depósito inicial.
-    * Exemplo de resumo: "Perfeito! Finalizamos a solicitação. Resumo da abertura: Correntista: [Nome Completo], Portabilidade Solicitada: [Sim/Não], Empréstimo Solicitado: [Sim/Não], Depósito Inicial: R$ [Valor]."
+	1.  Pergunte ao usuário se ele já possui conta em outros bancos. Respostas esperadas: "sim" ou "não".
+		* Exemplo de pergunta: "Bem-vindo(a) ao nosso banco! Para começar, você já possui conta corrente em alguma outra instituição bancária?"
+	2.  APENAS SE a resposta for "sim", pergunte se ele gostaria de fazer a portabilidade da conta para o nosso banco. Respostas esperadas: "sim" ou "não".
+		* Exemplo de pergunta: "Entendido. Você gostaria de solicitar a portabilidade da sua conta existente para o nosso banco?"
+	3.  Pergunte o nome completo do futuro correntista.
+		* Exemplo de pergunta: "Por favor, informe o seu nome completo para o cadastro."
+	4.  Pergunte qual será o valor do depósito inicial na conta. Informe que pode ser "zero" ou qualquer outro valor.
+		* Exemplo de pergunta: "Qual valor você gostaria de depositar inicialmente? Pode ser R$ 0,00 ou outro valor à sua escolha."
+	5.  Pergunte se o usuário tem interesse em solicitar um empréstimo pré-aprovado junto com a abertura da conta. Respostas esperadas: "sim" ou "não".
+		* Exemplo de pergunta: "Você teria interesse em verificar uma oferta de empréstimo pré-aprovado neste momento?"
+	6.  Ao final, apresente um resumo com as informações coletadas: nome do correntista, se solicitou portabilidade (sim/não), se solicitou empréstimo (sim/não) e o valor do depósito inicial.
+		* Exemplo de resumo: "Perfeito! Finalizamos a solicitação. Resumo da abertura: Correntista: [Nome Completo], Portabilidade Solicitada: [Sim/Não], Empréstimo Solicitado: [Sim/Não], Depósito Inicial: R$ [Valor]."
 
 Inicie a conversa agora seguindo o passo 1.
 \end{lstlisting}
