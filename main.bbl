@@ -1,0 +1,299 @@
+\begin{thebibliography}{39}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abdul-Kader and Woods(2015)]{Abdul-Kader2015}
+Sameera~A. Abdul-Kader and John Woods.
+\newblock {Survey on Chatbot Design Techniques in Speech Conversation Systems}.
+\newblock \emph{International Journal of Advanced Computer Science and
+  Applications}, 6\penalty0 (7):\penalty0 72--80, 2015.
+\newblock ISSN 2158107X.
+\newblock \doi{10.14569/ijacsa.2015.060712}.
+
+\bibitem[Bada(2012)]{Bada2012}
+Everton~Moschen Bada.
+\newblock {Uma proposta para extracao de perguntas e respostas de textos}.
+\newblock \emph{XVII Congreso Internacional de Informatica Educativa, TISE},
+  pages 44--49, 2012.
+
+\bibitem[Borah et~al.(2019)Borah, Pathak, and Sarmah]{Borah2019}
+Bhriguraj Borah, Dhrubajyoti Pathak, and Priyankoo Sarmah.
+\newblock {Survey of Text based Chatbot in Perspective of Recent Technologies}.
+\newblock In \emph{International Conference on Computational Intelligence,
+  Communications, and Business Analytics. CICBA 2018: Computational
+  Intelligence, Communications, and Business Analytics}, volume 1031, pages
+  84--96. Springer Singapore, 2019.
+\newblock ISBN 978-981-13-8580-3.
+\newblock \doi{10.1007/978-981-13-8581-0}.
+\newblock URL \url{http://link.springer.com/10.1007/978-981-13-8581-0}.
+
+\bibitem[Chomsky and Lightfoot(2002)]{chomsky2002syntactic}
+Noam Chomsky and David~W Lightfoot.
+\newblock \emph{{Syntactic structures}}.
+\newblock Walter de Gruyter, 2002.
+
+\bibitem[da~Silva and Costa(2007)]{Silva2007}
+Arandir~Cordeiro da~Silva and Evandro De~Barros Costa.
+\newblock {Um Chatterbot aplicado ao Turismo: Um estudo de caso no Litoral
+  Alagoano e na Cidade de Macei{\'{o}}}.
+\newblock pages 160--167, 2007.
+
+\bibitem[de~Azevedo(2015)]{AZEVEDO2015}
+Ryan~Ribeiro de~Azevedo.
+\newblock \emph{{Um sistema de dialogo inteligente baseado em logica de
+  descricoes}}.
+\newblock PhD thesis, 2015.
+
+\bibitem[{De Gasperis} et~al.(2013){De Gasperis}, Chiari, and
+  Florio]{DeGasperis2013}
+Giovanni {De Gasperis}, Isabella Chiari, and Niva Florio.
+\newblock \emph{{AIML knowledge base construction from text corpora}}, volume
+  427.
+\newblock 2013.
+\newblock ISBN 9783642296932.
+\newblock \doi{10.1007/978-3-642-29694-9_12}.
+
+\bibitem[Ferrucci(2012)]{Ferrucci2012}
+David Ferrucci.
+\newblock {This Is Watson}.
+\newblock \emph{Journal of Research and Development}, 56\penalty0 (3):\penalty0
+  88, 2012.
+
+\bibitem[H{\"{o}}hn(2019)]{Hohn2019}
+Sviatlana H{\"{o}}hn.
+\newblock \emph{{Artificial Companion for Second Language Conversation}}.
+\newblock 2019.
+\newblock ISBN 9783030155032.
+
+\bibitem[Jacobstein et~al.(1998)Jacobstein, Murray, Sams, and
+  Sincoff]{Jacobstein1998}
+Jacobstein, Murray, Sams, and Sincoff.
+\newblock A multi-agent associate system guide for a virtual collaboration
+  center.
+\newblock \emph{Proceedings of the International Conference on Virtual Worlds
+  and Simulation Conference}, pages 215--220, 1998.
+
+\bibitem[Junior(2008)]{Junior2008}
+Antonio Fernando Lavareda~Jacob Junior.
+\newblock \emph{{Buti: um Companheiro Virtual baseado em Computacao Afetiva
+  para Auxiliar na Manutencao da Saude Cardiovascular}}.
+\newblock PhD thesis, 2008.
+
+\bibitem[Klopfenstein et~al.(2017)Klopfenstein, Delpriori, Malatini, and
+  Bogliolo]{Klopfenstein2017}
+Lorenz~Cuno Klopfenstein, Saverio Delpriori, Silvia Malatini, and Alessandro
+  Bogliolo.
+\newblock {The Rise of Bots: A Survey of Conversational Interfaces, Patterns,
+  and Paradigms.}
+\newblock \emph{Proceedings of the 2017 Conference on Designing Interactive
+  Systems}, pages 555--565, 2017.
+\newblock \doi{10.1145/3064663.3064672}.
+\newblock URL \url{http://doi.acm.org/10.1145/3064663.3064672}.
+
+\bibitem[Krassmann et~al.(2017)Krassmann, Herpich, da~Silva, da~Silva, Abreu,
+  Schmitt, Bercht, and Tarouco]{Krassmann2017}
+Aliane~Loureiro Krassmann, Fabr{\'{i}}cio Herpich, {\'{A}}lvaro Souza~Pereira
+  da~Silva, Anita~Raquel da~Silva, Cristiane de~Souza Abreu, Marcelo
+  Augusto~Rauh Schmitt, Magda Bercht, and Liane Margarida~Rockenbach Tarouco.
+\newblock {FastAIML: uma ferramenta para apoiar a geracao de base de
+  conhecimento para chatbots educacionais}.
+\newblock \emph{Revista Novas Tecnologias na Educacao (RENOTE)}, 15\penalty0
+  (2):\penalty0 1--10, 2017.
+\newblock \doi{10.22456/1679-1916.79256}.
+
+\bibitem[Kraus and Fernandes(2008)]{Kraus2008}
+Helton Kraus and Anita Fernandes.
+\newblock {Ivetebyte: Um Chatterbot para Area Imobiliaria Integrando Raciocinio
+  Baseado em Casos}.
+\newblock \emph{Revista Iberica de Sistemas e Tecnologias de Informacao},
+  \penalty0 (1):\penalty0 40--51, 2008.
+\newblock URL \url{http://www.aisti.eu/risti/ristin1.pdf}.
+
+\bibitem[Lane et~al.(2025)Lane, Hay, Schwarz, Berry, and Shrager]{Lane2025}
+Rupert Lane, Anthony Hay, Arthur Schwarz, David~M. Berry, and Jeff Shrager.
+\newblock {ELIZA Reanimated: The world's first chatbot restored on the world's
+  first time sharing system}.
+\newblock pages 1--21, 2025.
+\newblock \doi{10.1063/5.0239302}.
+\newblock URL
+  \url{http://arxiv.org/abs/2501.06707%0Ahttp://dx.doi.org/10.1063/5.0239302}.
+
+\bibitem[Leonhardt et~al.(2003)Leonhardt, Neisse, and Tarouco]{Leonhardt2003}
+Michelle~Denise Leonhardt, Ricardo Neisse, and Liane Margarida~Rockenbach
+  Tarouco.
+\newblock {MEARA: Um Chatterbot Tem{\'{a}}tico para Uso em Ambiente
+  Educacional}, 2003.
+\newblock ISSN 2316-6533.
+\newblock URL \url{http://www.br-ie.org/pub/index.php/sbie/article/view/238}.
+
+\bibitem[Li et~al.(2018)Li, Monroe, Shi, Jean, Ritter, and Jurafsky]{Li2018}
+Jiwei Li, Will Monroe, Tianlin Shi, Sėbastien Jean, Alan Ritter, and Dan
+  Jurafsky.
+\newblock {Adversarial Learning for Neural Dialogue Generation}.
+\newblock pages 2157--2169, 2018.
+\newblock \doi{10.18653/v1/d17-1230}.
+
+\bibitem[Lima(2017)]{Lima2017}
+Carlos Eduardo Teixeira~Lima Lima.
+\newblock \emph{{Um Chatterbot para Criacao e Desenvolvimento de Ontologias com
+  Logica de Descricao}}.
+\newblock PhD thesis, 2017.
+
+\bibitem[Macedo and Fusco(2014)]{Macedo2014}
+Rafael Luiz~De Macedo and Elvis Fusco.
+\newblock {An Intelligent Robotic Engine Using Digital Repository of the DSpace
+  Platform}.
+\newblock \penalty0 (c):\penalty0 17--23, 2014.
+
+\bibitem[Madhumitha et~al.(2015)Madhumitha, Keerthana, and
+  Hemalatha]{Madhumitha2015}
+S.~Madhumitha, B.~Keerthana, and B.~Hemalatha.
+\newblock {Interactive Chatbot Using AIML}.
+\newblock \emph{International Journal Of Advanced Networking And Applications},
+  pages 217--223, 2015.
+
+\bibitem[Marcondes et~al.(2020)Marcondes, Almeida, and Novais]{B2020}
+Francisco~Supino Marcondes, Jose~Joao Almeida, and Paulo Novais.
+\newblock {A Short Survey on Chatbot Technology : Failure in Raising the State
+  of the Art}.
+\newblock pages 28--36, 2020.
+\newblock \doi{10.1007/978-3-030-23887-2}.
+
+\bibitem[Marcuschi(1986)]{Marchuschi1986}
+Lu{\'{i}}s~Antonio Marcuschi.
+\newblock \emph{{An{\'{a}}lise da Conversa{\c{c}}{\~{a}}o}}.
+\newblock 1986.
+
+\bibitem[Maria et~al.(2010)Maria, Da, Cordeiro, and Rodrigues]{Maria2010}
+Filomena Maria, Gon{\c{c}}alves Da, Silva Cordeiro, and Rodrigo~Lins Rodrigues.
+\newblock {Um ambiente virtual de aprendizagem apoiado por um agente virtual:
+  chatterbot}.
+\newblock \emph{Encontro Internacional TIC e Educacao 2010 Lisboa Portugal},
+  2010.
+\newblock ISSN 00351334 (ISSN).
+
+\bibitem[Mauldin(1994)]{Mauldin1994}
+Michael~L Mauldin.
+\newblock {CHATTERBOTS, TINYMUDS, and the Turing Test Entering the Loebner
+  Prize Competition}.
+\newblock \emph{AAAI}, 94:\penalty0 16--21, 1994.
+\newblock URL \url{http://www.aaai.org/Papers/AAAI/1994/AAAI94-003.pdf}.
+
+\bibitem[Neves and Barros(2005)]{Neves2005}
+Andr{\'{e}} M.~M. Neves and Fl{\'{a}}via de~Almeida Barros.
+\newblock {iAIML: Um mecanismo para tratamento de intencao em chatterbots}.
+\newblock \emph{Congresso da Sociedade Brasileira de Computacao}, pages
+  1032--1041, 2005.
+
+\bibitem[PRIMO and COELHO(2001)]{primo2001chatterbot}
+Alex Fernando~Teixeira PRIMO and Luciano~Roth COELHO.
+\newblock {A chatterbot Cybelle: experi{\^{e}}ncia pioneira no Brasil}.
+\newblock \emph{M{\'{i}}dia, textos e contextos. Porto Alegre: EDIPUCRS}, pages
+  259--276, 2001.
+
+\bibitem[Raj(2019)]{Raj2019}
+Sumit Raj.
+\newblock \emph{{Building Chatbots with Python}}.
+\newblock 2019.
+\newblock ISBN 9781484240953.
+\newblock \doi{10.1007/978-1-4842-4096-0}.
+
+\bibitem[Ramesh et~al.(2017)Ramesh, Ravishankaran, Joshi, and
+  Chandrasekaran]{Ramesh2019}
+Kiran Ramesh, Surya Ravishankaran, Abhishek Joshi, and K.~Chandrasekaran.
+\newblock {A Survey of Design Techniques for Conversational Agents}.
+\newblock In \emph{International Conference on Information, Communication and
+  Computing Technology}, volume 835, pages 336--350, 2017.
+\newblock ISBN 978-981-13-5991-0.
+\newblock \doi{10.1007/978-981-13-5992-7}.
+\newblock URL
+  \url{https://link.springer.com/chapter/10.1007/978-981-10-6544-6_31}.
+
+\bibitem[Russel and Norving(2013)]{Russel2013}
+Stuart Russel and Peter Norving.
+\newblock \emph{{Intelig{\^{e}}ncia Artificial}}.
+\newblock 2013.
+\newblock ISBN 9780136042594.
+
+\bibitem[Shaikh et~al.(2016)Shaikh, Phalke, Pat, Bhosale, and
+  Raghatwan]{Shaikh2016}
+Ayesha Shaikh, Geetanjali Phalke, Pranita Pat, Sangita Bhosale, and Jyoti
+  Raghatwan.
+\newblock {A Survey On Chatbot Conversational Systems}.
+\newblock \emph{International Journal of Engineering Science and Computing},
+  6\penalty0 (11):\penalty0 3117--3119, 2016.
+\newblock URL \url{http://ijesc.org/upload/464758c5f7d1a1cd13085e8a584ec5f3.A
+  Survey On Chatbot Conversational Systems.pdf}.
+
+\bibitem[Sharma et~al.(2020)Sharma, Verma, and Sahni]{Sharma2020}
+Moolchand Sharma, Shivang Verma, and Lakshay Sahni.
+\newblock {Comparative Analysis of Chatbots}.
+\newblock \emph{SSRN Electronic Journal}, 2020.
+\newblock \doi{10.2139/ssrn.3563674}.
+
+\bibitem[Shum et~al.(2018)Shum, He, and Li]{Shum2018}
+Heung-yeung Shum, Xiao-dong He, and Di~Li.
+\newblock {From Eliza to XiaoIce: challenges and opportunities with social
+  chatbots}.
+\newblock \emph{Frontiers of Information Technology e Electronic Engineering},
+  19\penalty0 (1):\penalty0 10--26, 2018.
+\newblock ISSN 2095-9184.
+\newblock \doi{10.1631/fitee.1700826}.
+
+\bibitem[Torreao(2005)]{Torreao2005}
+Paula Geralda Barbosa~Coelho Torreao.
+\newblock \emph{{Project Management Knowledge Learning Environment: Ambiente
+  Inteligente de Aprendizado para Educacao em Gerenciamento de Projetos}}.
+\newblock PhD thesis, 2005.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{Vaswani2017}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N. Gomez, {\L}ukasz Kaiser, and Illia Polosukhin.
+\newblock {Attention is all you need}.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  2017-Decem\penalty0 (Nips):\penalty0 5999--6009, 2017.
+\newblock ISSN 10495258.
+
+\bibitem[Wallace(2003)]{Wallace2003}
+R~Wallace.
+\newblock {The Elements of AIML Style}.
+\newblock \emph{Alice AI Foundation, Inc}, pages 12--77, 2003.
+\newblock URL
+  \url{https://files.ifi.uzh.ch/cl/hess/classes/seminare/chatbots/style.pdf}.
+
+\bibitem[Wallace(2000)]{Wallace2000}
+Richard~S Wallace.
+\newblock {Don' t Read Me: A.L.I.C.E. and AIML Documentation}.
+\newblock pages 1--72, 2000.
+
+\bibitem[Wallace(2009)]{Wallace2009}
+Richard~S. Wallace.
+\newblock {The anatomy of A.L.I.C.E.}
+\newblock \emph{Parsing the Turing Test. Springer, Dordrecht}, pages 181--210,
+  2009.
+\newblock ISSN 1551-8892.
+\newblock \doi{10.1093/labmed/30.3.161}.
+\newblock URL
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S1364661317302243}.
+
+\bibitem[Weizenbaum(1966)]{Weizenbaum1996}
+Joseph Weizenbaum.
+\newblock {ELIZA - A Computer Program For the Study of Natural Language
+  Communication Between Man And Machine}.
+\newblock \emph{Communications of the ACM}, 9\penalty0 (1), 1966.
+\newblock ISSN 14764687.
+\newblock \doi{10.1038/d41586-017-07228-2}.
+
+\bibitem[Yamaguchi et~al.(2018)Yamaguchi, Mozgovoy, and
+  Danielewicz-Betz]{Yamaguchi2018}
+Hiroshi Yamaguchi, Maxim Mozgovoy, and Anna Danielewicz-Betz.
+\newblock {A Chatbot Based On AIML Rules Extracted From Twitter Dialogues}.
+\newblock \emph{Communication Papers of the 2018 Federated Conference on
+  Computer Science and Information Systems}, 17:\penalty0 37--42, 2018.
+\newblock \doi{10.15439/2018f297}.
+
+\end{thebibliography}

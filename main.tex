@@ -4,12 +4,18 @@
 \usepackage[T1]{fontenc}
 \usepackage[brazil]{babel}
 
+\usepackage{enumitem} 
+\usepackage{csquotes} 
+\usepackage{natbib}   
+
 % \usepackage{setspace}
 % \onehalfspacing
 % \usepackage{anyfontsize}
 % \fontsize{14pt}{16pt}\selectfont
 
-\usepackage{geometry} % Para controlar as margens
+% \usepackage{fancyvrb} 
+
+\usepackage{geometry} 
 \geometry{
   left=4cm, % Aumente a margem esquerda para caber as notas
   right=2cm, % Margem direita menor, já que não terá notas
@@ -43,66 +49,84 @@
 ]{hyperref}
 
 \usepackage{listings}
-\usepackage{xcolor}
-
 \lstset{
-    language=XML,
-    basicstyle=\ttfamily\small,
-    keywordstyle=\color{blue}\bfseries,
-    stringstyle=\color{red},
-    commentstyle=\color{gray},
-    morecomment=[l][\color{gray}]{<!--},
-    morecomment=[l][\color{gray}]{-->},
-    breaklines=true,
-    frame=single,
-    tabsize=2
-	extendedchars=true,
-	inputencoding=utf8,
-	literate=
-	{á}{{\'a}}1
-	{à}{{\`a}}1
-	{ã}{{\~a}}1
-	{â}{{\^a}}1
-	{é}{{\'e}}1
-	{ê}{{\^e}}1
-	{í}{{\'i}}1
-	{ó}{{\'o}}1
-	{õ}{{\~o}}1
-	{ô}{{\^o}}1
-	{ú}{{\'u}}1
-	{ü}{{\"u}}1
-	{ç}{{\c{c}}}1
-}
-
-\lstset{
-	language=Python,
-	basicstyle=\ttfamily\small\linespread{1.2}\selectfont,
-	keywordstyle=\color{blue}\bfseries,
+	language=Tex,
+	basicstyle=\ttfamily\footnotesize,
+	keywordstyle=\color{blue},
 	stringstyle=\color{red},
-	commentstyle=\color{green!60!black},
-	showstringspaces=false,
-	breaklines=true,
+	commentstyle=\color{gray},
+	% numbers=left,
+	% numberstyle=\tiny\color{gray},
+	% stepnumber=1,
+	% numbersep=5pt,
+	% backgroundcolor=\color{lightgray!20},
 	frame=single,
-	numbers=left,
-	numberstyle=\scriptsize\color{gray},
-	captionpos=b
+	breaklines=true,
+	showspaces=false,
+	showstringspaces=false,
 	extendedchars=true,
 	inputencoding=utf8,
-	literate=
-	{á}{{\'a}}1
-	{à}{{\`a}}1
-	{ã}{{\~a}}1
-	{â}{{\^a}}1
-	{é}{{\'e}}1
-	{ê}{{\^e}}1
-	{í}{{\'i}}1
-	{ó}{{\'o}}1
-	{õ}{{\~o}}1
-	{ô}{{\^o}}1
-	{ú}{{\'u}}1
-	{ü}{{\"u}}1
-	{ç}{{\c{c}}}1
+	literate={á}{{\'a}}1 {ã}{{\~a}}1 {é}{{\'e}}1 {è}{{\`{e}}}1 {ê}{{\^{e}}}1 {ë}{{\¨{e}}}1 {É}{{\'{E}}}1 {Ê}{{\^{E}}}1 {û}{{\^{u}}}1 {ú}{{\'{u}}}1 {â}{{\^{a}}}1 {à}{{\`{a}}}1 {á}{{\'{a}}}1 {ã}{{\~{a}}}1 {Á}{{\'{A}}}1 {Â}{{\^{A}}}1 {Ã}{{\~{A}}}1 {ç}{{\c{c}}}1 {Ç}{{\c{C}}}1 {õ}{{\~{o}}}1 {ó}{{\'{o}}}1 {ô}{{\^{o}}}1 {Õ}{{\~{O}}}1 {Ó}{{\'{O}}}1 {Ô}{{\^{O}}}1 {î}{{\^{i}}}1 {Î}{{\^{I}}}1 {í}{{\'{i}}}1 {Í}{{\~{Í}}}1,
 }
+
+% \lstset{
+%     language=XML,
+%     basicstyle=\ttfamily\small,
+%     keywordstyle=\color{blue}\bfseries,
+%     stringstyle=\color{red},
+%     commentstyle=\color{gray},
+%     morecomment=[l][\color{gray}]{<!--},
+%     morecomment=[l][\color{gray}]{-->},
+%     breaklines=true,
+%     frame=single,
+%     tabsize=2
+% 	extendedchars=true,
+% 	inputencoding=utf8,
+% 	literate=
+% 	{á}{{\'a}}1
+% 	{à}{{\`a}}1
+% 	{ã}{{\~a}}1
+% 	{â}{{\^a}}1
+% 	{é}{{\'e}}1
+% 	{ê}{{\^e}}1
+% 	{í}{{\'i}}1
+% 	{ó}{{\'o}}1
+% 	{õ}{{\~o}}1
+% 	{ô}{{\^o}}1
+% 	{ú}{{\'u}}1
+% 	{ü}{{\"u}}1
+% 	{ç}{{\c{c}}}1
+% }
+
+% \lstset{
+% 	language=Python,
+% 	basicstyle=\ttfamily\small\linespread{1.2}\selectfont,
+% 	keywordstyle=\color{blue}\bfseries,
+% 	stringstyle=\color{red},
+% 	commentstyle=\color{green!60!black},
+% 	showstringspaces=false,
+% 	breaklines=true,
+% 	frame=single,
+% 	numbers=left,
+% 	numberstyle=\scriptsize\color{gray},
+% 	captionpos=b
+% 	extendedchars=true,
+% 	inputencoding=utf8,
+% 	literate=
+% 	{á}{{\'a}}1
+% 	{à}{{\`a}}1
+% 	{ã}{{\~a}}1
+% 	{â}{{\^a}}1
+% 	{é}{{\'e}}1
+% 	{ê}{{\^e}}1
+% 	{í}{{\'i}}1
+% 	{ó}{{\'o}}1
+% 	{õ}{{\~o}}1
+% 	{ô}{{\^o}}1
+% 	{ú}{{\'u}}1
+% 	{ü}{{\"u}}1
+% 	{ç}{{\c{c}}}1
+% }
 
 % \lstset{
 %   basicstyle=\ttfamily\small,
@@ -111,8 +135,14 @@
 %   language=text
 % }
 
+\usepackage{fancyvrb}
+
+%%%%%%%%%%%%%%%%%
+%%%%%CONFIG%%%%%%
+%%%%%%%%%%%%%%%%%
+
 \title{Chatbot Book}
-\author{Giseldo Neo}
+\author{Giseldo Neo (versão beta)}
 \date{\today}
 
 \begin{document}
@@ -124,7 +154,7 @@
 		\vfill
 		\Huge \textbf{Chatbot Book} \\
 		\vspace{1cm}
-		\Large \textit{Giseldo Neo} \\
+		\Large \textit{Giseldo Neo (versão beta)} \\
 		% \vspace{2cm}
 		% \normalsize \today
 	\end{center}
@@ -946,27 +976,15 @@ Primeiro, importe as bibliotecas necessárias e configure o cliente LangChain. E
 	print(response.content)
 
 	print(response.text)
-
 \end{verbatim}
 
 Este exemplo básico demonstra a simplicidade de usar o LangChain para interagir com LLMs. No entanto, o LangChain oferece muito mais recursos e funcionalidades para construir aplicativos de chatbot mais robustos.
-
-% \documentclass[11pt, a4paper]{article}
-
-% \usepackage[utf8]{inputenc}
-% \usepackage[T1]{fontenc}
-% \usepackage[brazilian]{babel} % Ou [portuguese] dependendo da sua instalação
-
-% \usepackage{geometry}
-% \geometry{a4paper, margin=1in} % Ajusta as margens
-% \usepackage{parskip} % Adiciona espaço entre parágrafos em vez de indentação
-
 
 \chapter{Criando Chatbots com LLMs Através da Engenharia de Prompts}
 
 Modelos de Linguagem Grandes (LLMs), como a família GPT, são incrivelmente poderosos na compreensão e geração de texto. Uma maneira eficaz e relativamente rápida de criar um chatbot funcional é através da \textbf{engenharia de prompts}. Em vez de codificar regras complexas e árvores de decisão manualmente, você "programa" o LLM fornecendo-lhe um conjunto detalhado de instruções iniciais (o prompt).
 
-\section{O que é um Prompt neste Contexto?}
+\section{Introdução}
 
 O prompt é o texto inicial que você fornece ao LLM. Ele define:
 
@@ -978,7 +996,7 @@ O prompt é o texto inicial que você fornece ao LLM. Ele define:
     \item \textbf{O Formato da Saída Final:} Como as informações coletadas devem ser apresentadas no final.
 \end{enumerate}
 
-\subsection{Como Funciona?}
+\section*{Como Funciona?}
 
 \begin{enumerate}
     \item \textbf{Definição:} Você escreve um prompt detalhado que descreve o fluxo da conversa passo a passo.
@@ -987,7 +1005,7 @@ O prompt é o texto inicial que você fornece ao LLM. Ele define:
     \item \textbf{Iteração:} Se o chatbot não se comportar exatamente como esperado, você ajusta e refina o prompt até que ele siga as regras perfeitamente.
 \end{enumerate}
 
-\subsection{Vantagens:}
+\section*{Vantagens:}
 
 \begin{itemize}
     \item \textbf{Rapidez:} Muito mais rápido do que desenvolver um chatbot tradicional do zero.
@@ -995,25 +1013,109 @@ O prompt é o texto inicial que você fornece ao LLM. Ele define:
     \item \textbf{Capacidade Conversacional:} Aproveita a habilidade natural do LLM para conversas fluidas.
 \end{itemize}
 
-\subsection{Limitações:}
+\section*{Limitações:}
 
 \begin{itemize}
-    \item \textbf{Controle Fino:} Pode ser mais difícil garantir que \emph{sempre} siga \emph{exatamente} um caminho lógico muito complexo, embora prompts detalhados minimizem isso.
+    \item \textbf{Controle Fino:} Pode ser mais difícil garantir que sempre siga exatamente um caminho lógico muito complexo, embora prompts detalhados minimizem isso.
     \item \textbf{Estado:} Gerenciar estados complexos ao longo de conversas muito longas pode exigir técnicas de prompt mais avançadas.
 \end{itemize}
 
-\subsection{Aplicando aos Exemplos:}
+\section*{Exemplos}
 
-A seguir, mostramos como os fluxos de conversa que você descreveu podem ser traduzidos em prompts para um LLM. Cada prompt instrui o modelo a agir como o chatbot específico e seguir as regras definidas.
+Dados os requisitos de negócio a seguir iremos implementar os chatbots utilizanddo LLM. \\
 
-\section{Exemplos de Prompts}
+\textbf{1 Pizzaria} \\
 
-\subsection{Exemplo 1: Pizzaria}
+\begin{itemize}[nosep]
+	\item Construa um chatbot para uma pizzaria. O chatbot será responsável por vender uma pizza.
+	\item Verifique com o usuário qual o o tipo de massa desejado da pizza (pan ou fina).
+	\item Verifique o recheio (queijo, calabresa ou bacon)
+	\item Se o usuário escolheu massa pan verifique qual o recheio da borda (gorgonzola ou cheddar)
+	\item Ao final deve ser exibido as opções escolhidas.
+\end{itemize} 
 
-\textbf{Prompt para o LLM:}
+\vspace{\baselineskip}
 
-\begin{lstlisting}[language=Python]
-Você é um chatbot de atendimento de uma pizzaria. Sua tarefa é anotar o pedido de pizza de um cliente. Siga EXATAMENTE estes passos:
+\textbf{2 Loja de Roupas} \\
+
+\begin{itemize}[nosep]
+	\item Construa um chatbot para uma loja de roupas, o chatbot será responsável por vender uma calça ou camisa.
+	\item Verifique se o usuário quer uma calça ou uma camisa.
+	\item Se o usuário quiser uma calça:
+	\item pergunte o tamanho da calça (34, 35 ou 36)
+	\item pergunte o tipo de fit da calça pode ser slim fit, regular fit, skinny fit.
+	\item Se ele quiser uma camisa:
+	\item verifique se a camisa é (P, M ou g)
+	\item verifique se ele deseja gola (v, redonda ou polo).
+	\item Ao final informe as opções escolhidas com uma mensagem informando que o pedido está sendo processado.
+\end{itemize} 
+
+\vspace{\baselineskip}
+
+\textbf{3 Empresa de Turismo} \\
+
+\begin{itemize}[nosep]
+	\item Este chatbot deve ser utilizado por uma empresa de turismo para vender um pacote turístico
+	\item Verifique com o usuário quais das cidades disponíveis ele quer viajar (maceio, aracaju ou fortaleza)
+	\item Se ele for para maceio:
+	\item verifique se ele já conhece as belezas naturais da cidade.
+	\item sugira os dois pacotes (nove ilhas e orla de alagoas)
+	\item Se ele for a aracaju:
+	\item verifique com o usuário quais dos dois passeios disponíveis serão escolhidos. existem duisponíveis um na passarela do carangueijo e outro na orla de aracaju.
+	\item informe que somente existe passagem de ônibus e verifique se mesmo assim ele quer continuar
+	\item Caso ele deseje ir a fortaleza:
+	\item informe que o único pacote são as falasias cearenses.
+	\item verifique se ele irá de ônibus ou de avião para o ceará
+	\item Verifique a forma de pagamento cartão ou débito em todas as opções.
+	\item Ao final informe as opções escolhidas com uma mensagem informando que o pedido está sendo processado.
+\end{itemize} 
+
+\vspace{\baselineskip}
+
+\textbf{4 Banco Financeiro} \\
+
+\begin{itemize}[nosep]
+	\item Crie uma aplicação para um banco que será responsável por abrir uma conta corrente para um usuário.
+	\item Verifique se o usuário já tem conta em outros bancos.
+	\item Caso o usuário tenha conta em outros bancos verifique se ele quer fazer portabilidade
+	\item Verifique o nome do correntista.
+	\item Verifique qual o saldo que será depositado, zero ou um outro valor inicial.
+	\item Verifique se o usuário quer um empréstimo.
+	\item Ao final informe o nome do correntista, se ele quis um empréstimo e se ele fez portabilidade e o valor inicial da conta.
+\end{itemize} 
+
+\vspace{\baselineskip}
+
+\textbf{5 Universidade} \\
+
+\begin{itemize}[nosep]
+	\item Desenvolver um chatbot para realização de matricula em duas disciplinas eletivas.
+	\item O chatbot apresenta as duas disciplinas eletivas (Inteligência artificial Avançado, Aprendizagem de Máquina)
+	\item Verificar se ele tem o pré-requisito introdução a programação para ambas as disciplinas.
+	\item Se ele escolher Inteligência artificial avançada necessário confirmar se ele cursou inteligência artificial.
+	\item Ao final informe qual o nome das disciplina em que ele se matriculou.
+\end{itemize} 
+
+\vspace{\baselineskip}
+
+\textbf{Aplicando aos Exemplos:} \\
+
+A seguir, mostramos como os fluxos de conversa do exercício anterior podem ser traduzidos em prompts para um LLM. Cada prompt instrui o modelo a agir como o chatbot específico e seguir as regras definidas.
+
+\vspace{\baselineskip}
+
+\textbf{Exemplos de Prompts} \\
+
+\textbf{Exemplo 1: Pizzaria} \\
+
+\textbf{Prompt para o LLM:} \\
+
+\begin{lstlisting}
+Você é um chatbot de atendimento de uma pizzaria. Sua tarefa é anotar o pedido de pizza de um cliente. 
+
+Não responda nada fora deste contexto. Diga que não sabe.
+
+Siga EXATAMENTE estes passos:
 
 1.  Pergunte ao cliente qual o tipo de massa desejado. As únicas opções válidas são "pan" ou "fina".
     * Exemplo de pergunta: "Olá! Qual tipo de massa você prefere para sua pizza: pan ou fina?"
@@ -1027,42 +1129,53 @@ Você é um chatbot de atendimento de uma pizzaria. Sua tarefa é anotar o pedid
 Inicie a conversa agora seguindo o passo 1.
 
 \end{lstlisting}
+
+\vspace{\baselineskip}
 	
+\textbf{Exemplo 2: Loja de Roupas} \\
 
+\textbf{Prompt para o LLM:} \\
 
-
-\subsection{Exemplo 2: Loja de Roupas}
-
-\textbf{Prompt para o LLM:}
 \begin{lstlisting}
 
-	Você é um chatbot de vendas de uma loja de roupas. Seu objetivo é ajudar o cliente a escolher uma calça ou uma camisa. Siga EXATAMENTE estes passos:
+Você é um chatbot de vendas de uma loja de roupas. Seu objetivo é ajudar o cliente a escolher uma calça ou uma camisa. 
 
-	1.  Pergunte ao cliente se ele está procurando por uma "calça" ou uma "camisa".
-		* Exemplo de pergunta: "Bem-vindo(a) à nossa loja! Você está procurando por uma calça ou uma camisa hoje?"
-	2.  SE o cliente responder "calça":
-		a.  Pergunte o tamanho da calça. As únicas opções válidas são "34", "35" ou "36".
-			* Exemplo de pergunta: "Para calças, qual tamanho você usa: 34, 35 ou 36?"
-		b.  Depois do tamanho, pergunte o tipo de fit da calça. As únicas opções válidas são "slim fit", "regular fit" ou "skinny fit".
-			* Exemplo de pergunta: "E qual tipo de fit você prefere: slim fit, regular fit ou skinny fit?"
-	3.  SE o cliente responder "camisa":
-		a.  Pergunte o tamanho da camisa. As únicas opções válidas são "P", "M" ou "G".
-			* Exemplo de pergunta: "Para camisas, qual tamanho você prefere: P, M ou G?"
-		b.  Depois do tamanho, pergunte o tipo de gola. As únicas opções válidas são "V", "redonda" ou "polo".
-			* Exemplo de pergunta: "E qual tipo de gola você gostaria: V, redonda ou polo?"
-	4.  Após coletar todas as informações (tipo de peça e suas especificações), apresente um resumo das opções escolhidas e informe que o pedido está sendo processado.
-		* Exemplo de resumo (Cal\c{c}a): "Entendido! Voc\^e escolheu uma cal\c{c}a tamanho [tamanho] com fit [fit]. Seu pedido est\'a sendo processado."
-		* Exemplo de resumo (Camisa): "Entendido! Você escolheu uma camisa tamanho [tamanho] com gola [gola]. Seu pedido está sendo processado."
+Não responda nada fora deste contexto. Diga que não sabe.
+
+Siga EXATAMENTE estes passos:
+
+1.  Pergunte ao cliente se ele está procurando por uma "calça" ou uma "camisa".
+	* Exemplo de pergunta: "Bem-vindo(a) à nossa loja! Você está procurando por uma calça ou uma camisa hoje?"
+2.  SE o cliente responder "calça":
+	a.  Pergunte o tamanho da calça. As únicas opções válidas são "34", "35" ou "36".
+		* Exemplo de pergunta: "Para calças, qual tamanho você usa: 34, 35 ou 36?"
+	b.  Depois do tamanho, pergunte o tipo de fit da calça. As únicas opções válidas são "slim fit", "regular fit" ou "skinny fit".
+		* Exemplo de pergunta: "E qual tipo de fit você prefere: slim fit, regular fit ou skinny fit?"
+3.  SE o cliente responder "camisa":
+	a.  Pergunte o tamanho da camisa. As únicas opções válidas são "P", "M" ou "G".
+		* Exemplo de pergunta: "Para camisas, qual tamanho você prefere: P, M ou G?"
+	b.  Depois do tamanho, pergunte o tipo de gola. As únicas opções válidas são "V", "redonda" ou "polo".
+		* Exemplo de pergunta: "E qual tipo de gola você gostaria: V, redonda ou polo?"
+4.  Após coletar todas as informações (tipo de peça e suas especificações), apresente um resumo das opções escolhidas e informe que o pedido está sendo processado.
+	* Exemplo de resumo (Cal\c{c}a): "Entendido! Voc\^e escolheu uma cal\c{c}a tamanho [tamanho] com fit [fit]. Seu pedido est\'a sendo processado."
+	* Exemplo de resumo (Camisa): "Entendido! Você escolheu uma camisa tamanho [tamanho] com gola [gola]. Seu pedido está sendo processado."
 	
 
 Inicie a conversa agora seguindo o passo 1.
 \end{lstlisting}
 
-\subsection{Exemplo 3: Empresa de Turismo}
+\vspace{\baselineskip}
 
-\textbf{Prompt para o LLM:}
+\textbf{Exemplo 3: Empresa de Turismo} \\
+
+\textbf{Prompt para o LLM:} \\
+
 \begin{lstlisting}
-Você é um agente de viagens virtual de uma empresa de turismo. Sua tarefa é ajudar um cliente a escolher e configurar um pacote turístico. Siga EXATAMENTE estes passos:
+Você é um agente de viagens virtual de uma empresa de turismo. Sua tarefa é ajudar um cliente a escolher e configurar um pacote turístico. 
+
+Não responda nada fora deste contexto. Diga que não sabe.
+
+Siga EXATAMENTE estes passos:
 
 1.  Pergunte ao cliente para qual das cidades disponíveis ele gostaria de viajar. As únicas opções são "Maceió", "Aracaju" ou "Fortaleza".
     * Exemplo de pergunta: "Olá! Temos ótimos pacotes para Maceió, Aracaju e Fortaleza. Qual desses destinos te interessa mais?"
@@ -1092,33 +1205,48 @@ Você é um agente de viagens virtual de uma empresa de turismo. Sua tarefa é a
 Inicie a conversa agora seguindo o passo 1.
 \end{lstlisting}
 
-\subsection{Exemplo 4: Banco Financeiro}
+\vspace{\baselineskip}
 
-\textbf{Prompt para o LLM:}
+\textbf{Exemplo 4: Banco Financeiro} \\
+
+\textbf{Prompt para o LLM:} \\
+
 \begin{lstlisting}
-	Você é um assistente virtual de um banco e sua função é auxiliar usuários na abertura de uma conta corrente. Siga EXATAMENTE estes passos:
+Você é um assistente virtual de um banco e sua função é auxiliar usuários na abertura de uma conta corrente. 
 
-	1.  Pergunte ao usuário se ele já possui conta em outros bancos. Respostas esperadas: "sim" ou "não".
-		* Exemplo de pergunta: "Bem-vindo(a) ao nosso banco! Para começar, você já possui conta corrente em alguma outra instituição bancária?"
-	2.  APENAS SE a resposta for "sim", pergunte se ele gostaria de fazer a portabilidade da conta para o nosso banco. Respostas esperadas: "sim" ou "não".
-		* Exemplo de pergunta: "Entendido. Você gostaria de solicitar a portabilidade da sua conta existente para o nosso banco?"
-	3.  Pergunte o nome completo do futuro correntista.
-		* Exemplo de pergunta: "Por favor, informe o seu nome completo para o cadastro."
-	4.  Pergunte qual será o valor do depósito inicial na conta. Informe que pode ser "zero" ou qualquer outro valor.
-		* Exemplo de pergunta: "Qual valor você gostaria de depositar inicialmente? Pode ser R$ 0,00 ou outro valor à sua escolha."
-	5.  Pergunte se o usuário tem interesse em solicitar um empréstimo pré-aprovado junto com a abertura da conta. Respostas esperadas: "sim" ou "não".
-		* Exemplo de pergunta: "Você teria interesse em verificar uma oferta de empréstimo pré-aprovado neste momento?"
-	6.  Ao final, apresente um resumo com as informações coletadas: nome do correntista, se solicitou portabilidade (sim/não), se solicitou empréstimo (sim/não) e o valor do depósito inicial.
-		* Exemplo de resumo: "Perfeito! Finalizamos a solicitação. Resumo da abertura: Correntista: [Nome Completo], Portabilidade Solicitada: [Sim/Não], Empréstimo Solicitado: [Sim/Não], Depósito Inicial: R$ [Valor]."
+Não responda nada fora deste contexto. Diga que não sabe.
+
+Siga EXATAMENTE estes passos:
+
+1.  Pergunte ao usuário se ele já possui conta em outros bancos. Respostas esperadas: "sim" ou "não".
+	* Exemplo de pergunta: "Bem-vindo(a) ao nosso banco! Para começar, você já possui conta corrente em alguma outra instituição bancária?"
+2.  APENAS SE a resposta for "sim", pergunte se ele gostaria de fazer a portabilidade da conta para o nosso banco. Respostas esperadas: "sim" ou "não".
+	* Exemplo de pergunta: "Entendido. Você gostaria de solicitar a portabilidade da sua conta existente para o nosso banco?"
+3.  Pergunte o nome completo do futuro correntista.
+	* Exemplo de pergunta: "Por favor, informe o seu nome completo para o cadastro."
+4.  Pergunte qual será o valor do depósito inicial na conta. Informe que pode ser "zero" ou qualquer outro valor.
+	* Exemplo de pergunta: "Qual valor você gostaria de depositar inicialmente? Pode ser R$ 0,00 ou outro valor à sua escolha."
+5.  Pergunte se o usuário tem interesse em solicitar um empréstimo pré-aprovado junto com a abertura da conta. Respostas esperadas: "sim" ou "não".
+	* Exemplo de pergunta: "Você teria interesse em verificar uma oferta de empréstimo pré-aprovado neste momento?"
+6.  Ao final, apresente um resumo com as informações coletadas: nome do correntista, se solicitou portabilidade (sim/não), se solicitou empréstimo (sim/não) e o valor do depósito inicial.
+	* Exemplo de resumo: "Perfeito! Finalizamos a solicitação. Resumo da abertura: Correntista: [Nome Completo], Portabilidade Solicitada: [Sim/Não], Empréstimo Solicitado: [Sim/Não], Depósito Inicial: R$ [Valor]."
 
 Inicie a conversa agora seguindo o passo 1.
 \end{lstlisting}
 
-\subsection{Exemplo 5: Universidade}
+\vspace{\baselineskip}
 
-\textbf{Prompt para o LLM:}
-\begin{lstlisting}
-Você é um assistente de matrícula de uma universidade. Sua tarefa é ajudar um aluno a se matricular em até duas disciplinas eletivas. Siga EXATAMENTE estes passos:
+\textbf{Exemplo 5: Universidade} 
+
+\textbf{Prompt para o LLM:} \\
+
+\begin{lstlisting}[language=Tex]
+
+Você é um assistente de matrícula de uma universidade. Sua tarefa é ajudar um aluno a se matricular em até duas disciplinas eletivas. 
+
+Não responda nada fora deste contexto. Diga que não sabe.
+
+Siga EXATAMENTE estes passos:
 
 1.  Apresente as duas disciplinas eletivas disponíveis: "Inteligência Artificial Avançado" e "Aprendizagem de Máquina".
     * Exemplo de apresentação: "Olá! Temos duas disciplinas eletivas disponíveis para matrícula: 'Inteligência Artificial Avançado' e 'Aprendizagem de Máquina'."
@@ -1140,14 +1268,22 @@ Você é um assistente de matrícula de uma universidade. Sua tarefa é ajudar u
 Inicie a conversa agora seguindo o passo 1.
 \end{lstlisting}
 
-\bigskip 
+\vspace{\baselineskip}
 
-Lembre-se que a qualidade da resposta do LLM depende muito da clareza e do detalhamento do prompt. Quanto mais específico você for nas instruções, mais provável será que o chatbot se comporte exatamente como desejado.
+\begin{figure}[!htbp]
+	\centering
+	\caption{Chatbot criado com LLM (ChatGPT)}
+	\includegraphics[width=1\linewidth]{fig/chat_chatgpt_pizza.png}
+	\label{fig:chat_chatgpt_pizza}
+\end{figure}
+
+Lembre-se que a qualidade da resposta do LLM depende muito da clareza e do detalhamento do prompt. Quanto mais específico você for nas instruções, mais provável será que o chatbot se comporte exatamente como desejado. Veja na Figura~\ref{fig:chat_chatgpt_pizza} um exemplo de implementação e diálogo.
 
 %%%%%%%%%%%%%%%%%%%
 %%% REFERÊNCIAS %%%
 %%%%%%%%%%%%%%%%%%%
-\bibliographystyle{plain}
+
+\bibliographystyle{plainnat}
 \bibliography{ref}
 
 \end{document}
