@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1744775746.05734 "main.aux" "main.bbl" "main" 1744775857.03123 0
+["bibtex main"] 1744817780.18858 "main.aux" "main.bbl" "main" 1744817857.76437 0
   "./ref.bib" 1744041405 270683 1a011c495fff59be804d90d273746c1a ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/bibtex/bst/natbib/plainnat.bst" 1284455456 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "main.aux" 1744775852 22848 a138e5ce1f973a1e4164331a48c34b6a "pdflatex"
+  "main.aux" 1744817855 23350 d1142b640b31ec14a8c96add9280fc4c "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1744775834.02789 "c:/Projetos/chatbot_book_latex/main.tex" "main.pdf" "main" 1744775857.03494 0
+["pdflatex"] 1744817847.93936 "c:/Projetos/chatbot_book_latex/main.tex" "main.pdf" "main" 1744817857.76613 0
   "C:/Users/gigi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1744152217 577244 b405a59c70dd3aa9bec296db0138e4cf ""
   "C:/Users/gigi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1440.pk" 1744753308 16968 b1df690d1e10a6adbd59412e21abee13 ""
   "C:/Users/gigi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725327799 24239922 74e4f57c74e586d3cab4d2d08e467b56 ""
@@ -176,6 +176,7 @@
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/nameref.sty" 1705826021 11026 182c63f139a71afd30a28e5f1ed2cd1c ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/pd1enc.def" 1705826021 14249 e67cb186717b7ab18d14a4875e7e98b5 ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/puenc.def" 1705826021 117112 05831178ece2cad4d9629dcf65099b11 ""
+  "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/hyphenat/hyphenat.sty" 1251898220 5798 0437b031e663035b68539cf7ac7c8eeb ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/kvoptions/kvoptions.sty" 1656236481 22555 6d8e155cfef6d82c3d5c742fea7c992e ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.sty" 1665066333 13815 760b0c02f691ea230f5359c4e1de23a7 ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1714423267 29785 470380cd55470b90fdb46d40220ba304 ""
@@ -212,7 +213,7 @@
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/gigi/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Projetos/chatbot_book_latex/main.tex" 1744775830 122007 5ca6fc4ea62ddf67c7419c1b7ccffea4 ""
+  "c:/Projetos/chatbot_book_latex/main.tex" 1744817839 122879 2781e2bfcac9cbe078096f1c2b41456d ""
   "fig/capa.png" 1744773791 4193625 5abd29881f33c27a062f9a5674f4b702 ""
   "fig/chat_chatgpt_pizza.png" 1744160314 257776 b84d29e27ba8293f89b67e25bda0e859 ""
   "fig/chatbot.png" 1743994112 46452 86b121f1a0f23e7c32a417b2d82498c9 ""
@@ -227,11 +228,11 @@
   "fig/image8.png" 1744056018 18131 ad6542a052530e13fc635695ea8a881d ""
   "fig/image9.png" 1744056018 132944 48839708d97a9e657580623663ddf1fe ""
   "fig/trends.png" 1743994112 51576 ca652a44bf2ada566f21f01079f0f073 ""
-  "main.aux" 1744775852 22848 a138e5ce1f973a1e4164331a48c34b6a "pdflatex"
-  "main.bbl" 1744775746 12700 fde62095454802e8be9f3464508d18ef "bibtex main"
-  "main.out" 1744775852 14533 4052a9a119ee412ae3308c39a5cc8b25 "pdflatex"
-  "main.tex" 1744775830 122007 5ca6fc4ea62ddf67c7419c1b7ccffea4 ""
-  "main.toc" 1744775852 7404 65fbb962a7a5582be924381d8f1327ab "pdflatex"
+  "main.aux" 1744817855 23350 d1142b640b31ec14a8c96add9280fc4c "pdflatex"
+  "main.bbl" 1744817780 12700 fde62095454802e8be9f3464508d18ef "bibtex main"
+  "main.out" 1744817855 14376 656d33346f45c2394577cc6bcd221897 "pdflatex"
+  "main.tex" 1744817839 122879 2781e2bfcac9cbe078096f1c2b41456d ""
+  "main.toc" 1744817855 7428 e3c7b9bb15dd637d9f3bc0f0dee379fc "pdflatex"
   (generated)
   "main.aux"
   "main.log"
