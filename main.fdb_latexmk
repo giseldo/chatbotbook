@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1745101088.84716 "main.aux" "main.bbl" "main" 1745101098.21285 0
+["bibtex main"] 1745101420.34328 "main.aux" "main.bbl" "main" 1745101429.92757 0
   "./ref.bib" 1744427431 270683 1a011c495fff59be804d90d273746c1a ""
   "C:/Users/gisel/AppData/Local/Programs/MiKTeX/bibtex/bst/natbib/plainnat.bst" 1284455456 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "main.aux" 1745101096 23350 d1142b640b31ec14a8c96add9280fc4c "pdflatex"
+  "main.aux" 1745101427 23343 c2319b10baee9a821f8bd4221507317b "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1745101089.42468 "c:/Projetos/chatbotbook_v2/main.tex" "main.pdf" "main" 1745101098.21429 0
+["pdflatex"] 1745101420.8981 "c:/Projetos/chatbotbook_v2/main.tex" "main.pdf" "main" 1745101429.92921 0
   "C:/Users/gisel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1745098876 333191 73c05eb4ad223a32d32804ba595e3b10 ""
   "C:/Users/gisel/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1440.pk" 1745098888 16968 c2325b7efe7411b36c778e38509f83af ""
   "C:/Users/gisel/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1723928429 24265374 d9f20010c4ccf005291dee566f651bcf ""
@@ -213,7 +213,7 @@
   "C:/Users/gisel/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/gisel/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/gisel/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Projetos/chatbotbook_v2/main.tex" 1745101075 122878 4d0cf58b745eaa61abadd1b19b89336e ""
+  "c:/Projetos/chatbotbook_v2/main.tex" 1745101409 122868 36e5419145659579c3526581dae966a3 ""
   "fig/capa.png" 1745098778 4193625 5abd29881f33c27a062f9a5674f4b702 ""
   "fig/chat_chatgpt_pizza.png" 1744427431 257776 b84d29e27ba8293f89b67e25bda0e859 ""
   "fig/chatbot.png" 1744427431 46452 86b121f1a0f23e7c32a417b2d82498c9 ""
@@ -228,11 +228,11 @@
   "fig/image8.png" 1745098779 18131 ad6542a052530e13fc635695ea8a881d ""
   "fig/image9.png" 1745098779 132944 48839708d97a9e657580623663ddf1fe ""
   "fig/trends.png" 1744427431 51576 ca652a44bf2ada566f21f01079f0f073 ""
-  "main.aux" 1745101096 23350 d1142b640b31ec14a8c96add9280fc4c "pdflatex"
-  "main.bbl" 1745101089 12700 fde62095454802e8be9f3464508d18ef "bibtex main"
-  "main.out" 1745101096 14376 656d33346f45c2394577cc6bcd221897 "pdflatex"
-  "main.tex" 1745101075 122878 4d0cf58b745eaa61abadd1b19b89336e ""
-  "main.toc" 1745101096 7428 e3c7b9bb15dd637d9f3bc0f0dee379fc "pdflatex"
+  "main.aux" 1745101427 23343 c2319b10baee9a821f8bd4221507317b "pdflatex"
+  "main.bbl" 1745101420 12700 fde62095454802e8be9f3464508d18ef "bibtex main"
+  "main.out" 1745101427 14304 958901b347f4de829d253d491dd968a7 "pdflatex"
+  "main.tex" 1745101409 122868 36e5419145659579c3526581dae966a3 ""
+  "main.toc" 1745101428 7418 284c4643b8cfb9ed68c1c4a82e7fedbc "pdflatex"
   (generated)
   "main.aux"
   "main.log"
