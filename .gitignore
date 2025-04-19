@@ -3,6 +3,8 @@
 
 *.pdf
 
+*.fdb_latexmk
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
