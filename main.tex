@@ -16,6 +16,9 @@
 \fontsize{14pt}{16pt}\selectfont
 \usepackage{fancyvrb} 
 
+\usepackage{hyphenat}
+\hyphenation{chat-bot cha-tbots in-te-li-gên-cia ar-ti-fi-cial}
+
 \usepackage{geometry} 
 \geometry{
   left=4cm, % Aumente a margem esquerda para caber as notas
@@ -187,6 +190,7 @@ A popularidade dos chatbots tem crescido significativamente em diversos domínio
 
 \section{Chatbots e Agentes: Definições e Distinções}
 
+\marginnote{Agente}
 Define-se chatbot como um programa computacional projetado para interagir com usuários por meio de linguagem natural. Por outro lado, o conceito de agente possui uma definição mais ampla: trata-se de uma entidade computacional que percebe seu ambiente por meio de sensores e atua sobre esse ambiente por meio de atuadores \cite{Russel2013}. A Figura~\ref{fig:agente} ilustra uma arquitetura conceitual de alto nível para um agente.
 
 \begin{figure}
@@ -206,12 +210,12 @@ Nesse contexto, um chatbot (Figura~\ref{fig:chatbot}) pode ser considerado uma i
 	\caption{Representação esquemática de um chatbot.}
 	\includegraphics[width=0.9\linewidth]{fig/chatbot.png}
 	\label{fig:chatbot}
-	{\footnotesize \centering
 
-		Fonte: Giseldo Neo (2025)}
 \end{figure}
 
-Com o advento de modelos de linguagem avançados, como os baseados na arquitetura \textit{Generative Pre-trained Transformer} (GPT), a exemplo do ChatGPT, observou-se uma recontextualização do termo ``agente'' no domínio dos sistemas conversacionais. Nessa abordagem mais recente, um sistema focado predominantemente na geração de texto conversacional tende a ser denominado ``chatbot''. Em contraste, o termo ``agente'' é frequentemente reservado para sistemas que, além da capacidade conversacional, integram e utilizam ferramentas externas (por exemplo, acesso à internet, execução de código, interação com APIs) para realizar tarefas complexas e interagir proativamente com o ambiente digital. Um sistema capaz de realizar uma compra online, processar um pagamento e confirmar um endereço de entrega por meio do navegador do usuário seria, portanto, classificado como um agente, diferentemente de chatbots mais simples como ELIZA, ou mesmo versões mais simples do chatGPT (GPT-2),cujo foco era estritamente o diálogo.
+Com o advento de modelos de linguagem avançados, como os baseados na arquitetura \textit{Generative Pre-trained Transformer} (GPT), a exemplo do ChatGPT, observou-se uma recontextualização do termo ``agente'' no domínio dos sistemas conversacionais. Nessa abordagem mais recente, um sistema focado predominantemente na geração de texto conversacional tende a ser denominado ``chatbot''. 
+Em contraste, o termo ``agente'' é frequentemente reservado para sistemas que, além da capacidade conversacional, integram e utilizam ferramentas externas (por exemplo, acesso à internet, execução de código, interação com APIs) para realizar tarefas complexas e interagir proativamente com o ambiente digital. 
+Um sistema capaz de realizar uma compra online, processar um pagamento e confirmar um endereço de entrega por meio do navegador do usuário seria, portanto, classificado como um agente, diferentemente de chatbots mais simples como ELIZA, ou mesmo versões mais simples do chatGPT (GPT-2), cujo foco era estritamente o diálogo.
 
 
 \section{Gerenciamento do Diálogo e Fluxo Conversacional}
@@ -251,7 +255,7 @@ Um outro tipo de fluxo para um chatbot que vende roupas está representada na Fi
 
 \section{Depois do ELIZA}
 
-\marginnote{ALICE \\ AIML}
+\marginnote{AIML}
 Um marco significativo na evolução dos chatbots foi o ALICE, que introduziu a Artificial Intelligence Markup Language (AIML), uma linguagem de marcação baseada em XML \cite{Wallace2000}. A AIML estabeleceu um paradigma para a construção de agentes conversacionais ao empregar algoritmos de correspondência de padrões. Essa abordagem utiliza modelos pré-definidos para mapear as entradas do usuário a respostas correspondentes, permitindo a definição modular de blocos de conhecimento \cite{Wallace2000}.
 
 No contexto brasileiro, um dos primeiros chatbots documentados capaz de interagir em português, inspirado no modelo ELIZA, foi o Cybele \cite{primo2001chatterbot}. Posteriormente, foi desenvolvido o Elecktra, também em língua portuguesa, com aplicação voltada para a educação a distância \cite{Leonhardt2003}. Em um exemplo mais recente de aplicação governamental, no ano de 2019, o processo de inscrição para o Exame Nacional do Ensino Médio (ENEM) foi disponibilizado por meio de uma interface conversacional baseada em chatbot (Figura~\ref{fig:enem}).
@@ -274,6 +278,7 @@ Entre os chatbots baseado em LLMs de destaque atualmente estão o Qwen, desenvol
 
 \section{Abordagens}
 
+\marginnote{Outras técnicas}
 Desde o pioneirismo do ELIZA, múltiplas abordagens e técnicas foram exploradas para o desenvolvimento de chatbots. 
 Entre as mais relevantes, destacam-se: AIML com correspondência de padrões (pattern matching), análise sintática (Parsing), modelos de cadeia de Markov (Markov Chain Models), uso de ontologias, redes neurais recorrentes (RNNs), redes de memória de longo prazo (LSTMs), modelos neurais sequência-a-sequência (Sequence-to-Sequence), aprendizado adversarial para geração de diálogo, além de abordagens baseadas em recuperação (Retrieval-Based) e generativas (Generative-Based) \cite{Borah2019, Ramesh2019, Shaikh2016, Abdul-Kader2015, Li2018}, entre outras.
 
@@ -289,7 +294,9 @@ Se a tarefa que o chatbot visa simular é inerentemente complexa e envolve múlt
 Para facilitar a visualização desses fluxos, uma solução eficaz é a utilização de fluxogramas.  % TODO Citar Giseldo Neo
 Embora simples de criar e entender, os fluxogramas constituem uma poderosa ferramenta de representação para este problema.
 
-Os chatbots baseados em AIML (Artificial Intelligence Markup Language) apresentam desvantagens específicas. Por exemplo, o conhecimento é representado como instâncias de arquivos AIML. Se esse conhecimento for criado com base em dados coletados da Internet, ele não será atualizado automaticamente, exigindo atualizações periódicas manuais \cite{Madhumitha2015}. No entanto, já existem abordagens para mitigar essa limitação, permitindo carregar conteúdo AIML a partir de fontes como arquivos XML \cite{Macedo2014}, um corpus textual \cite{DeGasperis2013} ou dados do Twitter \cite{Yamaguchi2018}.
+Os chatbots baseados em AIML apresentam desvantagens específicas. Por exemplo, o conhecimento é representado como instâncias de arquivos AIML. 
+Se esse conhecimento for criado com base em dados coletados da Internet, ele não será atualizado automaticamente, exigindo atualizações periódicas manuais \cite{Madhumitha2015}. 
+No entanto, já existem abordagens para mitigar essa limitação, permitindo carregar conteúdo AIML a partir de fontes como arquivos XML \cite{Macedo2014}, um corpus textual \cite{DeGasperis2013} ou dados do Twitter \cite{Yamaguchi2018}.
 
 Outra desvantagem do AIML, a exemplo do Eliza, reside na relativa complexidade de seus padrões de correspondência (patterns). Além disso, a manutenção do sistema pode ser árdua, pois, embora a inserção de conteúdo (categorias) seja conceitualmente simples, grandes volumes de informação frequentemente precisam ser adicionados manualmente \cite{Madhumitha2015}.
 
@@ -327,7 +334,11 @@ O conjunto de padrões e respostas predefinidas constitui o que Weizenbaum chamo
 \end{figure}
 
 \marginnote{SCRIPT DOCTOR}
-Um destes scripts (o DOCTOR) o deixou famoso. Com este script carregado, o ELIZA simulava precariamente um psicoterapeuta (do estilo Rogeriano), refletindo as palavras do usuário de volta em forma de pergunta. A primeira linha do script é a introdução do chatbot, a primeira palavra que ele escrever para o usuário. START é um comando técnico do script, serve para indicar que a seguir virão as regras. REMEMBER 5 estabelece que a prioridade da palavra REMEMBER é 5, ou seja, se o usuário disser algo que contenha a palavra REMEMBER, o ELIZA irá responder com uma das perguntas definidas entre parênteses. A seguir estão as regras de transformação de frases (decomposition rule e reassembly rule) associadas à palavra-chave REMEMBER. O exemplo abaixo mostra um trecho do script DOCTOR:
+Um destes scripts (o DOCTOR) o deixou famoso. 
+Com este script carregado, o ELIZA simulava precariamente um psicoterapeuta (do estilo Rogeriano), refletindo as palavras do usuário de volta em forma de pergunta. 
+A primeira linha do script é a introdução do chatbot, a primeira palavra que ele escrever para o usuário. 
+START é um comando técnico do script, serve para indicar que a seguir virão as regras. REMEMBER 5 estabelece que a prioridade da palavra REMEMBER é 5, ou seja, se o usuário disser algo que contenha a palavra REMEMBER, o ELIZA irá responder com uma das perguntas definidas entre parênteses. 
+A seguir estão as regras de transformação de frases (decomposition rule e reassembly rule) associadas à palavra-chave REMEMBER. O exemplo abaixo mostra um trecho do script DOCTOR:
 
 \begin{verbatim}
 		
@@ -416,7 +427,8 @@ A cada turno, o texto de entrada do usuário é analisado em busca de palavras-c
 O ELIZA fazia uma varredura da sentença da esquerda para a direita, identificando se alguma palavra correspondia a uma palavra\-chave do script. 
 Caso encontrasse, ELIZA selecionava a palavra-chave mais “importante” (havia um peso de prioridade associado a cada palavra-chave) e ignorava o restante da entrada.
 
-Por exemplo, o script DOCTOR, definia palavras-chave como “ALIKE” ou “SAME” com alta prioridade; assim, na frase “Men are all alike.” o programa detectava a palavra “ALIKE” e disparava uma resposta associada a ela (no caso: “In what way?”). Se múltiplas palavras-chave aparecessem, ELIZA escolhia aquela de maior peso para formular a resposta.
+Por exemplo, o script DOCTOR, definia palavras-chave como “ALIKE” ou “SAME” com alta prioridade; assim, na frase “Men are all alike.” o programa detectava a palavra “ALIKE” e disparava uma resposta associada a ela (no caso: “In what way?”). 
+Se múltiplas palavras-chave aparecessem, ELIZA escolhia aquela de maior peso para formular a resposta.
 
 Primeiro o texto de entrada digitado pelo usuário era separado em palavras, em um técnica que hoje chamamos de tokenização de palavras. A palavra-chave era identificada, comparando-a sequencialmente até o fim das palavras existentes, ou até ser encontrado uma pontuação. Caso fosse encontrado uma pontuação (ponto final ou vírgula), o texto após a pontuação era ignorado se já tivesse sido identificado uma palavra-chave. Assim cada processamento da resposta foca em apenas uma única afirmação (ou frase) do usuário. Se várias palavras-chave fossem encontradas antes da pontuação, a de maior peso era selecionada.
 
@@ -424,7 +436,9 @@ Por exemplo, o usuário entra com o texto: “I am sick. but, today is raining�
 
 Se nenhuma palavra-chave fosse encontrada na entrada, ELIZA recorria a frases genéricas programadas, chamadas de respostas vazias ou sem conteúdo. Nesses casos, o chatbot emitia mensagens do tipo “I see.” ou “Please, go on.” . Esse mecanismo evitava silêncio quando o usuário dizia algo fora do escopo do script.
 
-Além disso, a implementação original incluía uma estrutura de memória: algumas declarações recentes do usuário eram armazenadas e, se uma entrada subsequente não contivesse novas keywords, ELIZA poderia recuperar um tópico anterior e introduzi-lo na conversa. Por exemplo, se o usuário mencionasse família em um momento e depois fizesse uma afirmação vaga, o programa poderia responder retomando o assunto da família (“DOES THAT HAVE ANYTHING TO DO WITH YOUR FAMILY?”). Essa estratégia dava uma pseudo-continuidade ao diálogo, simulando que o sistema “lembrava” de informações fornecidas anteriormente.
+Além disso, a implementação original incluía uma estrutura de memória: algumas declarações recentes do usuário eram armazenadas e, se uma entrada subsequente não contivesse novas keywords, ELIZA poderia recuperar um tópico anterior e introduzi-lo na conversa.
+Por exemplo, se o usuário mencionasse família em um momento e depois fizesse uma afirmação vaga, o programa poderia responder retomando o assunto da família (“DOES THAT HAVE ANYTHING TO DO WITH YOUR FAMILY?”).
+Essa estratégia dava uma pseudo-continuidade ao diálogo, simulando que o sistema “lembrava” de informações fornecidas anteriormente.
 
 \section{Regras de Transformação de Frases}
 
@@ -765,7 +779,7 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 %%%%CAPITULO%%%%
 %%%%%%%%%%%%%%%%
 
-\chapter{Processamento de Linguagem Natural (PLN) e Entendimento de Linguagem Natural (ULN)}
+\chapter{Processamento de Linguagem Natural}
 
 O \textbf{Processamento de Linguagem Natural (PLN)} é um campo intrinsecamente ligado à inteligência artificial, dedicando-se a equipar computadores com a capacidade de analisar e compreender a linguagem humana. No cenário da construção de \textit{chatbots}, o PLN emerge como um componente fundamental, atuando como o "cérebro" da aplicação conversacional. Sua função primordial reside em processar a entrada bruta do usuário, realizando a limpeza e a preparação dos dados textuais para que o sistema possa interpretar a mensagem e tomar as ações subsequentes apropriadas.
 
@@ -1138,6 +1152,10 @@ Primeiro, importe as bibliotecas necessárias e configure o cliente LangChain. E
 
 Este exemplo básico demonstra a simplicidade de usar o LangChain para interagir com LLMs. No entanto, o LangChain oferece muito mais recursos e funcionalidades para construir aplicativos de chatbot mais robustos.
 
+%%%%%%%%%%%%%%%%
+%%%%CAPITULO%%%%
+%%%%%%%%%%%%%%%%
+
 \chapter{Criando Chatbots com LLMs Através da Engenharia de Prompts}
 
 Modelos de Linguagem Grandes (LLMs), como a família GPT, são incrivelmente poderosos na compreensão e geração de texto. Uma maneira eficaz e relativamente rápida de criar um chatbot funcional é através da \textbf{engenharia de prompts}. Em vez de codificar regras complexas e árvores de decisão manualmente, você "programa" o LLM fornecendo-lhe um conjunto detalhado de instruções iniciais (o prompt).
@@ -1437,9 +1455,9 @@ Inicie a conversa agora seguindo o passo 1.
 
 Lembre-se que a qualidade da resposta do LLM depende muito da clareza e do detalhamento do prompt. Quanto mais específico você for nas instruções, mais provável será que o chatbot se comporte exatamente como desejado. Veja na Figura~\ref{fig:chat_chatgpt_pizza} um exemplo de implementação e diálogo.
 
-%%%%%%%%%%%%%%%%%%%
-%%% REFERÊNCIAS %%%
-%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+%%%%CAPITULO%%%%
+%%%%%%%%%%%%%%%%
 
 \chapter{Expressões Regulares}
 
@@ -1577,6 +1595,29 @@ As expressões regulares representam uma ferramenta essencial para o processamen
 No entanto, é crucial entender as limitações das regex, especialmente no que diz respeito à compreensão da linguagem natural em sua totalidade. Para tarefas que exigem análise semântica e contextual, técnicas avançadas de PLN são necessárias. As expressões regulares, portanto, encontram seu melhor uso como parte de um fluxo de trabalho mais amplo, onde complementam outras abordagens para criar chatbots robustos e eficientes.
 
 Encorajamos o leitor a praticar a criação de diferentes padrões de regex e a experimentar com os exemplos fornecidos neste capítulo. A familiaridade com as expressões regulares é uma habilidade valiosa para qualquer pessoa envolvida no desenvolvimento de chatbots e no processamento de linguagem natural em geral.
+
+%%%%%%%%%%%%%%%%
+%%%%CAPITULO%%%%
+%%%%%%%%%%%%%%%%
+
+
+\chapter{Usando o GPT2}
+
+A biblioteca transformers da Hugging Face torna muito mais fácil trabalhar com modelos pré-treinados como GPT-2. Aqui está um exemplo de como gerar texto usando o GPT-2 pré-treinado:
+
+\begin{lstlisting}[language=Python, caption=Exemplo de uso do GPT-2 com a biblioteca transformers, label=lst:gpt2_exemplo]
+from transformers import pipeline
+
+pipe = pipeline('text-generation', model='gpt2')
+
+input = 'Olá, como vai você?'
+
+output = pipe(input)
+
+print(output[0]['generated_text'])
+\end{lstlisting}
+
+Este código é simples porque ele usa um modelo que já foi treinado em um grande dataset. Também é possível ajustar (fine-tune) um modelo pré-treinado em seus próprios dados para obter resultados melhores.
 
 %%%%%%%%%%%%%%%%%%%
 %%% REFERÊNCIAS %%%
