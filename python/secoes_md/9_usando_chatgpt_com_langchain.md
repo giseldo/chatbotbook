@@ -1,5 +1,7 @@
 # Usando chatGPT com LangChain
 
+## Introdução
+
 LangChain é uma biblioteca de software de código aberto projetada para
 simplificar a interação com Large Language Models (LLMs) e construir
 aplicativos de processamento de linguagem natural robustos. Ele fornece
@@ -70,7 +72,7 @@ LangChain. Em seguida, carregue o modelo de linguagem desejado. Agora,
 você pode usar o modelo para fazer uma consulta. Vamos perguntar quem é
 o presidente do Brasil.
 
-[ ![image](fig/colab-badge.png)
+[ ![image](./fig/colab-badge.png)
 ](https://colab.research.google.com/github/giseldo/chatbotbook_v2/blob/main/notebook/langchain.ipynb)
 
         from langchain.chat_models import init_chat_model

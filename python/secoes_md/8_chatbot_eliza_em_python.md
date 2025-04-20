@@ -9,7 +9,7 @@ textuais (palavras-chave) na entrada fornecida pelo usuário e a
 subsequente geração de respostas, fundamentada em regras de
 transformação predefinidas manualmente.
 
-[ ![image](fig/colab-badge.png)
+[ ![image](./fig/colab-badge.png)
 ](https://colab.research.google.com/github/giseldo/chatbotbook/blob/main/notebook/eliza.ipynb)
 
     import re  

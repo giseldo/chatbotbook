@@ -101,7 +101,7 @@ popularidade no período analisado e 0 (ou a ausência de dados) indica
 interesse mínimo ou dados insuficientes.
 
 <figure id="fig:trends">
-<p><img src="fig/trends.png" style="width:100.0%" alt="image" /> <span
+<p><img src="./fig/trends.png" style="width:100.0%" alt="image" /> <span
 id="fig:trends" data-label="fig:trends"></span> <span>Fonte: Google
 Trends acesso em 05/04/2025</span></p>
 <figcaption>Evolução do interesse de busca pelo termo “chatbot” (Google
@@ -119,7 +119,7 @@ Figura [1.3](#fig:agente){reference-type="ref" reference="fig:agente"}
 ilustra uma arquitetura conceitual de alto nível para um agente.
 
 <figure id="fig:agente">
-<p><img src="fig/ia.png" style="width:70.0%" alt="image" /> <span
+<p><img src="./fig/ia.png" style="width:70.0%" alt="image" /> <span
 id="fig:agente" data-label="fig:agente"></span></p>
 <p>Fonte: Diretamente retirado de <span class="citation"
 data-cites="Russel2013"></span></p>
@@ -133,7 +133,7 @@ específica de um agente, cujo propósito primário é a interação
 conversacional em linguagem natural.
 
 <figure id="fig:chatbot">
-<p><img src="fig/chatbot.png" style="width:90.0%" alt="image" /> <span
+<p><img src="./fig/chatbot.png" style="width:90.0%" alt="image" /> <span
 id="fig:chatbot" data-label="fig:chatbot"></span></p>
 <figcaption>Representação esquemática de um chatbot.</figcaption>
 </figure>
@@ -199,7 +199,7 @@ tarefas, onde o objetivo é guiar o usuário por um processo específico,
 como fazer um pedido de pizza.
 
 <figure id="fig:fluxo">
-<p><img src="fig/fluxo.png" style="width:100.0%" alt="image" /> <span
+<p><img src="./fig/fluxo.png" style="width:100.0%" alt="image" /> <span
 id="fig:fluxo" data-label="fig:fluxo"></span></p>
 <figcaption>Exemplo esquemático de um fluxo conversacional em um
 chatbot.</figcaption>
@@ -241,7 +241,7 @@ interface conversacional baseada em chatbot
 (Figura [1.7](#fig:enem){reference-type="ref" reference="fig:enem"}).
 
 <figure id="fig:enem">
-<p><img src="fig/enem.png" style="width:50.0%" alt="image" /> <span
+<p><img src="./fig/enem.png" style="width:50.0%" alt="image" /> <span
 id="fig:enem" data-label="fig:enem"></span></p>
 <p>Fonte: Captura de tela realizada por Giseldo Neo.</p>
 <figcaption>Interface de chatbot para inscrição no ENEM
@@ -700,6 +700,8 @@ o mecanismo simples porém pioneiro de ELIZA.
 
 # Artificial Intelligence Markup Language
 
+## Introdução
+
 O Artificial Intelligence Markup Language (AIML) é uma especificação
 baseada em XML, proposta por [@Wallace2009], destinada à programação de
 agentes conversacionais, comumente denominados chatbots. A concepção da
@@ -742,7 +744,7 @@ Figura [3.2](#fig:representacaovisual){reference-type="ref"
 reference="fig:representacaovisual"}.
 
 <figure id="fig:representacaovisual">
-<p><img src="fig/image9.png" style="width:70.0%" alt="image" /> <span
+<p><img src="./fig/image9.png" style="width:70.0%" alt="image" /> <span
 id="fig:representacaovisual"
 data-label="fig:representacaovisual"></span></p>
 <p>Retirado de <span class="citation"
@@ -766,7 +768,7 @@ fontes de dados externas e expandir a base de conhecimento do agente
 [@Kraus2008].
 
 <figure id="fig:teoriaestimulo">
-<p><img src="fig/image10.png" style="width:70.0%" alt="image" /> <span
+<p><img src="./fig/image10.png" style="width:70.0%" alt="image" /> <span
 id="fig:teoriaestimulo" data-label="fig:teoriaestimulo"></span></p>
 <p>Retirado de <span class="citation" data-cites="Lima2017"></span></p>
 <figcaption>Teoria estímulo-resposta aplicada no AIML</figcaption>
@@ -1029,6 +1031,8 @@ final).
     </category>
 
 # Processamento de Linguagem Natural
+
+## Introdução
 
 O **Processamento de Linguagem Natural (PLN)** é um campo
 intrinsecamente ligado à inteligência artificial, dedicando-se a equipar
@@ -1300,6 +1304,8 @@ PLN, é utilizada para formular a resposta do *chatbot* ao usuário.
 
 # Intenção em Chatbots {#chap:intents}
 
+## Introdução
+
 Os Intents representam a intenção ou o propósito por trás da mensagem de
 um usuário ao interagir com o chatbot. Em termos mais simples, é o que o
 usuário deseja que o chatbot faça ou sobre o que ele quer saber.
@@ -1415,6 +1421,8 @@ da experiência do usuário oferecida por um chatbot.
 
 # LLM
 
+## Introdução
+
 Os Modelos de Linguagem de Grande Escala, conhecidos como Large Language
 Models (LLMs), são sistemas avançados de inteligência artificial
 projetados para compreender, gerar e manipular linguagem natural de
@@ -1445,6 +1453,8 @@ possibilidades para aplicações em diversas áreas, como educação,
 atendimento ao cliente, criação de conteúdo e muito mais.
 
 # Retrieval-Augmented Generation
+
+## Introdução
 
 Retrieval Augmented Generation (RAG) é uma abordagem inovadora que
 combina duas técnicas fundamentais na área de processamento de linguagem
@@ -1497,7 +1507,7 @@ textuais (palavras-chave) na entrada fornecida pelo usuário e a
 subsequente geração de respostas, fundamentada em regras de
 transformação predefinidas manualmente.
 
-[ ![image](fig/colab-badge.png)
+[ ![image](./fig/colab-badge.png)
 ](https://colab.research.google.com/github/giseldo/chatbotbook/blob/main/notebook/eliza.ipynb)
 
     import re  
@@ -1622,6 +1632,8 @@ comportamento baseado em padrões do sistema ELIZA original
 
 # Usando chatGPT com LangChain
 
+## Introdução
+
 LangChain é uma biblioteca de software de código aberto projetada para
 simplificar a interação com Large Language Models (LLMs) e construir
 aplicativos de processamento de linguagem natural robustos. Ele fornece
@@ -1692,7 +1704,7 @@ LangChain. Em seguida, carregue o modelo de linguagem desejado. Agora,
 você pode usar o modelo para fazer uma consulta. Vamos perguntar quem é
 o presidente do Brasil.
 
-[ ![image](fig/colab-badge.png)
+[ ![image](./fig/colab-badge.png)
 ](https://colab.research.google.com/github/giseldo/chatbotbook_v2/blob/main/notebook/langchain.ipynb)
 
         from langchain.chat_models import init_chat_model
@@ -1716,6 +1728,8 @@ interagir com LLMs. No entanto, o LangChain oferece muito mais recursos
 e funcionalidades para construir aplicativos de chatbot mais robustos.
 
 # Criando Chatbots com LLMs Através da Engenharia de Prompts
+
+## Introdução
 
 Modelos de Linguagem Grandes (LLMs), como a família GPT, são
 incrivelmente poderosos na compreensão e geração de texto. Uma maneira
@@ -2042,7 +2056,7 @@ Inicie a conversa agora seguindo o passo 1.
 ```
 
 <figure id="fig:chat_chatgpt_pizza">
-<p><img src="fig/chat_chatgpt_pizza.png" style="width:100.0%"
+<p><img src="./fig/chat_chatgpt_pizza.png" style="width:100.0%"
 alt="image" /> <span id="fig:chat_chatgpt_pizza"
 data-label="fig:chat_chatgpt_pizza"></span></p>
 <figcaption>Chatbot criado com LLM (ChatGPT)</figcaption>
@@ -2057,6 +2071,8 @@ reference="fig:chat_chatgpt_pizza"} um exemplo de implementação e
 diálogo.
 
 # Expressões Regulares
+
+## Introdução
 
 Expressões regulares, frequentemente abreviadas como regex, são
 sequências de caracteres que definem padrões de busca. Elas são
@@ -2305,6 +2321,8 @@ processamento de linguagem natural em geral.
 
 # Usando o GPT2
 
+## Introdução
+
 A biblioteca transformers da Hugging Face torna muito mais fácil
 trabalhar com modelos pré-treinados como GPT-2. Aqui está um exemplo de
 como gerar texto usando o GPT-2 pré-treinado:
@@ -2324,6 +2342,24 @@ print(output[0]['generated_text'])
 Este código é simples porque ele usa um modelo que já foi treinado em um
 grande dataset. Também é possível ajustar (fine-tune) um modelo
 pré-treinado em seus próprios dados para obter resultados melhores.
+
+# Crie um GPT do Zero
+
+## Introdução
+
+Para escrever um **GPT**, precisamos de algumas coisas. Primeiro vamos
+criar um tokenizador em Python. Mas para facilitar, vamos usar um
+tokenizador já existente no hugging faces.
+
+    from transformers import GPT2Tokenizer
+
+    tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+
+    input= "Olá, como vai você?"    
+
+    token_id = tokenizador(input)
+
+    print(token_id)
 
 [^1]: <https://github.com/keiffster/program-y/wiki/RDF>
 

@@ -1,5 +1,7 @@
 # Criando Chatbots com LLMs Através da Engenharia de Prompts
 
+## Introdução
+
 Modelos de Linguagem Grandes (LLMs), como a família GPT, são
 incrivelmente poderosos na compreensão e geração de texto. Uma maneira
 eficaz e relativamente rápida de criar um chatbot funcional é através da
@@ -325,7 +327,7 @@ Inicie a conversa agora seguindo o passo 1.
 ```
 
 <figure id="fig:chat_chatgpt_pizza">
-<p><img src="fig/chat_chatgpt_pizza.png" style="width:100.0%"
+<p><img src="./fig/chat_chatgpt_pizza.png" style="width:100.0%"
 alt="image" /> <span id="fig:chat_chatgpt_pizza"
 data-label="fig:chat_chatgpt_pizza"></span></p>
 <figcaption>Chatbot criado com LLM (ChatGPT)</figcaption>

@@ -92,7 +92,7 @@ popularidade no período analisado e 0 (ou a ausência de dados) indica
 interesse mínimo ou dados insuficientes.
 
 <figure id="fig:trends">
-<p><img src="fig/trends.png" style="width:100.0%" alt="image" /> <span
+<p><img src="./fig/trends.png" style="width:100.0%" alt="image" /> <span
 id="fig:trends" data-label="fig:trends"></span> <span>Fonte: Google
 Trends acesso em 05/04/2025</span></p>
 <figcaption>Evolução do interesse de busca pelo termo “chatbot” (Google
@@ -110,7 +110,7 @@ Figura [1.3](#fig:agente){reference-type="ref" reference="fig:agente"}
 ilustra uma arquitetura conceitual de alto nível para um agente.
 
 <figure id="fig:agente">
-<p><img src="fig/ia.png" style="width:70.0%" alt="image" /> <span
+<p><img src="./fig/ia.png" style="width:70.0%" alt="image" /> <span
 id="fig:agente" data-label="fig:agente"></span></p>
 <p>Fonte: Diretamente retirado de <span class="citation"
 data-cites="Russel2013"></span></p>
@@ -124,7 +124,7 @@ específica de um agente, cujo propósito primário é a interação
 conversacional em linguagem natural.
 
 <figure id="fig:chatbot">
-<p><img src="fig/chatbot.png" style="width:90.0%" alt="image" /> <span
+<p><img src="./fig/chatbot.png" style="width:90.0%" alt="image" /> <span
 id="fig:chatbot" data-label="fig:chatbot"></span></p>
 <figcaption>Representação esquemática de um chatbot.</figcaption>
 </figure>
@@ -190,7 +190,7 @@ tarefas, onde o objetivo é guiar o usuário por um processo específico,
 como fazer um pedido de pizza.
 
 <figure id="fig:fluxo">
-<p><img src="fig/fluxo.png" style="width:100.0%" alt="image" /> <span
+<p><img src="./fig/fluxo.png" style="width:100.0%" alt="image" /> <span
 id="fig:fluxo" data-label="fig:fluxo"></span></p>
 <figcaption>Exemplo esquemático de um fluxo conversacional em um
 chatbot.</figcaption>
@@ -232,7 +232,7 @@ interface conversacional baseada em chatbot
 (Figura [1.7](#fig:enem){reference-type="ref" reference="fig:enem"}).
 
 <figure id="fig:enem">
-<p><img src="fig/enem.png" style="width:50.0%" alt="image" /> <span
+<p><img src="./fig/enem.png" style="width:50.0%" alt="image" /> <span
 id="fig:enem" data-label="fig:enem"></span></p>
 <p>Fonte: Captura de tela realizada por Giseldo Neo.</p>
 <figcaption>Interface de chatbot para inscrição no ENEM

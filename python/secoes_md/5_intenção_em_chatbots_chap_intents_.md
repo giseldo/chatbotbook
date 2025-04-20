@@ -1,5 +1,7 @@
 # Intenção em Chatbots {#chap:intents}
 
+## Introdução
+
 Os Intents representam a intenção ou o propósito por trás da mensagem de
 um usuário ao interagir com o chatbot. Em termos mais simples, é o que o
 usuário deseja que o chatbot faça ou sobre o que ele quer saber.

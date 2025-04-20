@@ -1,5 +1,7 @@
 # Artificial Intelligence Markup Language
 
+## Introdução
+
 O Artificial Intelligence Markup Language (AIML) é uma especificação
 baseada em XML, proposta por [@Wallace2009], destinada à programação de
 agentes conversacionais, comumente denominados chatbots. A concepção da
@@ -42,7 +44,7 @@ Figura [3.2](#fig:representacaovisual){reference-type="ref"
 reference="fig:representacaovisual"}.
 
 <figure id="fig:representacaovisual">
-<p><img src="fig/image9.png" style="width:70.0%" alt="image" /> <span
+<p><img src="./fig/image9.png" style="width:70.0%" alt="image" /> <span
 id="fig:representacaovisual"
 data-label="fig:representacaovisual"></span></p>
 <p>Retirado de <span class="citation"
@@ -66,7 +68,7 @@ fontes de dados externas e expandir a base de conhecimento do agente
 [@Kraus2008].
 
 <figure id="fig:teoriaestimulo">
-<p><img src="fig/image10.png" style="width:70.0%" alt="image" /> <span
+<p><img src="./fig/image10.png" style="width:70.0%" alt="image" /> <span
 id="fig:teoriaestimulo" data-label="fig:teoriaestimulo"></span></p>
 <p>Retirado de <span class="citation" data-cites="Lima2017"></span></p>
 <figcaption>Teoria estímulo-resposta aplicada no AIML</figcaption>

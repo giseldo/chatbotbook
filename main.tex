@@ -100,7 +100,7 @@
 	\vspace*{-4cm} % Preenche o espaço vertical no topo
 	\hspace*{-3.8cm} % Compensa a margem esquerda
 	\makebox[\textwidth]{
-	  \includegraphics[width=1.00\paperwidth,height=1.0\paperheight,keepaspectratio=true]{fig/capa.png}
+	  \includegraphics[width=1.00\paperwidth,height=1.0\paperheight,keepaspectratio=true]{./fig/capa.png}
 	}
 \end{figure}
 
@@ -158,7 +158,7 @@ A popularidade dos chatbots tem crescido significativamente em diversos domínio
 \begin{figure}[!hbp]
 	\centering
 	\caption{Evolução do interesse de busca pelo termo ``chatbot'' (Google Trends, 2020-2025).}
-	\includegraphics[width=1\linewidth]{fig/trends.png}
+	\includegraphics[width=1\linewidth]{./fig/trends.png}
 	\label{fig:trends}
 	{\footnotesize Fonte: Google Trends acesso em 05/04/2025} % Sugestão: Adicionar a fonte e data de acesso para dados do Trends.
 \end{figure}
@@ -196,7 +196,7 @@ Define-se chatbot como um programa computacional projetado para interagir com us
 \begin{figure}
 	\centering
 	\caption{Arquitetura conceitual de um agente.}
-	\includegraphics[width=0.7\linewidth]{fig/ia.png}
+	\includegraphics[width=0.7\linewidth]{./fig/ia.png}
 	\label{fig:agente}
 	{\footnotesize \centering
 
@@ -208,7 +208,7 @@ Nesse contexto, um chatbot (Figura~\ref{fig:chatbot}) pode ser considerado uma i
 \begin{figure}
 	\centering
 	\caption{Representação esquemática de um chatbot.}
-	\includegraphics[width=0.9\linewidth]{fig/chatbot.png}
+	\includegraphics[width=0.9\linewidth]{./fig/chatbot.png}
 	\label{fig:chatbot}
 
 \end{figure}
@@ -235,7 +235,7 @@ Um exemplo esquemático de um fluxo conversacional é apresentado na Figura~\ref
 \begin{figure}
 	\centering
 	\caption{Exemplo esquemático de um fluxo conversacional em um chatbot.}
-	\includegraphics[width=1\linewidth]{fig/fluxo.png}
+	\includegraphics[width=1\linewidth]{./fig/fluxo.png}
 	\label{fig:fluxo}
 \end{figure}
 
@@ -246,7 +246,7 @@ Um outro tipo de fluxo para um chatbot que vende roupas está representada na Fi
 \vspace{0.5cm}
     \centering
    	\vspace*{0,2cm}
-    \includegraphics[width=0.9\textwidth]{./fig/image14}
+    \includegraphics[width=0.9\textwidth]{./fig/image14.png}
     \label{fig:representacaodeumaarvore}
 	{
 	
@@ -263,7 +263,7 @@ No contexto brasileiro, um dos primeiros chatbots documentados capaz de interagi
 \begin{figure}
 	\centering
 	\caption{Interface de chatbot para inscrição no ENEM 2019.}
-	\includegraphics[width=0.5\linewidth]{fig/enem.png}
+	\includegraphics[width=0.5\linewidth]{./fig/enem.png}
 	\label{fig:enem}
 	{\footnotesize 
 	
@@ -308,7 +308,7 @@ Especificamente no caso do AIML, a construção e a visualização de fluxos de 
 %%%%CAPITULO%%%%
 %%%%%%%%%%%%%%%%
 
-\chapter{Eliza Explicado}
+\chapter{Eliza: O Primeiro Chatbot}
 
 \section{Introdução}
 
@@ -320,16 +320,7 @@ O conjunto de padrões e respostas predefinidas constitui o que Weizenbaum chamo
 \begin{figure}[!htbp]
 	\centering	
 	\caption{ELIZA: separação entre o código fonte, o script e o editor de texto.}
-	\begin{tikzpicture}
-		% Texto à esquerda
-		\node[align=center] at (0,0) {código fonte};
-		
-		% Sinal de +
-		\node at (3,0) {$+$};
-		
-		% Texto à direita
-		\node[align=center] at (6,0) {script (exemplo: DOCTOR)\\  \\ editor de texto};
-	\end{tikzpicture}
+	\includegraphics[width=0.9\linewidth]{./fig/eliza.png}
 	\label{fig:elizaeditor}
 \end{figure}
 
@@ -500,12 +491,14 @@ Em resumo, os avanços de arquitetura (especialmente o mecanismo de atenção) a
 \chapter{Artificial Intelligence Markup
 Language}
 
+\section{Introdução}
+
 O Artificial Intelligence Markup Language (AIML) é uma especificação baseada em XML, proposta por \cite{Wallace2009}, destinada à programação de agentes conversacionais, comumente denominados chatbots. A concepção da linguagem prioriza o minimalismo, característica que simplifica o processo de criação de bases de conhecimento por indivíduos sem experiência prévia em programação \cite{Wallace2009}. A arquitetura fundamental de um interpretador AIML genérico é ilustrada na Figura~\ref{fig:interpretador}.
 
 \begin{figure}
     \centering
     \caption{Interpretador AIML arquitetura.}
-    \includegraphics[width=0.8\textwidth]{./fig/image8} % Ajuste o caminho se necessário
+    \includegraphics[width=0.8\textwidth]{./fig/image8.png} % Ajuste o caminho se necessário
     \label{fig:interpretador}
     \vspace{0.2cm} % Espaçamento opcional
     {\footnotesize 
@@ -520,7 +513,7 @@ AIML é frequentemente associado aos chatbots de terceira geração \cite{Maria2
 \begin{figure}
     \centering
     \caption{Representação visual da base de conhecimento do chatbot ALICE.}
-    \includegraphics[width=0.7\textwidth]{fig/image9.png} % Ajuste o caminho se necessário
+    \includegraphics[width=0.7\textwidth]{./fig/image9.png} % Ajuste o caminho se necessário
     \label{fig:representacaovisual}
     \vspace{0.2cm} % Espaçamento opcional
     {\footnotesize 
@@ -533,7 +526,7 @@ AIML é frequentemente associado aos chatbots de terceira geração \cite{Maria2
 \begin{figure}
     \centering
     \caption{Teoria estímulo-resposta aplicada no AIML}
-    \includegraphics[width=0.7\textwidth]{fig/image10.png} % 
+    \includegraphics[width=0.7\textwidth]{./fig/image10.png} % 
     \label{fig:teoriaestimulo}
     \vspace{0.2cm}
     {\footnotesize 
@@ -566,7 +559,7 @@ A Figura~\ref{fig:exemplodeumabase} demonstra a estrutura elementar de um arquiv
 \begin{figure}
     \centering
     \caption{Representação visual abstrata de uma base de conhecimento AIML}
-    \includegraphics[width=0.8\textwidth]{./fig/image12} % Ajuste o caminho se necessário
+    \includegraphics[width=0.8\textwidth]{./fig/image12.png} % Ajuste o caminho se necessário
     \label{fig:representacaovisualabstrata}
     \vspace{0.2cm} % Espaçamento opcional
     {\footnotesize 
@@ -583,7 +576,7 @@ Embora \cite{Hohn2019} argumente que o AIML padrão carece de um conceito explí
 \begin{figure}
     \centering
     \caption{Uso da tag \texttt{<srai>}}
-    \includegraphics[width=0.5\textwidth]{./fig/image13} % Ajuste o caminho se necessário
+    \includegraphics[width=0.5\textwidth]{./fig/image13.png} % Ajuste o caminho se necessário
     \label{fig:sodatagsrai}
     \vspace{0.2cm} % Espaçamento opcional
     {\footnotesize 
@@ -781,13 +774,16 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 
 \chapter{Processamento de Linguagem Natural}
 
+\section{Introdução}
+
 O \textbf{Processamento de Linguagem Natural (PLN)} é um campo intrinsecamente ligado à inteligência artificial, dedicando-se a equipar computadores com a capacidade de analisar e compreender a linguagem humana. No cenário da construção de \textit{chatbots}, o PLN emerge como um componente fundamental, atuando como o "cérebro" da aplicação conversacional. Sua função primordial reside em processar a entrada bruta do usuário, realizando a limpeza e a preparação dos dados textuais para que o sistema possa interpretar a mensagem e tomar as ações subsequentes apropriadas.
 
 Em um espectro mais amplo, o PLN engloba uma vasta gama de tarefas que transcendem a interação com \textit{chatbots}. Ele se nutre de conceitos e metodologias provenientes da ciência da computação, da linguística, da matemática, da própria inteligência artificial, do aprendizado de máquina e da psicologia. O objetivo central do PLN é, portanto, manipular e analisar a linguagem natural, seja em sua forma escrita ou falada, com o intuito de concretizar tarefas específicas e úteis. Este processo multifacetado envolve a decomposição da linguagem em unidades menores, a compreensão do seu significado intrínseco e a determinação da resposta ou ação mais adequada.
 
 \section{Entendimento de Linguagem Natural (ULN) como Subconjunto do PLN}
 
-O \textbf{Entendimento de Linguagem Natural (ULN)} é apresentado nas fontes como um subdomínio específico dentro do universo mais vasto do PLN. Enquanto o PLN abarca um conjunto diversificado de operações sobre a linguagem, o ULN se concentra de maneira particular na habilidade da máquina de apreender e interpretar a linguagem natural tal como ela é comunicada pelos seres humanos. Em outras palavras, o ULN é o ramo do PLN dedicado à extração de significado e à identificação da intenção por trás do texto inserido pelo usuário. As aplicações do ULN são extensas e incluem funcionalidades cruciais para \textit{chatbots}, como a capacidade de responder a perguntas, realizar buscas em linguagem natural, identificar relações entre entidades, analisar o sentimento expresso no texto, sumarizar informações textuais e auxiliar em processos de descoberta legal.
+O \textbf{Entendimento de Linguagem Natural (ULN)} é apresentado nas fontes como um subdomínio específico dentro do universo mais vasto do PLN. Enquanto o PLN abarca um conjunto diversificado de operações sobre a linguagem, o ULN se concentra de maneira particular na habilidade da máquina de apreender e interpretar a linguagem natural tal como ela é comunicada pelos seres humanos. 
+Em outras palavras, o ULN é o ramo do PLN dedicado à extração de significado e à identificação da intenção por trás do texto inserido pelo usuário. As aplicações do ULN são extensas e incluem funcionalidades cruciais para \textit{chatbots}, como a capacidade de responder a perguntas, realizar buscas em linguagem natural, identificar relações entre entidades, analisar o sentimento expresso no texto, sumarizar informações textuais e auxiliar em processos de descoberta legal.
 
 % A relação entre PLN e ULN é frequentemente ilustrada como um diagrama de Venn, onde o ULN se posiciona como um subconjunto do PLN. Essa representação sublinha que, embora o PLN englobe diversas técnicas de processamento da linguagem que não necessariamente envolvem a compreensão em profundidade do significado, o ULN se dedica especificamente à interpretação semântica do texto para que as máquinas possam, em alguma medida, "pensar" de maneira similar aos humanos.
 
@@ -876,6 +872,8 @@ Com base nessa representação estruturada, um motor de decisão (\textit{decisi
 \chapter{Intenção em Chatbots}
 \label{chap:intents}
 
+\section{Introdução}
+
 Os Intents representam a intenção ou o propósito por trás da mensagem de um usuário ao interagir com o chatbot. Em termos mais simples, é o que o usuário deseja que o chatbot faça ou sobre o que ele quer saber.
 
 \section{Definição e Propósito}
@@ -947,12 +945,9 @@ A definição cuidadosa, o treinamento robusto e o gerenciamento contínuo dos i
 %%%%CAPITULO%%%%
 %%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%
-%%%%%%CAPITULO%%%%%%
-%%%%%%%%%%%%%%%%%%%%
-
-
 \chapter{LLM}
+
+\section{Introdução}
 
 Os Modelos de Linguagem de Grande Escala, conhecidos como Large Language Models (LLMs), são sistemas avançados de inteligência artificial projetados para compreender, gerar e manipular linguagem natural de forma sofisticada. Esses modelos são alimentados por vastos conjuntos de dados textuais e utilizam técnicas de aprendizado profundo, particularmente redes neurais, para aprender padrões, contextos e nuances da linguagem.
 
@@ -967,6 +962,8 @@ Em resumo, os Modelos de Linguagem de Grande Escala representam um marco signifi
 %%%%%%%%%%%%%%%%%%%%
 
 \chapter{Retrieval-Augmented Generation}
+
+\section{Introdução}
 
 Retrieval Augmented Generation (RAG) é uma abordagem inovadora que combina duas técnicas fundamentais na área de processamento de linguagem natural: recuperação de informações e geração de texto. A ideia central do RAG é aprimorar a capacidade de um modelo de linguagem ao integrá-lo com um sistema de recuperação que busca informações relevantes de uma base de dados ou de um conjunto de documentos.
 
@@ -986,7 +983,7 @@ Apresenta-se, nesta seção, uma implementação simplificada em Python de um ch
 
 \vspace{\baselineskip}
 \href{https://colab.research.google.com/github/giseldo/chatbotbook/blob/main/notebook/eliza.ipynb}{
-  \includegraphics{fig/colab-badge.png}
+  \includegraphics{./fig/colab-badge.png}
 }
 
 \begin{verbatim}
@@ -1095,6 +1092,8 @@ Observa-se na interação que o chatbot inicialmente respondeu à saudação (\t
 
 \chapter{Usando chatGPT com LangChain}
 
+\section{Introdução}
+
 LangChain é uma biblioteca de software de código aberto projetada para simplificar a interação com Large Language Models (LLMs) e construir aplicativos de processamento de linguagem natural robustos. Ele fornece uma camada de abstração de alto nível sobre as complexidades de trabalhar diretamente com modelos de linguagem, tornando mais acessível a criação de aplicativos de compreensão e geração de linguagem.
 
 \section{Por que usar LangChain?}
@@ -1129,7 +1128,7 @@ Primeiro, importe as bibliotecas necessárias e configure o cliente LangChain. E
 
 \vspace{\baselineskip}
 \href{https://colab.research.google.com/github/giseldo/chatbotbook_v2/blob/main/notebook/langchain.ipynb}{
-  \includegraphics{fig/colab-badge.png}
+  \includegraphics{./fig/colab-badge.png}
 }
 
 \begin{verbatim}
@@ -1157,6 +1156,8 @@ Este exemplo básico demonstra a simplicidade de usar o LangChain para interagir
 %%%%%%%%%%%%%%%%
 
 \chapter{Criando Chatbots com LLMs Através da Engenharia de Prompts}
+
+\section{Introdução}
 
 Modelos de Linguagem Grandes (LLMs), como a família GPT, são incrivelmente poderosos na compreensão e geração de texto. Uma maneira eficaz e relativamente rápida de criar um chatbot funcional é através da \textbf{engenharia de prompts}. Em vez de codificar regras complexas e árvores de decisão manualmente, você "programa" o LLM fornecendo-lhe um conjunto detalhado de instruções iniciais (o prompt).
 
@@ -1449,7 +1450,7 @@ Inicie a conversa agora seguindo o passo 1.
 \begin{figure}[!htbp]
 	\centering
 	\caption{Chatbot criado com LLM (ChatGPT)}
-	\includegraphics[width=1\linewidth]{fig/chat_chatgpt_pizza.png}
+	\includegraphics[width=1\linewidth]{./fig/chat_chatgpt_pizza.png}
 	\label{fig:chat_chatgpt_pizza}
 \end{figure}
 
@@ -1460,6 +1461,8 @@ Lembre-se que a qualidade da resposta do LLM depende muito da clareza e do detal
 %%%%%%%%%%%%%%%%
 
 \chapter{Expressões Regulares}
+
+\section{Introdução}
 
 Expressões regulares, frequentemente abreviadas como regex, são sequências de caracteres que definem padrões de busca. Elas são utilizadas em chatbots para diversas tarefas relacionadas ao processamento e à análise de texto fornecido pelos usuários. Algumas das aplicações incluem:
 
@@ -1487,6 +1490,7 @@ O módulo \texttt{re} em Python é a biblioteca padrão para trabalhar com expre
 \subsection{Exemplo Básico: Extração de E-mails}
 
 Um caso de uso comum em chatbots é a extração de endereços de e-mail do texto fornecido pelo usuário. O seguinte exemplo em Python demonstra como usar \texttt{re.findall} para realizar essa tarefa:
+
 \begin{lstlisting}[language=Python, caption=Extração de e-mails com regex, label=lst:extracao_email]
 import re
 
@@ -1603,6 +1607,8 @@ Encorajamos o leitor a praticar a criação de diferentes padrões de regex e a 
 
 \chapter{Usando o GPT2}
 
+\section{Introdução}
+
 A biblioteca transformers da Hugging Face torna muito mais fácil trabalhar com modelos pré-treinados como GPT-2. Aqui está um exemplo de como gerar texto usando o GPT-2 pré-treinado:
 
 \begin{lstlisting}[language=Python, caption=Exemplo de uso do GPT-2 com a biblioteca transformers, label=lst:gpt2_exemplo]
@@ -1618,6 +1624,38 @@ print(output[0]['generated_text'])
 \end{lstlisting}
 
 Este código é simples porque ele usa um modelo que já foi treinado em um grande dataset. Também é possível ajustar (fine-tune) um modelo pré-treinado em seus próprios dados para obter resultados melhores.
+
+\chapter{Crie um GPT do Zero}
+
+\section{Introdução}
+
+Para escrever um \textbf{GPT}, precisamos de algumas coisas. 
+Primeiro, precisamos de um tokenizador. O tokenizador é responsável por dividir o texto em partes menores (tokens) que o modelo pode entender. Depois, precisamos de um modelo. O modelo é a parte que realmente faz o trabalho de entender e gerar texto.
+
+Primeiro, antes de criarmos um tokenizador em Python do Zero, vamos usar um tokenizador já existente no hugging faces.
+
+\vspace{\baselineskip}
+\href{https://colab.research.google.com/github/giseldo/chatbotbook/blob/main/notebook/eliza.ipynb}{
+  \includegraphics{./fig/colab-badge.png}
+}
+
+\begin{lstlisting}[language=Python, caption=Usando o tokenizador do GPT-2, label=lst:usando_tokenizer_gpt2]
+from transformers import GPT2Tokenizer
+
+tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+
+input= "Olá, como vai você?"	
+
+token_id = tokenizer(input)
+
+print(token_id)
+\end{lstlisting}
+
+A saída deste código será um dicionário com os ids dos tokens e a máscara de atenção. O id do token é o número que representa cada palavra ou parte da palavra no vocabulário do modelo. A máscara de atenção indica quais tokens devem ser considerados pelo modelo durante o processamento.
+
+\begin{lstlisting}
+{'input_ids': [30098, 6557, 11, 401, 78, 410, 1872, 12776, 25792, 30], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]}
+\end{lstlisting}
 
 %%%%%%%%%%%%%%%%%%%
 %%% REFERÊNCIAS %%%
