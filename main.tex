@@ -979,14 +979,15 @@ Em resumo, o Retrieval Augmented Generation é uma técnica poderosa que não ap
 
 \section{Introdução}
 
-Apresenta-se, nesta seção, uma implementação simplificada em Python de um chatbot inspirado no paradigma ELIZA. Esta implementação demonstra a utilização de expressões regulares para a identificação de padrões textuais (palavras-chave) na entrada fornecida pelo usuário e a subsequente geração de respostas, fundamentada em regras de transformação predefinidas manualmente.
+Apresenta-se, nesta seção, uma implementação simplificada em Python de um chatbot inspirado no paradigma ELIZA. 
+Esta implementação demonstra a utilização de expressões regulares para a identificação de padrões textuais (palavras-chave) na entrada fornecida pelo usuário e a subsequente geração de respostas, fundamentada em regras de transformação predefinidas manualmente.
 
 \vspace{\baselineskip}
 \href{https://colab.research.google.com/github/giseldo/chatbotbook/blob/main/notebook/eliza.ipynb}{
   \includegraphics{./fig/colab-badge.png}
 }
 
-\begin{verbatim}
+\begin{lstlisting}[language=Python, caption=Chatbot Eliza em Python]
 import re  
 import random  
 
@@ -1041,9 +1042,9 @@ def response(entrada_usuario):
                 resposta = resposta.format(*match.groups())
             return resposta
     return random.choice(respostas_padrao)
+\end{lstlisting}
 
-
-# Exemplo de uso
+\begin{lstlisting}[language=Python, caption=Exemplo de uso do chatbot ELIZA]
 print("User: Hello.")
 print("Bot: " + response("Hello."))
 
@@ -1055,8 +1056,7 @@ print("Bot: " + response("Maybe I was not good enough."))
 
 print("My mother tried to help.")
 print("Bot: " + response("My mother tried to help."))
-
-\end{verbatim}
+\end{lstlisting}
 
 Na implementação, são definidos múltiplos padrões de expressões regulares que correspondem a palavras-chave ou estruturas frasais de interesse (e.g., saudações, construções como ``I am'' ou ``I need'', referências a termos familiares). A função \texttt{response}, ao receber uma string de entrada, itera sequencialmente sobre essas regras. Para cada regra, utiliza-se o método \texttt{padrao.search(entrada)} para verificar a ocorrência do padrão correspondente na sentença do usuário.
 
@@ -1067,7 +1067,7 @@ Na ausência de correspondência com qualquer regra específica, o sistema selec
 % Usando \paragraph para um subtítulo menos proeminente, ou use \subsubsection se preferir
 \section{Exemplo de Interação}
 
-\begin{verbatim}
+\begin{lstlisting}
 Usuário: Hello
 Bot: Hello. How do you do. Please tell me your problem.
 
@@ -1082,7 +1082,7 @@ Bot: You don't seem certain.
 
 Usuário: My mother tried to help.
 Bot: Tell me more about your family.
-\end{verbatim}
+\end{lstlisting}
 
 Observa-se na interação que o chatbot inicialmente respondeu à saudação (\textit{``Hello...''}) com base na regra 1. Em seguida, a entrada \textit{``I am sad''} ativou a regra 2, resultando em uma resposta que incorpora o termo \textit{``sad''}. A interação prossegue com o sistema respondendo a entradas iniciadas por \textit{``Because...''} (regra 8) e \textit{``Maybe...''} (regra 7), entre outras. Cada resposta gerada foi determinada pela regra correspondente ativada e pelo conteúdo específico da sentença do usuário, mimetizando o comportamento baseado em padrões do sistema ELIZA original \cite{Abdul-Kader2015}.
 

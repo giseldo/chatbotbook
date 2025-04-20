@@ -347,7 +347,7 @@ formato baseado em texto, muitas vezes é difícil perceber claramente
 como as diferentes categorias (unidades de conhecimento e resposta) se
 interligam para formar a estrutura da conversação.
 
-# Eliza Explicado
+# Eliza: O Primeiro Chatbot
 
 ## Introdução
 
@@ -366,7 +366,8 @@ reference="fig:elizaeditor"}). Também foi codificado um editor de texto
 para as alterações do próprio Script.
 
 <figure id="fig:elizaeditor">
-
+<p><img src="./fig/eliza.png" style="width:90.0%" alt="image" /> <span
+id="fig:elizaeditor" data-label="fig:elizaeditor"></span></p>
 <figcaption>ELIZA: separação entre o código fonte, o script e o editor
 de texto.</figcaption>
 </figure>
@@ -1510,74 +1511,76 @@ transformação predefinidas manualmente.
 [ ![image](./fig/colab-badge.png)
 ](https://colab.research.google.com/github/giseldo/chatbotbook/blob/main/notebook/eliza.ipynb)
 
-    import re  
-    import random  
+``` {.python language="Python" caption="Chatbot Eliza em Python"}
+import re  
+import random  
 
-    regras = [
-        (re.compile(r'\b(hello|hi|hey)\b', re.IGNORECASE),
-         ["Hello. How do you do. Please tell me your problem."]),
+regras = [
+    (re.compile(r'\b(hello|hi|hey)\b', re.IGNORECASE),
+     ["Hello. How do you do. Please tell me your problem."]),
 
-        (re.compile(r'\b(I am|I\'?m) (.+)', re.IGNORECASE),
-         ["How long have you been {1}?",   
-          "Why do you think you are {1}?"]),
+    (re.compile(r'\b(I am|I\'?m) (.+)', re.IGNORECASE),
+     ["How long have you been {1}?",   
+      "Why do you think you are {1}?"]),
 
-        (re.compile(r'\bI need (.+)', re.IGNORECASE),
-         ["Why do you need {1}?",
-          "Would it really help you to get {1}?"]),
+    (re.compile(r'\bI need (.+)', re.IGNORECASE),
+     ["Why do you need {1}?",
+      "Would it really help you to get {1}?"]),
 
-        (re.compile(r'\bI can\'?t (.+)', re.IGNORECASE),
-         ["What makes you think you can't {1}?",
-          "Have you tried {1}?"]),
+    (re.compile(r'\bI can\'?t (.+)', re.IGNORECASE),
+     ["What makes you think you can't {1}?",
+      "Have you tried {1}?"]),
 
-        (re.compile(r'\bmy (mother|father|mom|dad)\b', re.IGNORECASE),
-         ["Tell me more about your family.",
-          "How do you feel about your parents?"]),
+    (re.compile(r'\bmy (mother|father|mom|dad)\b', re.IGNORECASE),
+     ["Tell me more about your family.",
+      "How do you feel about your parents?"]),
 
-        (re.compile(r'\b(sorry)\b', re.IGNORECASE),
-         ["Please don't apologize."]),
+    (re.compile(r'\b(sorry)\b', re.IGNORECASE),
+     ["Please don't apologize."]),
 
-        (re.compile(r'\b(maybe|perhaps)\b', re.IGNORECASE),
-         ["You don't seem certain."]),
+    (re.compile(r'\b(maybe|perhaps)\b', re.IGNORECASE),
+     ["You don't seem certain."]),
 
-        (re.compile(r'\bbecause\b', re.IGNORECASE),
-         ["Is that the real reason?"]),
+    (re.compile(r'\bbecause\b', re.IGNORECASE),
+     ["Is that the real reason?"]),
 
-        (re.compile(r'\b(are you|do you) (.+)\?$', re.IGNORECASE),
-         ["Why do you ask that?"]),
+    (re.compile(r'\b(are you|do you) (.+)\?$', re.IGNORECASE),
+     ["Why do you ask that?"]),
 
-        (re.compile(r'\bcomputer\b', re.IGNORECASE),
-         ["Do computers worry you?"]),
-    ]
+    (re.compile(r'\bcomputer\b', re.IGNORECASE),
+     ["Do computers worry you?"]),
+]
 
-    respostas_padrao = [
-        "I see.",  
-        "Please tell me more.",  
-        "Can you elaborate on that?"  
-    ]
+respostas_padrao = [
+    "I see.",  
+    "Please tell me more.",  
+    "Can you elaborate on that?"  
+]
 
-    def response(entrada_usuario):
-        for padrao, respostas in regras:
-            match = padrao.search(entrada_usuario)  
-            if match:
-                resposta = random.choice(respostas)
-                if match.groups():
-                    resposta = resposta.format(*match.groups())
-                return resposta
-        return random.choice(respostas_padrao)
+def response(entrada_usuario):
+    for padrao, respostas in regras:
+        match = padrao.search(entrada_usuario)  
+        if match:
+            resposta = random.choice(respostas)
+            if match.groups():
+                resposta = resposta.format(*match.groups())
+            return resposta
+    return random.choice(respostas_padrao)
+```
 
+``` {.python language="Python" caption="Exemplo de uso do chatbot ELIZA"}
+print("User: Hello.")
+print("Bot: " + response("Hello."))
 
-    # Exemplo de uso
-    print("User: Hello.")
-    print("Bot: " + response("Hello."))
+print("User: I am feeling sad.")
+print("Bot: " + response("I am feeling sad."))
 
-    print("User: I am feeling sad.")
-    print("Bot: " + response("I am feeling sad."))
+print("Maybe I was not good enough.")
+print("Bot: " + response("Maybe I was not good enough."))
 
-    print("Maybe I was not good enough.")
-    print("Bot: " + response("Maybe I was not good enough."))
-
-    print("My mother tried to help.")
-    print("Bot: " + response("My mother tried to help."))
+print("My mother tried to help.")
+print("Bot: " + response("My mother tried to help."))
+```
 
 Na implementação, são definidos múltiplos padrões de expressões
 regulares que correspondem a palavras-chave ou estruturas frasais de
@@ -2327,17 +2330,22 @@ A biblioteca transformers da Hugging Face torna muito mais fácil
 trabalhar com modelos pré-treinados como GPT-2. Aqui está um exemplo de
 como gerar texto usando o GPT-2 pré-treinado:
 
+[ ![image](./fig/colab-badge.png)
+](https://colab.research.google.com/github/giseldo/chatbotbook_v2/blob/main/notebook/cap12.ipynb)
+
 ``` {#lst:gpt2_exemplo .python language="Python" caption="Exemplo de uso do GPT-2 com a biblioteca transformers" label="lst:gpt2_exemplo"}
 from transformers import pipeline
-
 pipe = pipeline('text-generation', model='gpt2')
-
 input = 'Olá, como vai você?'
-
 output = pipe(input)
-
-print(output[0]['generated_text'])
+print(output)
 ```
+
+    [{'generated_text': 'The book is on one of the most exciting,'},
+     {'generated_text': 'The book is on sale via Amazon.com for'}, 
+     {'generated_text': 'The book is on sale tomorrow for $2.'}, 
+     {'generated_text': 'The book is on sale now, read more at'}, 
+     {'generated_text': 'The book is on the bookshelf in the'}]
 
 Este código é simples porque ele usa um modelo que já foi treinado em um
 grande dataset. Também é possível ajustar (fine-tune) um modelo
@@ -2347,19 +2355,38 @@ pré-treinado em seus próprios dados para obter resultados melhores.
 
 ## Introdução
 
-Para escrever um **GPT**, precisamos de algumas coisas. Primeiro vamos
-criar um tokenizador em Python. Mas para facilitar, vamos usar um
-tokenizador já existente no hugging faces.
+Para escrever um **GPT**, precisamos de algumas coisas. Primeiro,
+precisamos de um tokenizador. O tokenizador é responsável por dividir o
+texto em partes menores (tokens) que o modelo pode entender. Depois,
+precisamos de um modelo. O modelo é a parte que realmente faz o trabalho
+de entender e gerar texto.
 
-    from transformers import GPT2Tokenizer
+Primeiro, antes de criarmos um tokenizador em Python do Zero, vamos usar
+um tokenizador já existente no hugging faces.
 
-    tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+[ ![image](./fig/colab-badge.png)
+](https://colab.research.google.com/github/giseldo/chatbotbook_v2/blob/main/notebook/cap13.ipynb)
 
-    input= "Olá, como vai você?"    
+``` {#lst:usando_tokenizer_gpt2 .python language="Python" caption="Usando o tokenizador do GPT-2" label="lst:usando_tokenizer_gpt2"}
+from transformers import GPT2Tokenizer
+tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+input= "Olá, como vai você?"    
+token_id = tokenizer(input)
+print(token_id)
+```
 
-    token_id = tokenizador(input)
+    {'input_ids': [30098, 6557, 11, 401, 78, 410, 1872, 12776, 25792, 30], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]}
 
-    print(token_id)
+A saída deste código será um dicionário com os ids dos tokens e a
+máscara de atenção. O id do token é o número que representa cada palavra
+ou parte da palavra no vocabulário do modelo. A máscara de atenção
+indica quais tokens devem ser considerados pelo modelo durante o
+processamento.
+
+Attention mask é uma lista de 1s e 0s que indica quais tokens devem ser
+considerados pelo modelo durante o processamento. Um valor de 1
+significa que o token correspondente deve ser considerado, enquanto um
+valor de 0 significa que ele deve ser ignorado.
 
 [^1]: <https://github.com/keiffster/program-y/wiki/RDF>
 
