@@ -138,55 +138,24 @@ Outro tipo de chatbot classificado em relação ao objetivo é o \textbf{orienta
 
 Essas duas classificações - conversacional e orientado a tarefas - (Figura~\ref{fig:tipo}) ainda não são suficientes para uma completa classifição dada diversas caractéristicas e enorme quantidade de chatbots existentes. Existem outras classificações que serão discutidas em seções posteriores.
 
-\begin{figure}
+\begin{figure}[!htbp]
 	\centering
-	\caption{Classificação chatbots.}
-	\begin{tikzpicture}[
-		level 1/.style={sibling distance=6cm},
-		level 2/.style={sibling distance=3cm},
-		every node/.style={align=center}
-	]
-		\node {Por objetivo}
-			child {node {Conversacional}}
-			child {node {Orientado a\\Tarefas}};
-	\end{tikzpicture}
+	\caption{Classificação chatbots por objetivo.}
+	\includegraphics[width=0.9\linewidth]{./fig/tipo_objetivo.png}
 	\label{fig:tipo}
 \end{figure}
 
-A popularidade dos chatbots tem crescido significativamente em diversos domínios de aplicação \cite{B2020, Klopfenstein2017, Sharma2020}. Essa tendência é corroborada pelo aumento do interesse de busca pelo termo ``chatbots'', conforme análise de dados do Google Trends no período entre 2020 e 2025 (Figura~\ref{fig:trends}). Nesta figura, os valores representam o interesse relativo de busca ao longo do tempo, onde 100 indica o pico de popularidade no período analisado e 0 (ou a ausência de dados) indica interesse mínimo ou dados insuficientes.
+A popularidade dos chatbots tem crescido significativamente em diversos domínios de aplicação \cite{B2020, Klopfenstein2017, Sharma2020}. 
+Essa tendência é corroborada pelo aumento do interesse de busca pelo termo ``chatbots'', conforme análise de dados do Google Trends no período entre 2020 e 2025 (Figura~\ref{fig:trends}). 
+Nesta figura, os valores representam o interesse relativo de busca ao longo do tempo, onde 100 indica o pico de popularidade no período analisado e 0 (ou a ausência de dados) indica interesse mínimo ou dados insuficientes.
 
-\begin{figure}[!hbp]
+\begin{figure}[!htbp]
 	\centering
 	\caption{Evolução do interesse de busca pelo termo ``chatbot'' (Google Trends, 2020-2025).}
 	\includegraphics[width=1\linewidth]{./fig/trends.png}
 	\label{fig:trends}
 	{\footnotesize Fonte: Google Trends acesso em 05/04/2025} % Sugestão: Adicionar a fonte e data de acesso para dados do Trends.
 \end{figure}
-
-% \begin{figure}[H]
-% 	\centering
-% 	\begin{tikzpicture}[
-% 		level 1/.style={sibling distance=6cm},
-% 		level 2/.style={sibling distance=3cm},
-% 		every node/.style={align=center}
-% 	]
-% 		\node {Tipo}
-% 			child {node {Conversacional}}
-% 			child {node {Orientado a\\Tarefas}};
-% 	\end{tikzpicture}
-% 	\caption{Classificação de tipos de chatbots.}
-% 	\label{fig:tipo}
-% \end{figure}
-
-% \begin{figure}[H]
-% 	\centering
-% 	\caption{Tipo de chatbot}
-% 	\includegraphics[width=0.7\linewidth]{fig/tipo.png}
-% 	\label{fig:tipo}
-% 	{\footnotesize \centering
-
-% 		Fonte: Giseldo Neo (2025)}
-% \end{figure}
 
 \section{Chatbots e Agentes: Definições e Distinções}
 
@@ -196,7 +165,7 @@ Define-se chatbot como um programa computacional projetado para interagir com us
 \begin{figure}
 	\centering
 	\caption{Arquitetura conceitual de um agente.}
-	\includegraphics[width=0.7\linewidth]{./fig/ia.png}
+	\includegraphics[width=0.7\linewidth]{./fig/original_agente.png}
 	\label{fig:agente}
 	{\footnotesize \centering
 
@@ -208,7 +177,7 @@ Nesse contexto, um chatbot (Figura~\ref{fig:chatbot}) pode ser considerado uma i
 \begin{figure}
 	\centering
 	\caption{Representação esquemática de um chatbot.}
-	\includegraphics[width=0.9\linewidth]{./fig/chatbot.png}
+	\includegraphics[width=0.7\linewidth]{./fig/chatbot.png}
 	\label{fig:chatbot}
 
 \end{figure}
@@ -276,11 +245,22 @@ Diversos outros chatbots foram desenvolvidos para atender a demandas específica
 
 Entre os chatbots baseado em LLMs de destaque atualmente estão o Qwen, desenvolvido pela Alibaba, que se destaca por sua eficiência e suporte multilíngue; o DeepSeek, de código aberto voltado para pesquisa e aplicações empresariais com foco em precisão e escalabilidade; o Maritaca, modelo brasileiro de otimizado para o português; o Gemini, da Google, que integra capacidades multimodais e forte desempenho em tarefas diversas; o Mixtral, da Mistral AI, que utiliza arquitetura de mistura de especialistas para maior eficiência; o Llama, da Meta, reconhecido por ser código aberto e ampla adoção na comunidade; o Claude, da Anthropic, projetado com ênfase em segurança, alinhamento ético que vem ganhando adeptos para tarefas e codificação; e o Nemotron, da NVIDIA, que oferece modelos de linguagem otimizados para execução em GPUs e aplicações empresariais de alto desempenho. 
 
+
+
 \section{Abordagens}
 
 \marginnote{Outras técnicas}
 Desde o pioneirismo do ELIZA, múltiplas abordagens e técnicas foram exploradas para o desenvolvimento de chatbots. 
 Entre as mais relevantes, destacam-se: AIML com correspondência de padrões (pattern matching), análise sintática (Parsing), modelos de cadeia de Markov (Markov Chain Models), uso de ontologias, redes neurais recorrentes (RNNs), redes de memória de longo prazo (LSTMs), modelos neurais sequência-a-sequência (Sequence-to-Sequence), aprendizado adversarial para geração de diálogo, além de abordagens baseadas em recuperação (Retrieval-Based) e generativas (Generative-Based) \cite{Borah2019, Ramesh2019, Shaikh2016, Abdul-Kader2015, Li2018}, entre outras.
+
+\begin{itemize}
+	\item ELIZA: o primeiro chatbot, que utilizava correspondência de padrões simples para simular um psicoterapeuta. O ELIZA foi um marco na história dos chatbots e influenciou o desenvolvimento de sistemas conversacionais subsequentes \cite{Weizenbaum1996}.
+	\item AIML: Artificial Intelligence Markup Language, uma linguagem de marcação baseada em XML \cite{Wallace2000}. Essa linguagem permite a definição de regras de correspondência de padrões (pattern matching) para mapear entradas do usuário a respostas predefinidas. O AIML é amplamente utilizado na construção de chatbots, permitindo a criação de diálogos complexos e interativos.
+	\item Modelos de Markov: introdução de técnicas de aprendizado de máquina, como os modelos ocultos de Markov (HMMs) , que utilizam cadeias de Markov para modelar sequências de palavras e prever a próxima palavra em uma sequência. % \cite{Bengio2003}
+	\item Word2Vec: técnica de representação de palavras em vetores densos, permitindo capturar semântica e relações entre palavras. Essa técnica é frequentemente utilizada em chatbots para melhorar a compreensão do contexto e a geração de respostas. % \cite{Mikolov2013}
+	\item TransformersBERT: arquitetura de rede neural baseada em atenção, que revolucionou o processamento de linguagem natural (NLP) \cite{Vaswani2017}. Modelos como BERT  e GPT  são exemplos de arquiteturas baseadas em Transformers que têm sido amplamente utilizadas em chatbots modernos. % \cite{Devlin2018} % \cite{Radford2019}
+	\item GPT: modelos de linguagem generativa, como o GPT-3 , que utilizam redes neurais profundas para gerar texto coerente e relevante em resposta a entradas do usuário. Esses modelos são treinados em grandes quantidades de dados e podem ser adaptados para tarefas específicas, como atendimento ao cliente ou suporte técnico. % \cite{Brown2020}
+\end{itemize}
 
 Além disso, diversos frameworks têm sido desenvolvidos para facilitar a criação desses agentes complexos, como CrewAI e bibliotecas associadas a plataformas como Hugging Face (e.g., Transformers Agents), que fornecem abstrações e ferramentas em Python para orquestrar múltiplos componentes e o uso de ferramentas externas.
 
@@ -864,6 +844,18 @@ No cerne da funcionalidade de um \textit{chatbot} reside a sua capacidade de com
 A arquitetura típica de um \textit{chatbot} envolve uma camada de processamento de linguagem natural (NLP/NLU engine) que recebe a entrada de texto do usuário. Essa camada é responsável por realizar as tarefas de PLN mencionadas anteriormente: tokenização, análise morfossintática, extração de entidades, detecção de intenção, etc.. O resultado desse processamento é uma representação estruturada da mensagem do usuário, que pode ser entendida pela lógica de negócios do \textit{chatbot}.
 
 Com base nessa representação estruturada, um motor de decisão (\textit{decision engine}) no \textit{chatbot} pode então corresponder a intenção do usuário a fluxos de trabalho preconfigurados ou a regras de negócio específicas. Em alguns casos, a geração de linguagem natural (NLG), outro subcampo do PLN, é utilizada para formular a resposta do \textit{chatbot} ao usuário.
+
+\section{Desafios da PLN}
+
+\begin{itemize}
+	\item Geração de Texto coerente
+	\item Sintaxe e gramática
+	\item semântica
+	\item Contexto
+	\item Ambiguidade
+\end{itemize}
+
+A Geração de Texto coerente é um desafio porque envolve não apenas a escolha de palavras, mas também a construção de frases que façam sentido no contexto da conversa. A sintaxe e gramática são importantes para garantir que o texto gerado seja gramaticalmente correto e compreensível. A semântica se refere ao significado das palavras e frases, e é importante para garantir que o texto gerado transmita a mensagem correta. O contexto é importante para entender o que foi dito anteriormente na conversa e como isso afeta a resposta atual. A ambiguidade pode surgir quando uma palavra ou frase tem múltiplos significados, tornando difícil para o modelo determinar qual interpretação é a correta.
 
 %%%%%%%%%%%%%%%%%%%%
 %%%%%%CAPITULO%%%%%%
