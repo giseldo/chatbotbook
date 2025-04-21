@@ -86,8 +86,9 @@ caractéristicas e enorme quantidade de chatbots existentes. Existem
 outras classificações que serão discutidas em seções posteriores.
 
 <figure id="fig:tipo">
-
-<figcaption>Classificação chatbots.</figcaption>
+<p><img src="./fig/tipo_objetivo.png" style="width:90.0%" alt="image" />
+<span id="fig:tipo" data-label="fig:tipo"></span></p>
+<figcaption>Classificação chatbots por objetivo.</figcaption>
 </figure>
 
 A popularidade dos chatbots tem crescido significativamente em diversos
@@ -119,8 +120,8 @@ Figura [1.3](#fig:agente){reference-type="ref" reference="fig:agente"}
 ilustra uma arquitetura conceitual de alto nível para um agente.
 
 <figure id="fig:agente">
-<p><img src="./fig/ia.png" style="width:70.0%" alt="image" /> <span
-id="fig:agente" data-label="fig:agente"></span></p>
+<p><img src="./fig/original_agente.png" style="width:70.0%"
+alt="image" /> <span id="fig:agente" data-label="fig:agente"></span></p>
 <p>Fonte: Diretamente retirado de <span class="citation"
 data-cites="Russel2013"></span></p>
 <figcaption>Arquitetura conceitual de um agente.</figcaption>
@@ -133,7 +134,7 @@ específica de um agente, cujo propósito primário é a interação
 conversacional em linguagem natural.
 
 <figure id="fig:chatbot">
-<p><img src="./fig/chatbot.png" style="width:90.0%" alt="image" /> <span
+<p><img src="./fig/chatbot.png" style="width:70.0%" alt="image" /> <span
 id="fig:chatbot" data-label="fig:chatbot"></span></p>
 <figcaption>Representação esquemática de um chatbot.</figcaption>
 </figure>
@@ -295,6 +296,40 @@ além de abordagens baseadas em recuperação (Retrieval-Based) e
 generativas (Generative-Based)
 [@Borah2019; @Ramesh2019; @Shaikh2016; @Abdul-Kader2015; @Li2018], entre
 outras.
+
+- ELIZA: o primeiro chatbot, que utilizava correspondência de padrões
+  simples para simular um psicoterapeuta. O ELIZA foi um marco na
+  história dos chatbots e influenciou o desenvolvimento de sistemas
+  conversacionais subsequentes [@Weizenbaum1996].
+
+- AIML: Artificial Intelligence Markup Language, uma linguagem de
+  marcação baseada em XML [@Wallace2000]. Essa linguagem permite a
+  definição de regras de correspondência de padrões (pattern matching)
+  para mapear entradas do usuário a respostas predefinidas. O AIML é
+  amplamente utilizado na construção de chatbots, permitindo a criação
+  de diálogos complexos e interativos.
+
+- Modelos de Markov: introdução de técnicas de aprendizado de máquina,
+  como os modelos ocultos de Markov (HMMs) , que utilizam cadeias de
+  Markov para modelar sequências de palavras e prever a próxima palavra
+  em uma sequência.
+
+- Word2Vec: técnica de representação de palavras em vetores densos,
+  permitindo capturar semântica e relações entre palavras. Essa técnica
+  é frequentemente utilizada em chatbots para melhorar a compreensão do
+  contexto e a geração de respostas.
+
+- TransformersBERT: arquitetura de rede neural baseada em atenção, que
+  revolucionou o processamento de linguagem natural (NLP)
+  [@Vaswani2017]. Modelos como BERT e GPT são exemplos de arquiteturas
+  baseadas em Transformers que têm sido amplamente utilizadas em
+  chatbots modernos.
+
+- GPT: modelos de linguagem generativa, como o GPT-3 , que utilizam
+  redes neurais profundas para gerar texto coerente e relevante em
+  resposta a entradas do usuário. Esses modelos são treinados em grandes
+  quantidades de dados e podem ser adaptados para tarefas específicas,
+  como atendimento ao cliente ou suporte técnico.
 
 Além disso, diversos frameworks têm sido desenvolvidos para facilitar a
 criação desses agentes complexos, como CrewAI e bibliotecas associadas a
@@ -1303,6 +1338,30 @@ fluxos de trabalho preconfigurados ou a regras de negócio específicas.
 Em alguns casos, a geração de linguagem natural (NLG), outro subcampo do
 PLN, é utilizada para formular a resposta do *chatbot* ao usuário.
 
+## Desafios da PLN
+
+- Geração de Texto coerente
+
+- Sintaxe e gramática
+
+- semântica
+
+- Contexto
+
+- Ambiguidade
+
+A Geração de Texto coerente é um desafio porque envolve não apenas a
+escolha de palavras, mas também a construção de frases que façam sentido
+no contexto da conversa. A sintaxe e gramática são importantes para
+garantir que o texto gerado seja gramaticalmente correto e
+compreensível. A semântica se refere ao significado das palavras e
+frases, e é importante para garantir que o texto gerado transmita a
+mensagem correta. O contexto é importante para entender o que foi dito
+anteriormente na conversa e como isso afeta a resposta atual. A
+ambiguidade pode surgir quando uma palavra ou frase tem múltiplos
+significados, tornando difícil para o modelo determinar qual
+interpretação é a correta.
+
 # Intenção em Chatbots {#chap:intents}
 
 ## Introdução
@@ -2140,6 +2199,9 @@ Um caso de uso comum em chatbots é a extração de endereços de e-mail do
 texto fornecido pelo usuário. O seguinte exemplo em Python demonstra
 como usar `re.findall` para realizar essa tarefa:
 
+[ ![image](./fig/colab-badge.png)
+](https://colab.research.google.com/github/giseldo/chatbotbook_v2/blob/main/notebook/cap11.ipynb)
+
 ``` {#lst:extracao_email .python language="Python" caption="Extração de e-mails com regex" label="lst:extracao_email"}
 import re
 
@@ -2153,8 +2215,8 @@ A saída deste código será:
 
     ['exemplo@email.com', 'suporte@outroemail.com']
 
-Este exemplo ilustra a eficácia das regex para identificar e extrair
-informações específicas de um texto.
+Este exemplo ilustra o uso regex para identificar e extrair informações
+específicas de um texto.
 
 ## Sintaxe de Expressões Regulares
 
@@ -2162,8 +2224,6 @@ A sintaxe das expressões regulares consiste em uma combinação de
 caracteres literais (que correspondem a si mesmos) e metacaracteres, que
 possuem significados especiais e permitem definir padrões de busca mais
 complexos. Alguns dos metacaracteres mais importantes incluem:
-
-## Casos de Uso Específicos em Chatbots
 
 As expressões regulares podem ser aplicadas em uma variedade de cenários
 no desenvolvimento de chatbots. A seguir, apresentamos alguns casos de
@@ -2174,6 +2234,9 @@ uso comuns com exemplos práticos em Python.
 Chatbots que lidam com agendamentos ou reservas frequentemente precisam
 validar se a data fornecida pelo usuário está em um formato correto. O
 seguinte exemplo demonstra como validar datas no formato DD/MM/AAAA:
+
+[ ![image](./fig/colab-badge.png)
+](https://colab.research.google.com/github/giseldo/chatbotbook_v2/blob/main/notebook/cap11_2.ipynb)
 
 ``` {#lst:validacao_data .python language="Python" caption="Validação de datas com regex" label="lst:validacao_data"}
 import re
@@ -2191,11 +2254,19 @@ for data in datas_teste:
 A saída deste código ilustra quais das strings de teste correspondem ao
 padrão de data especificado.
 
+    '31/12/2020' é uma data válida no formato DD/MM/AAAA.
+    '1/1/2021' não é uma data válida no formato DD/MM/AAAA.
+    '2023-05-10' não é uma data válida no formato DD/MM/AAAA.
+    '25/06/2025 10:00' é uma data válida no formato DD/MM/AAAA.
+
 ### Análise de Comandos
 
 Em interfaces de chatbot baseadas em texto, os usuários podem interagir
 através de comandos específicos, como `/ajuda` ou `/iniciar`. As regex
 podem ser usadas para detectar esses comandos de forma eficiente:
+
+[ ![image](./fig/colab-badge.png)
+](https://colab.research.google.com/github/giseldo/chatbotbook_v2/blob/main/notebook/cap11_3.ipynb)
 
 ``` {#lst:analise_comando .python language="Python" caption="Análise de comandos com regex" label="lst:analise_comando"}
 import re
@@ -2213,12 +2284,20 @@ for comando in comandos_teste:
 Este exemplo mostra como identificar strings que começam com uma barra
 seguida por um ou mais caracteres alfanuméricos.
 
+    '/ajuda' é um comando válido.
+    '/iniciar' é um comando válido.
+    'ajuda' não é um comando válido.
+    'iniciar/' não é um comando válido.
+
 ### Tokenização Simples
 
 Embora para tarefas complexas de PLN sejam utilizadas técnicas de
 tokenização mais avançadas, as regex podem ser úteis para realizar uma
 tokenização básica, dividindo o texto em palavras ou unidades menores
 com base em padrões de separação:
+
+[ ![image](./fig/colab-badge.png)
+](https://colab.research.google.com/github/giseldo/chatbotbook_v2/blob/main/notebook/cap11_4.ipynb)
 
 ``` {#lst:tokenizacao_simples .python language="Python" caption="Tokenização simples com regex" label="lst:tokenizacao_simples"}
 import re
@@ -2231,11 +2310,16 @@ print(tokens)
 A saída será uma lista de strings, onde o padrão `\W+` corresponde a um
 ou mais caracteres não alfanuméricos, utilizados como delimitadores.
 
+    ['Olá', 'como', 'vai', 'você', '']
+
 ### Limpeza de Texto
 
 Chatbots podem precisar processar texto que contém elementos
 indesejados, como tags HTML. As regex podem ser usadas para remover
 esses elementos:
+
+[ ![image](./fig/colab-badge.png)
+](https://colab.research.google.com/github/giseldo/chatbotbook_v2/blob/main/notebook/cap11_5.ipynb)
 
 ``` {#lst:limpeza_html .python language="Python" caption="Limpeza de texto removendo tags HTML" label="lst:limpeza_html"}
 import re
@@ -2244,6 +2328,8 @@ texto_html = "<p>Este é um parágrafo com <b>texto em negrito</b>.</p>"
 texto_limpo = re.sub(r'<[^>]+>', '', texto_html)
 print(texto_limpo)
 ```
+
+    Este é um parágrafo com texto em negrito.
 
 ## Aplicação em Frameworks de Chatbot
 

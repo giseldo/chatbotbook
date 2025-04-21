@@ -19,9 +19,11 @@
 \usepackage{hyphenat}
 \hyphenation{chat-bot cha-tbots in-te-li-gên-cia ar-ti-fi-cial}
 
+\usepackage{rotating}
+
 \usepackage{geometry} 
 \geometry{
-  left=4cm, % Aumente a margem esquerda para caber as notas
+  left=2cm, % Aumente a margem esquerda para caber as notas
   right=2cm, % Margem direita menor, já que não terá notas
   bottom=2cm, % Margem direita menor, já que não terá notas
   marginparwidth=2.5cm, % Largura das notas
@@ -113,30 +115,31 @@
 
 \section{Introdução}
 
-\marginnote{Definição}
+% \marginnote{Definição}
 Um chatbot é um programa de computador que simula uma conversa humana, geralmente utilizando texto ou áudio. Eles oferecem respostas diretas a perguntas e auxiliam em diversas tarefas, servindo tanto para conversas gerais quanto para ações específicas, como abrir uma conta bancária.
 
-\marginnote{Origem do termo}
+% \marginnote{Origem do termo}
 Embora o chatbot ELIZA \cite{Weizenbaum1996} seja frequentemente considerado um dos primeiros exemplos de software conversacional, o termo ``chatbot'' ainda não era utilizado na época de sua criação. 
 O termo ``chatterbot'', sinônimo de ``chatbot'', foi popularizado por Michael Mauldin em 1994, ao descrever seu programa JULIA \cite{Mauldin1994}. 
 Publicações acadêmicas, como os anais da \textit{Virtual Worlds and Simulation Conference} de 1998 \cite{Jacobstein1998}, também ajudaram a consolidar o uso do termo.
 
-\marginnote{ELIZA}
+% \marginnote{ELIZA}
 O ELIZA, criado em 1966 por Joseph Weizenbaum,  representou um experimento revolucionário na interação humano-computador \cite{Weizenbaum1996}. Seu roteiro (ou script)  mais famoso, DOCTOR, imitava rudimentarmente um psicoterapeuta, utilizando correspondência de padrões simples. Por exemplo, quando um usuário inseria a frase “Estou triste”, o ELIZA respondia “Por que você está triste hoje?”, reformulando a entrada como uma pergunta. Seu funcionamento baseia-se em um conjunto de regras que lhe permitem analisar e compreender a linguagem humana de forma limitada e aproximada. 
 
 Esse tipo de aplicação do ELIZA (simular um psicólogo muito rudimentar da técnica rogeriana) adequou-se bem a esse domínio, pois dependia de pouco conhecimento sobre o ambiente externo; as regras no script DOCTOR permitiam que o programa respondesse ao usuário com outras perguntas ou simplesmente refletisse a afirmação original. O ELIZA não possuía uma real ``compreensão'' da linguagem humana; ele apenas utilizava palavras-chave e manipulava frases para que a interação parecesse natural. Uma descrição detalhada do funcionamento do ELIZA, com exemplos em Python, será apresentada em seções posteriores deste livro.
 
-\marginnote{ChatGPT}
+% \marginnote{ChatGPT}
 Outro chatbot famoso é o ChatGPT. Desenvolvido pela OpenAI, este é um modelo de linguagem capaz de gerar texto muito semelhante ao criado por humanos. Ele utiliza aprendizagem profunda (deep learning) e redes neurais para gerar sentenças e parágrafos com base nas entradas e informações fornecidas. É capaz de produzir textos coerentes e até mesmo realizar tarefas simples, como responder a perguntas e gerar ideias. Contudo, é importante lembrar que o ChatGPT não possui consciência nem a capacidade de compreender contexto ou emoções. Ele é um exemplo de Modelo de Linguagem Grande (Large Language Model - LLM), baseado na arquitetura conhecida como Transformers, introduzida em 2017 \cite{Vaswani2017}. Esses modelos são treinados com terabytes de texto, utilizando mecanismos de autoatenção que avaliam a relevância de cada palavra em uma frase. Ao contrário das regras manuais do ELIZA, os LLMs extraem padrões linguísticos a partir da vasta quantidade de dados com que a rede neural foi treinada.
 
-\marginnote{Tipo Conversacional}
+% \marginnote{Tipo Conversacional}
 Esses dois chatbots, ELIZA e ChatGPT, são bons representantes do tipo \textbf{conversacional}. 
 Apesar de terem surgido com décadas de diferença — ELIZA em 1966 e ChatGPT em 2022 — e de diferirem bastante na forma como geram suas respostas, ambos compartilham semelhanças em seu objetivo: conversar sobre determinado assunto ou responder perguntas, mantendo o usuário em um diálogo fluido quando necessário. Chatbots com essas características podem ser agrupados, de acordo com o objetivo, como chatbots conversacionais e são utilizados para interagir sobre assuntos gerais.
 
-\marginnote{Tipo Orientado a tarefas} 
+% \marginnote{Tipo Orientado a tarefas} 
 Outro tipo de chatbot classificado em relação ao objetivo é o \textbf{orientado a tarefas}. Os chatbots orientados a tarefas executam ações específicas, como abrir uma conta bancária ou pedir uma pizza. Geralmente, as empresas disponibilizam chatbots orientados a tarefas para seus usuários, com regras de negócio embutidas na conversação e com fluxos bem definidos. Normalmente, não se espera pedir uma pizza e, no mesmo chatbot, discutir os estudos sobre Ética do filósofo Immanuel Kant (embora talvez haja quem queira). 
 
-Essas duas classificações - conversacional e orientado a tarefas - (Figura~\ref{fig:tipo}) ainda não são suficientes para uma completa classifição dada diversas caractéristicas e enorme quantidade de chatbots existentes. Existem outras classificações que serão discutidas em seções posteriores.
+Essas duas classificações - conversacional e orientado a tarefas - (Figura~\ref{fig:tipo}) ainda não são suficientes para uma completa classifição dada diversas caractéristicas e enorme quantidade de chatbots existentes. 
+Existem outras classificações que serão discutidas em seções posteriores.
 
 \begin{figure}[!htbp]
 	\centering
@@ -159,7 +162,7 @@ Nesta figura, os valores representam o interesse relativo de busca ao longo do t
 
 \section{Chatbots e Agentes: Definições e Distinções}
 
-\marginnote{Agente}
+% \marginnote{Agente}
 Define-se chatbot como um programa computacional projetado para interagir com usuários por meio de linguagem natural. Por outro lado, o conceito de agente possui uma definição mais ampla: trata-se de uma entidade computacional que percebe seu ambiente por meio de sensores e atua sobre esse ambiente por meio de atuadores \cite{Russel2013}. A Figura~\ref{fig:agente} ilustra uma arquitetura conceitual de alto nível para um agente.
 
 \begin{figure}
@@ -1483,6 +1486,11 @@ O módulo \texttt{re} em Python é a biblioteca padrão para trabalhar com expre
 
 Um caso de uso comum em chatbots é a extração de endereços de e-mail do texto fornecido pelo usuário. O seguinte exemplo em Python demonstra como usar \texttt{re.findall} para realizar essa tarefa:
 
+\vspace{\baselineskip}
+\href{https://colab.research.google.com/github/giseldo/chatbotbook_v2/blob/main/notebook/cap11.ipynb}{
+  \includegraphics{./fig/colab-badge.png}
+}
+
 \begin{lstlisting}[language=Python, caption=Extração de e-mails com regex, label=lst:extracao_email]
 import re
 
@@ -1494,25 +1502,26 @@ print(emails)
 
 A saída deste código será:
 
-\begin{verbatim}
+\begin{lstlisting}
 ['exemplo@email.com', 'suporte@outroemail.com']
-\end{verbatim}
+\end{lstlisting}
 
-Este exemplo ilustra a eficácia das regex para identificar e extrair informações específicas de um texto.
+Este exemplo ilustra o uso  regex para identificar e extrair informações específicas de um texto.
 
 \section{Sintaxe de Expressões Regulares}
 
 A sintaxe das expressões regulares consiste em uma combinação de caracteres literais (que correspondem a si mesmos) e metacaracteres, que possuem significados especiais e permitem definir padrões de busca mais complexos. Alguns dos metacaracteres mais importantes incluem:
-
-%%%%%%%%%% TABELA    %%%%%%%%%%%%%
-
-\section{Casos de Uso Específicos em Chatbots}
 
 As expressões regulares podem ser aplicadas em uma variedade de cenários no desenvolvimento de chatbots. A seguir, apresentamos alguns casos de uso comuns com exemplos práticos em Python.
 
 \subsection{Validação de Datas}
 
 Chatbots que lidam com agendamentos ou reservas frequentemente precisam validar se a data fornecida pelo usuário está em um formato correto. O seguinte exemplo demonstra como validar datas no formato DD/MM/AAAA:
+
+\vspace{\baselineskip}
+\href{https://colab.research.google.com/github/giseldo/chatbotbook_v2/blob/main/notebook/cap11_2.ipynb}{
+  \includegraphics{./fig/colab-badge.png}
+}
 
 \begin{lstlisting}[language=Python, caption=Validação de datas com regex, label=lst:validacao_data]
 import re
@@ -1528,8 +1537,22 @@ for data in datas_teste:
 \end{lstlisting}
 A saída deste código ilustra quais das strings de teste correspondem ao padrão de data especificado.
 
+\begin{lstlisting}
+'31/12/2020' é uma data válida no formato DD/MM/AAAA.
+'1/1/2021' não é uma data válida no formato DD/MM/AAAA.
+'2023-05-10' não é uma data válida no formato DD/MM/AAAA.
+'25/06/2025 10:00' é uma data válida no formato DD/MM/AAAA.
+\end{lstlisting}
+
 \subsection{Análise de Comandos}
+
 Em interfaces de chatbot baseadas em texto, os usuários podem interagir através de comandos específicos, como \texttt{/ajuda} ou \texttt{/iniciar}. As regex podem ser usadas para detectar esses comandos de forma eficiente:
+
+\vspace{\baselineskip}
+\href{https://colab.research.google.com/github/giseldo/chatbotbook_v2/blob/main/notebook/cap11_3.ipynb}{
+  \includegraphics{./fig/colab-badge.png}
+}
+
 \begin{lstlisting}[language=Python, caption=Análise de comandos com regex, label=lst:analise_comando]
 import re
 
@@ -1544,8 +1567,22 @@ for comando in comandos_teste:
 \end{lstlisting}
 Este exemplo mostra como identificar strings que começam com uma barra seguida por um ou mais caracteres alfanuméricos.
 
+\begin{lstlisting}
+'/ajuda' é um comando válido.
+'/iniciar' é um comando válido.
+'ajuda' não é um comando válido.
+'iniciar/' não é um comando válido.
+\end{lstlisting}
+
 \subsection{Tokenização Simples}
+
 Embora para tarefas complexas de PLN sejam utilizadas técnicas de tokenização mais avançadas, as regex podem ser úteis para realizar uma tokenização básica, dividindo o texto em palavras ou unidades menores com base em padrões de separação:
+
+\vspace{\baselineskip}
+\href{https://colab.research.google.com/github/giseldo/chatbotbook_v2/blob/main/notebook/cap11_4.ipynb}{
+  \includegraphics{./fig/colab-badge.png}
+}
+
 \begin{lstlisting}[language=Python, caption=Tokenização simples com regex, label=lst:tokenizacao_simples]
 import re
 
@@ -1553,10 +1590,21 @@ texto = "Olá, como vai você?"
 tokens = re.split(r'\W+', texto)
 print(tokens)
 \end{lstlisting}
+
 A saída será uma lista de strings, onde o padrão \texttt{\textbackslash{}W+} corresponde a um ou mais caracteres não alfanuméricos, utilizados como delimitadores.
+
+\begin{lstlisting}
+['Olá', 'como', 'vai', 'você', '']
+\end{lstlisting}
 
 \subsection{Limpeza de Texto}
 Chatbots podem precisar processar texto que contém elementos indesejados, como tags HTML. As regex podem ser usadas para remover esses elementos:
+
+\vspace{\baselineskip}
+\href{https://colab.research.google.com/github/giseldo/chatbotbook_v2/blob/main/notebook/cap11_5.ipynb}{
+  \includegraphics{./fig/colab-badge.png}
+}
+
 \begin{lstlisting}[language=Python, caption=Limpeza de texto removendo tags HTML, label=lst:limpeza_html]
 import re
 
@@ -1565,10 +1613,17 @@ texto_limpo = re.sub(r'<[^>]+>', '', texto_html)
 print(texto_limpo)
 \end{lstlisting}
 
+\begin{lstlisting}
+Este é um parágrafo com texto em negrito.
+\end{lstlisting}
+
 % Neste exemplo, o padrão \texttt{<[^>]+>} corresponde a qualquer string que comece com \texttt{<}, seguida por um ou mais caracteres que não sejam \texttt{>}, e termine com \texttt{>}, ou seja, uma tag HTML completa. A função \texttt{re.sub} substitui todas as ocorrências desse padrão por uma string vazia, removendo as tags.
 
 \section{Aplicação em Frameworks de Chatbot}
-Frameworks populares para desenvolvimento de chatbots, como Rasa, frequentemente integram o uso de expressões regulares para aprimorar a extração de entidades. Por exemplo, em Rasa, as regex podem ser definidas nos dados de treinamento para ajudar o sistema a reconhecer padrões específicos como nomes de ruas ou códigos de produtos. Essa abordagem permite melhorar a precisão do reconhecimento de entidades, um componente crucial para a compreensão da intenção do usuário.
+
+Frameworks populares para desenvolvimento de chatbots, como Rasa, frequentemente integram o uso de expressões regulares para aprimorar a extração de entidades. 
+Por exemplo, em Rasa, as regex podem ser definidas nos dados de treinamento para ajudar o sistema a reconhecer padrões específicos como nomes de ruas ou códigos de produtos. 
+Essa abordagem permite melhorar a precisão do reconhecimento de entidades, um componente crucial para a compreensão da intenção do usuário.
 
 \section{Tópicos Avançados}
 Embora os fundamentos das regex sejam suficientes para muitas tarefas, existem construções mais avançadas que podem ser úteis em cenários complexos. Alguns exemplos incluem:
