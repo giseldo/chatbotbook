@@ -32,12 +32,20 @@ print(f"Divisão concluída: {len(secoes)//2} arquivos criados em '{pasta_saida}
 pasta_origem = pasta_saida
 pasta_destino = "..\\cursos\\docs\\chatbotbook"
 
-# os.makedirs(pasta_destino, exist_ok=True)
-
 for arquivo in os.listdir(pasta_origem):
     if arquivo.endswith(".md"):
         caminho_origem = os.path.join(pasta_origem, arquivo)
         caminho_destino = os.path.join(pasta_destino, arquivo)
         shutil.copy(caminho_origem, caminho_destino)
+        
 
-print(f"Arquivos .md movidos de '{pasta_origem}' para '{pasta_destino}'.")
+pasta_figura = "fig/"
+pasta_destino = "..\\cursos\\docs\\chatbotbook\fig"
+
+for arquivo in os.listdir(pasta_figura):
+    if arquivo.endswith(".png") or arquivo.endswith(".jpg"):
+        caminho_origem = os.path.join(pasta_figura, arquivo)
+        caminho_destino = os.path.join(pasta_destino, arquivo)
+        shutil.copy(caminho_origem, caminho_destino)
+
+

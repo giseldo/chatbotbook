@@ -1,6 +1,6 @@
 \documentclass[14pt,a4paper,oneside]{book}
 
-\usepackage{extsizes}
+
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -10,11 +10,14 @@
 \usepackage{csquotes} 
 \usepackage{natbib}   
 
+\usepackage{extsizes}
 \usepackage{setspace}
 \onehalfspacing
 \usepackage{anyfontsize}
 \fontsize{14pt}{16pt}\selectfont
 \usepackage{fancyvrb} 
+
+\usepackage[scaled=0.9]{inconsolata}
 
 \usepackage{hyphenat}
 \hyphenation{chat-bot cha-tbots in-te-li-gên-cia ar-ti-fi-cial}
@@ -57,7 +60,7 @@
 \usepackage{listings}
 \lstset{
 	language=Tex,
-	basicstyle=\ttfamily\footnotesize,
+	basicstyle=\ttfamily\small\setstretch{0.9},
 	keywordstyle=\color{blue},
 	stringstyle=\color{red},
 	commentstyle=\color{gray},
@@ -138,7 +141,7 @@ Apesar de terem surgido com décadas de diferença — ELIZA em 1966 e ChatGPT e
 % \marginnote{Tipo Orientado a tarefas} 
 Outro tipo de chatbot classificado em relação ao objetivo é o \textbf{orientado a tarefas}. Os chatbots orientados a tarefas executam ações específicas, como abrir uma conta bancária ou pedir uma pizza. Geralmente, as empresas disponibilizam chatbots orientados a tarefas para seus usuários, com regras de negócio embutidas na conversação e com fluxos bem definidos. Normalmente, não se espera pedir uma pizza e, no mesmo chatbot, discutir os estudos sobre Ética do filósofo Immanuel Kant (embora talvez haja quem queira). 
 
-Essas duas classificações - conversacional e orientado a tarefas - (Figura~\ref{fig:tipo}) ainda não são suficientes para uma completa classifição dada diversas caractéristicas e enorme quantidade de chatbots existentes. 
+Essas duas classificações, conversacional e orientado a tarefas  (Figura~\ref{fig:tipo}), ainda não são suficientes para uma completa classifição dada diversas caractéristicas e enorme quantidade de chatbots existentes. 
 Existem outras classificações que serão discutidas em seções posteriores.
 
 \begin{figure}[!htbp]
@@ -172,7 +175,7 @@ Define-se chatbot como um programa computacional projetado para interagir com us
 	\label{fig:agente}
 	{\footnotesize \centering
 
-		Fonte: Diretamente retirado de \cite{Russel2013}}
+		Fonte: Adaptado de \cite{Russel2013}}
 \end{figure}
 
 Nesse contexto, um chatbot (Figura~\ref{fig:chatbot}) pode ser considerado uma instanciação específica de um agente, cujo propósito primário é a interação conversacional em linguagem natural.
@@ -194,12 +197,12 @@ Um sistema capaz de realizar uma compra online, processar um pagamento e confirm
 
 Um chatbot responde a uma entrada do usuário. Porém, essa interação textual mediada por chatbots não se constitui em uma mera justaposição aleatória de turnos de conversação ou pares isolados de estímulo-resposta. Pelo contrário, espera-se que a conversação exiba coerência e mantenha relações lógicas e semânticas entre os turnos consecutivos. O estudo da estrutura e organização da conversa humana é abordado por disciplinas como a Análise da Conversação.
 
-\marginnote{Análise da Conversação}
+% \marginnote{Análise da Conversação}
 No contexto da da análise da conversação em língua portuguesa, os trabalhos de Marcuschi \cite{Marchuschi1986} são relevantes ao investigar a organização dessa conversação. Marcuschi analisou a estrutura conversacional em termos de unidades coesas, como o ``tópico conversacional'', que agrupa turnos relacionados a um mesmo assunto ou propósito interacional.
 
 Conceitos oriundos da Análise da Conversação, como a gestão de tópicos, têm sido aplicados no desenvolvimento de chatbots para aprimorar sua capacidade de manter diálogos coerentes e contextualmente relevantes com usuários humanos \cite{Neves2005}.
 
-\marginnote{Fluxo de diálogo}
+% \marginnote{Fluxo de diálogo}
 Na prática de desenvolvimento de sistemas conversacionais, a estrutura lógica e sequencial da interação é frequentemente modelada e referida como ``fluxo de conversação'' ou ``fluxo de diálogo''. Contudo, é importante ressaltar que a implementação explícita de modelos sofisticados de gerenciamento de diálogo, inspirados na Análise da Conversação, não é uma característica universal de todos os chatbots, variando conforme a complexidade e o propósito do sistema. 
 
 Um exemplo esquemático de um fluxo conversacional é apresentado na Figura~\ref{fig:fluxo}. Nesta figura o fluxo de conversação inicia quando o usuário entra com o texto: I WANT PIZZA, o chatbot responde com uma pergunta: HI I AM THE PIZZA BOT. CAN I CONFIRM THIS DELIVERY TO YOUR HOUSE?. O usuário então pode responder: SIM e o chatbot finaliza a conversa com: IT'S ON THE WAY. THANK YOU FOR CHOOSE OUR PRODUCT. Caso o usuário responda: NO, o chatbot responde com a pergunta original: HI I AM THE PIZZA BOT. CAN I CONFIRM THIS DELIVERY TO YOUR HOUSE?. O fluxo de conversação continua até que o usuário responda com um ``sim'' para a pergunta inicial. Essa estrutura de perguntas e respostas é comum em chatbots orientados a tarefas, onde o objetivo é guiar o usuário por um processo específico, como fazer um pedido de pizza.
@@ -227,7 +230,7 @@ Um outro tipo de fluxo para um chatbot que vende roupas está representada na Fi
 
 \section{Depois do ELIZA}
 
-\marginnote{AIML}
+% \marginnote{AIML}
 Um marco significativo na evolução dos chatbots foi o ALICE, que introduziu a Artificial Intelligence Markup Language (AIML), uma linguagem de marcação baseada em XML \cite{Wallace2000}. A AIML estabeleceu um paradigma para a construção de agentes conversacionais ao empregar algoritmos de correspondência de padrões. Essa abordagem utiliza modelos pré-definidos para mapear as entradas do usuário a respostas correspondentes, permitindo a definição modular de blocos de conhecimento \cite{Wallace2000}.
 
 No contexto brasileiro, um dos primeiros chatbots documentados capaz de interagir em português, inspirado no modelo ELIZA, foi o Cybele \cite{primo2001chatterbot}. Posteriormente, foi desenvolvido o Elecktra, também em língua portuguesa, com aplicação voltada para a educação a distância \cite{Leonhardt2003}. Em um exemplo mais recente de aplicação governamental, no ano de 2019, o processo de inscrição para o Exame Nacional do Ensino Médio (ENEM) foi disponibilizado por meio de uma interface conversacional baseada em chatbot (Figura~\ref{fig:enem}).
@@ -297,7 +300,7 @@ Especificamente no caso do AIML, a construção e a visualização de fluxos de 
 
 o ELIZA foi um dos primeiros programas de processamento de linguagem natural e foi apresentado em 1966 por Joseph Weizenbaum no MIT \cite{Weizenbaum1996}.
 
-\marginnote{SCRIPT}
+% \marginnote{SCRIPT}
 O conjunto de padrões e respostas predefinidas constitui o que Weizenbaum chamou de “roteiro” (ou script) de conversa. O mecanismo do ELIZA separa o motor genérico de processamento (o algoritmo de busca de palavras-chave e aplicação de regras) dos dados do script em si. Isso significa que ELIZA podia em teoria simular diferentes personalidades ou tópicos apenas carregando um script diferente, sem alterar o código do programa (veja na Figura~\ref{fig:elizaeditor}). Também foi codificado um editor de texto para as alterações do próprio Script.
 
 \begin{figure}[!htbp]
@@ -307,84 +310,82 @@ O conjunto de padrões e respostas predefinidas constitui o que Weizenbaum chamo
 	\label{fig:elizaeditor}
 \end{figure}
 
-\marginnote{SCRIPT DOCTOR}
+% \marginnote{SCRIPT DOCTOR}
 Um destes scripts (o DOCTOR) o deixou famoso. 
 Com este script carregado, o ELIZA simulava precariamente um psicoterapeuta (do estilo Rogeriano), refletindo as palavras do usuário de volta em forma de pergunta. 
 A primeira linha do script é a introdução do chatbot, a primeira palavra que ele escrever para o usuário. 
 START é um comando técnico do script, serve para indicar que a seguir virão as regras. REMEMBER 5 estabelece que a prioridade da palavra REMEMBER é 5, ou seja, se o usuário disser algo que contenha a palavra REMEMBER, o ELIZA irá responder com uma das perguntas definidas entre parênteses. 
 A seguir estão as regras de transformação de frases (decomposition rule e reassembly rule) associadas à palavra-chave REMEMBER. O exemplo abaixo mostra um trecho do script DOCTOR:
 
-\begin{verbatim}
+\begin{lstlisting}
 		
-	(REMEMBER 5 
-		(
-			(0 YOU REMEMBER 0) 
-			(DO YOU OFTEN THINK OF 4) 
-			(DOES THINKING OF ~ BRING ANYTHING ELSE TO MINO) 
-			(WHAT ELSE OO YOU REMEMBER)
-			(WHY DO YOU REMEMBER 4 JUST NOW) 
-			(WHAT IN THE PRESENT SITUATION REMINDS YOU OF 4) 
-			(WHAT IS THE CONNECTION BETWEEN ME AND 4)
-		) 
-		(
-			(0 DO I REMEMBER 0) 
-			(DID YOU THINK I WOULD FORGET 5) 
-			(WHY DO YOU THINK I SHOULD RECALL 5 NOW) 
-			(WHAT ABOUT 5) 
-			(=WHAT) 
-			(YOU MENTIONED S)
-		) 
+(REMEMBER 5 
+	(
+		(0 YOU REMEMBER 0) 
+		(DO YOU OFTEN THINK OF 4) 
+		(DOES THINKING OF ~ BRING ANYTHING ELSE TO MINO) 
+		(WHAT ELSE OO YOU REMEMBER)
+		(WHY DO YOU REMEMBER 4 JUST NOW) 
+		(WHAT IN THE PRESENT SITUATION REMINDS YOU OF 4) 
+		(WHAT IS THE CONNECTION BETWEEN ME AND 4)
 	) 
-	
-	(IF 3 
-		(
-			(0 IF 0) 
-			(DO YOU THINK ITS LIKELY THAT 3) 
-			(DO YOU WISH THAT 3) 
-			(WHAT DO YOU THINK ABOUT 3) 
-			(REALLY, 2 3)
-		)
+	(
+		(0 DO I REMEMBER 0) 
+		(DID YOU THINK I WOULD FORGET 5) 
+		(WHY DO YOU THINK I SHOULD RECALL 5 NOW) 
+		(WHAT ABOUT 5) 
+		(=WHAT) 
+		(YOU MENTIONED S)
 	) 
+) 
+
+(IF 3 
+	(
+		(0 IF 0) 
+		(DO YOU THINK ITS LIKELY THAT 3) 
+		(DO YOU WISH THAT 3) 
+		(WHAT DO YOU THINK ABOUT 3) 
+		(REALLY, 2 3)
+	)
+) 
 	
-
-\end{verbatim}
-
+\end{lstlisting}
 
 A seguir é apresentado um exemplo de diálogo (retirado do artigo original) entre um usuário humano e ELIZA, mostrando as respostas em letras maiúsculas. Nesse exemplo, o usuário faz afirmações pessoais (“Men are all alike.”, “Well, my boyfriend made me come here.”) e ELIZA responde com perguntas ou reformulações (“IN WHAT WAY”, “YOUR BOYFRIEND MADE YOU COME HERE?”), reutilizando termos do próprio usuário. Esse estilo reflexivo encoraja o usuário a continuar falando sem fornecer respostas diretas.
 
-\begin{verbatim}
-	Men are all alike. 
-	IN WHAT WAY 
-	They're always bugging us about something or other. 
-	CAN YOU THINK OF A SPECIFIC EXAMPLE 
-	Well, my boyfriend made me come here. 
-	YOUR BOYFRIEND MADE YOU COME HERE 
-	He says I'm depressed much of the time. 
-	I AM SORRY TO HEAR YOU ARE DEPRESSED 
-	It's true. I am unhappy. 
-	DO YOU THINK COMING HERE WILL HELP YOU NOT TO BE UNHAPPY 
-	I need some help, that much seems certain. 
-	WHAT WOULD IT MEAN TO YOU IF YOU GOT SOME HELP 
-	Perhaps I could learn to get along with my mother. 
-	TELL ME MORE ABOUT YOUR FAMILY 
-	My mother takes care of me. 
-	WHO ELSE IN YOUR FAMILY TAKES CARE OF YOU 
-	My father. 
-	YOUR FATHER 
-	You are like my father in some ways. 
-	WHAT RESEMBLANCE DO YOU SEE 
-	You are not very aggressive but I think you don't want me to 
-	notice that. 
-	WHAT MAKES YOU THINK I AM NOT VERY AGGRESSIVE 
-	You don't argue with me. 
-	WHY DO YOU THINK I DON'T ARGUE WITH YOU 
-	You are afraid of me. 
-	DOES IT PLEASE YOU TO BELIEVE I AM AFRAID OF YOU 
-	My father is afraid of everybody. 
-	WHAT ELSE COMES TO MIND WHEN YOU THINK OF YOUR FATHER 
-	Bullies. 
-	DOES THAT HAVE ANYTHING TO DO WITH THE FACT THAT YOUR BOYFRIEND MADE YOU COME HERE 
-\end{verbatim}
+\begin{lstlisting}
+Men are all alike. 
+IN WHAT WAY 
+They're always bugging us about something or other. 
+CAN YOU THINK OF A SPECIFIC EXAMPLE 
+Well, my boyfriend made me come here. 
+YOUR BOYFRIEND MADE YOU COME HERE 
+He says I'm depressed much of the time. 
+I AM SORRY TO HEAR YOU ARE DEPRESSED 
+It's true. I am unhappy. 
+DO YOU THINK COMING HERE WILL HELP YOU NOT TO BE UNHAPPY 
+I need some help, that much seems certain. 
+WHAT WOULD IT MEAN TO YOU IF YOU GOT SOME HELP 
+Perhaps I could learn to get along with my mother. 
+TELL ME MORE ABOUT YOUR FAMILY 
+My mother takes care of me. 
+WHO ELSE IN YOUR FAMILY TAKES CARE OF YOU 
+My father. 
+YOUR FATHER 
+You are like my father in some ways. 
+WHAT RESEMBLANCE DO YOU SEE 
+You are not very aggressive but I think you don't want me to 
+notice that. 
+WHAT MAKES YOU THINK I AM NOT VERY AGGRESSIVE 
+You don't argue with me. 
+WHY DO YOU THINK I DON'T ARGUE WITH YOU 
+You are afraid of me. 
+DOES IT PLEASE YOU TO BELIEVE I AM AFRAID OF YOU 
+My father is afraid of everybody. 
+WHAT ELSE COMES TO MIND WHEN YOU THINK OF YOUR FATHER 
+Bullies. 
+DOES THAT HAVE ANYTHING TO DO WITH THE FACT THAT YOUR BOYFRIEND MADE YOU COME HERE 
+\end{lstlisting}
 	
 
 % Um detalhamento do algoritmo do ELIZA está no Algoritmo 1.
@@ -395,7 +396,7 @@ A seguir é apresentado um exemplo de diálogo (retirado do artigo original) ent
 
 \section{Processamento de Entradas e Palavras-Chave}
 
-\marginnote{Pattern Matching}
+% \marginnote{Pattern Matching}
 O funcionamento do ELIZA baseia-se em correspondência de padrões por palavras-chave. Técnica também chamado casamento de padrão, em inglês \textit{pattner matching} seu paradigma também se encaixa na técnica baseado em regras (ou \textit{rule-based}). 
 A cada turno, o texto de entrada do usuário é analisado em busca de palavras-chave predefinidas. 
 O ELIZA fazia uma varredura da sentença da esquerda para a direita, identificando se alguma palavra correspondia a uma palavra\-chave do script. 
@@ -481,9 +482,9 @@ O Artificial Intelligence Markup Language (AIML) é uma especificação baseada 
 \begin{figure}
     \centering
     \caption{Interpretador AIML arquitetura.}
-    \includegraphics[width=0.8\textwidth]{./fig/image8.png} % Ajuste o caminho se necessário
+    \includegraphics[width=0.8\textwidth]{./fig/aimlbase.png} 
     \label{fig:interpretador}
-    \vspace{0.2cm} % Espaçamento opcional
+    \vspace{0.2cm} 
     {\footnotesize 
 	
 	Adaptado de \cite{Silva2007}}
@@ -491,7 +492,8 @@ O Artificial Intelligence Markup Language (AIML) é uma especificação baseada 
 
 A técnica central empregada pelo AIML é a correspondência de padrões (\emph{pattern matching}). Este método é amplamente utilizado no desenvolvimento de chatbots, particularmente em sistemas orientados a perguntas e respostas \cite{Abdul-Kader2015}. Uma das metas de projeto do AIML é possibilitar a fusão de bases de conhecimento de múltiplos chatbots especializados em domínios distintos. Teoricamente, um interpretador poderia agregar essas bases, eliminando automaticamente categorias redundantes para formar um \emph{chatbot} mais abrangente \cite{Wallace2000}.
 
-AIML é frequentemente associado aos chatbots de terceira geração \cite{Maria2010} e estima-se sua adoção em mais de 50.000 implementações em diversos idiomas. Extensões da linguagem foram propostas, como o iAIML, que introduziu novas \emph{tags} e incorporou o conceito de intenção com base nos princípios da Teoria da Análise da Conversação (TAC) \cite{Neves2005}. Adicionalmente, ferramentas baseadas na Web foram desenvolvidas para apoiar a construção de bases de conhecimento AIML \cite{Krassmann2017}. Um exemplo proeminente é o \emph{chatbot} ALICE, cuja implementação em AIML compreendia aproximadamente 16.000 categorias, cada uma potencialmente contendo múltiplas \emph{tags} XML aninhadas \cite{Wallace2000}. Uma representação visual desta estrutura de conhecimento é apresentada na Figura~\ref{fig:representacaovisual}.
+AIML é frequentemente associado aos chatbots de terceira geração \cite{Maria2010} e estima-se sua adoção em mais de 50.000 implementações em diversos idiomas. 
+Extensões da linguagem foram propostas, como o iAIML, que introduziu novas \emph{tags} e incorporou o conceito de intenção com base nos princípios da Teoria da Análise da Conversação (TAC) \cite{Neves2005}. Adicionalmente, ferramentas baseadas na Web foram desenvolvidas para apoiar a construção de bases de conhecimento AIML \cite{Krassmann2017}. Um exemplo proeminente é o \emph{chatbot} ALICE, cuja implementação em AIML compreendia aproximadamente 16.000 categorias, cada uma potencialmente contendo múltiplas \emph{tags} XML aninhadas \cite{Wallace2000}. Uma representação visual desta estrutura de conhecimento é apresentada na Figura~\ref{fig:representacaovisual}.
 
 \begin{figure}
     \centering
@@ -579,11 +581,11 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 
 \textbf{Descrição:} Tag raiz que engloba todo o conteúdo AIML. 
 
-\begin{verbatim}
+\begin{lstlisting}
 	<aiml version="1.0">
 		<!-- Categorias aqui -->
 	</aiml>
-\end{verbatim}
+\end{lstlisting}
 
 \paragraph{\texttt{<category>}} 
 
@@ -864,7 +866,7 @@ A Geração de Texto coerente é um desafio porque envolve não apenas a escolha
 %%%%%%CAPITULO%%%%%%
 %%%%%%%%%%%%%%%%%%%%
 
-\chapter{Intenção em Chatbots}
+\chapter{Intençãos e Entidades}
 \label{chap:intents}
 
 \section{Introdução}
@@ -970,7 +972,7 @@ A combinação dessas duas etapas permite que o RAG supere algumas limitações 
 
 Em resumo, o Retrieval Augmented Generation é uma técnica poderosa que não apenas melhora a qualidade das respostas geradas por modelos de linguagem, mas também amplia o alcance e a aplicabilidade desses modelos em cenários do mundo real, onde a informação é dinâmica e em constante evolução.
 
-\chapter{Chatbot ELIZA em Python}
+\chapter{ELIZA em Python}
 
 \section{Introdução}
 
@@ -1085,7 +1087,7 @@ Observa-se na interação que o chatbot inicialmente respondeu à saudação (\t
 %%%%CAPITULO%%%%
 %%%%%%%%%%%%%%%%
 
-\chapter{Usando chatGPT com LangChain}
+\chapter{LangChain}
 
 \section{Introdução}
 
@@ -1122,27 +1124,29 @@ Vamos ver um exemplo simples de como usar o LangChain para consultar um LLM e ob
 Primeiro, importe as bibliotecas necessárias e configure o cliente LangChain. Em seguida, carregue o modelo de linguagem desejado. Agora, você pode usar o modelo para fazer uma consulta. Vamos perguntar quem é o presidente do Brasil.
 
 \vspace{\baselineskip}
-\href{https://colab.research.google.com/github/giseldo/chatbotbook_v2/blob/main/notebook/langchain.ipynb}{
+\href{https://colab.research.google.com/github/giseldo/chatbotbook/blob/main/notebook/cap9.ipynb}{
   \includegraphics{./fig/colab-badge.png}
 }
 
-\begin{verbatim}
-	from langchain.chat_models import init_chat_model
-	import os
+\begin{lstlisting}[language=Python, caption=Exemplo de uso do LangChain]
+from langchain.chat_models import init_chat_model
+from langchain_core.messages import HumanMessage
+import os
 
-	OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 
-	model = init_chat_model("gpt-4o-mini", model_provider="openai", 
-		openai_api_key=OPENAI_API_KEY)
+model = init_chat_model("gpt-4o-mini", model_provider="openai", 						openai_api_key=OPENAI_API_KEY)
 
-	response = model.invoke([
-		{"role":"user", "content": "quem é o presidente do Brasil?"}
-	])
+user_message = HumanMessage(content="Quem é o presidente do Brasil?")
 
-	print(response.content)
+response = model.invoke([user_message])
 
-	print(response.text)
-\end{verbatim}
+print(response.content)
+\end{lstlisting}
+
+\begin{lstlisting}
+Até a minha última atualização em outubro de 2023, o presidente do Brasil é Luiz Inácio Lula da Silva. Ele assumiu o cargo em janeiro de 2023. Para informações mais atualizadas, recomendo verificar fontes de notícias recentes.
+\end{lstlisting}
 
 Este exemplo básico demonstra a simplicidade de usar o LangChain para interagir com LLMs. No entanto, o LangChain oferece muito mais recursos e funcionalidades para construir aplicativos de chatbot mais robustos.
 
@@ -1150,7 +1154,7 @@ Este exemplo básico demonstra a simplicidade de usar o LangChain para interagir
 %%%%CAPITULO%%%%
 %%%%%%%%%%%%%%%%
 
-\chapter{Criando Chatbots com LLMs Através da Engenharia de Prompts}
+\chapter{Fluxos em LLM}
 
 \section{Introdução}
 
@@ -1652,7 +1656,7 @@ Encorajamos o leitor a praticar a criação de diferentes padrões de regex e a 
 %%%%%%%%%%%%%%%%
 
 
-\chapter{Usando o GPT2}
+\chapter{GPT2}
 
 \section{Introdução}
 
@@ -1681,7 +1685,7 @@ print(output)
 
 Este código é simples porque ele usa um modelo que já foi treinado em um grande dataset. Também é possível ajustar (fine-tune) um modelo pré-treinado em seus próprios dados para obter resultados melhores.
 
-\chapter{Crie um GPT do Zero}
+\chapter{Crie um GPT2 do Zero}
 
 \section{Introdução}
 
