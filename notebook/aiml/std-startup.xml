@@ -1,0 +1,11 @@
+<aiml version="1.0.1" encoding="UTF-8">
+  <category>
+    <pattern>OI</pattern>
+    <template>Olá! Como posso te ajudar?</template>
+  </category>
+  
+  <category>
+    <pattern>QUAL SEU NOME</pattern>
+    <template>Eu sou um chatbot em AIML.</template>
+  </category>
+</aiml>

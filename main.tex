@@ -168,7 +168,9 @@ Nesta figura, os valores representam o interesse relativo de busca ao longo do t
 \section{Chatbots e Agentes: Definições e Distinções}
 
 % \marginnote{Agente}
-Define-se chatbot como um programa computacional projetado para interagir com usuários por meio de linguagem natural. Por outro lado, o conceito de agente possui uma definição mais ampla: trata-se de uma entidade computacional que percebe seu ambiente por meio de sensores e atua sobre esse ambiente por meio de atuadores \cite{Russel2013}. A Figura~\ref{fig:agente} ilustra uma arquitetura conceitual de alto nível para um agente.
+Define-se chatbot como um programa computacional projetado para interagir com usuários por meio de linguagem natural. 
+Por outro lado, o conceito de agente possui uma definição mais ampla: trata-se de uma entidade computacional que percebe seu ambiente por meio de sensores e atua sobre esse ambiente por meio de atuadores \cite{Russel2013}. 
+A Figura~\ref{fig:agente} ilustra uma arquitetura conceitual de alto nível para um agente.
 
 \begin{figure}
 	\centering
@@ -233,9 +235,12 @@ Um outro tipo de fluxo para um chatbot que vende roupas está representada na Fi
 \section{Depois do ELIZA}
 
 % \marginnote{AIML}
-Um marco significativo na evolução dos chatbots foi o ALICE, que introduziu a Artificial Intelligence Markup Language (AIML), uma linguagem de marcação baseada em XML \cite{Wallace2000}. A AIML estabeleceu um paradigma para a construção de agentes conversacionais ao empregar algoritmos de correspondência de padrões. Essa abordagem utiliza modelos pré-definidos para mapear as entradas do usuário a respostas correspondentes, permitindo a definição modular de blocos de conhecimento \cite{Wallace2000}.
+Um marco significativo na evolução dos chatbots foi o ALICE, que introduziu a Artificial Intelligence Markup Language (AIML), uma linguagem de marcação baseada em XML \cite{Wallace2000}. 
+A AIML estabeleceu um paradigma para a construção de agentes conversacionais ao empregar algoritmos de correspondência de padrões. 
+Essa abordagem utiliza modelos pré-definidos para mapear as entradas do usuário a respostas correspondentes, permitindo a definição modular de blocos de conhecimento \cite{Wallace2000}.
 
-No contexto brasileiro, um dos primeiros chatbots documentados capaz de interagir em português, inspirado no modelo ELIZA, foi o Cybele \cite{primo2001chatterbot}. Posteriormente, foi desenvolvido o Elecktra, também em língua portuguesa, com aplicação voltada para a educação a distância \cite{Leonhardt2003}. Em um exemplo mais recente de aplicação governamental, no ano de 2019, o processo de inscrição para o Exame Nacional do Ensino Médio (ENEM) foi disponibilizado por meio de uma interface conversacional baseada em chatbot (Figura~\ref{fig:enem}).
+No contexto brasileiro, um dos primeiros chatbots documentados capaz de interagir em português, inspirado no modelo ELIZA, foi o Cybele \cite{primo2001chatterbot}. Posteriormente, foi desenvolvido o Elecktra, também em língua portuguesa, com aplicação voltada para a educação a distância \cite{Leonhardt2003}. 
+Em um exemplo mais recente de aplicação governamental, no ano de 2019, o processo de inscrição para o Exame Nacional do Ensino Médio (ENEM) foi disponibilizado por meio de uma interface conversacional baseada em chatbot (Figura~\ref{fig:enem}).
 
 \begin{figure}
 	\centering
@@ -512,7 +517,7 @@ Em contraste, modelos de linguagem modernos levam em conta um longo histórico d
 
 Por exemplo, ao conversar com um LLM, se você mencionar no início da conversa que tem um irmão chamado Alex e depois perguntar “ele pode me ajudar com o problema?”, o modelo entenderá que “ele” se refere ao Alex mencionado anteriormente (desde que dentro da janela de contexto). Já o ELIZA original não teria como fazer essa ligação, a menos que houvesse uma regra explícita para “ele” e algum armazenamento específico do nome – algo impraticável de antecipar via regras fixas para todos os casos.
 
-Outra diferença crucial está na geração de linguagem. O ELIZA não gera texto original no sentido pleno: suas respostas são em grande parte frases prontas (ou templates fixos) embaralhadas com partes da fala do usuário. Assim, seu vocabulário e estilo são limitados pelo script escrito manualmente. Modelos GPT, por sua vez, geram respostas novas combinando probabilisticamente o conhecimento adquirido de um extenso corpus. Eles não se restringem a repetir trechos da entrada, podendo elaborar explicações, fazer analogias, criar perguntas inéditas – tudo coerente com os exemplos linguísticos em sua base de treinamento. Enquanto ELIZA tendia a responder com perguntas genéricas ou devolvendo as palavras do usuário, os LLMs podem produzir respostas informativas e detalhadas sobre o assunto (pois “aprenderam” uma ampla gama de tópicos durante o treinamento). Por exemplo, se perguntarmos algo factual ou complexo, o ELIZA falharia por não ter nenhuma regra a respeito, provavelmente dando uma resposta vazia. Já um modelo como GPT-4 tentará formular uma resposta baseada em padrões linguísticos aprendidos e em conhecimento implícito dos dados, muitas vezes fornecendo detalhes relevantes.
+Outra diferença está na geração de linguagem. O ELIZA não gera texto original no sentido pleno: suas respostas são em grande parte frases prontas (ou templates fixos) embaralhadas com partes da fala do usuário. Assim, seu vocabulário e estilo são limitados pelo script escrito manualmente. Modelos GPT, por sua vez, geram respostas novas combinando probabilisticamente o conhecimento adquirido de um extenso corpus. Eles não se restringem a repetir trechos da entrada, podendo elaborar explicações, fazer analogias, criar perguntas inéditas – tudo coerente com os exemplos linguísticos em sua base de treinamento. Enquanto ELIZA tendia a responder com perguntas genéricas ou devolvendo as palavras do usuário, os LLMs podem produzir respostas informativas e detalhadas sobre o assunto (pois “aprenderam” uma ampla gama de tópicos durante o treinamento). Por exemplo, se perguntarmos algo factual ou complexo, o ELIZA falharia por não ter nenhuma regra a respeito, provavelmente dando uma resposta vazia. Já um modelo como GPT-4 tentará formular uma resposta baseada em padrões linguísticos aprendidos e em conhecimento implícito dos dados, muitas vezes fornecendo detalhes relevantes.
 
 Em termos de fluência e variedade, os modelos modernos superam o ELIZA amplamente. O ELIZA frequentemente se repetia ou caía em loops verbais quando confrontado com inputs fora do roteiro – um limite claro de sistemas por regras estáticas. Os LLMs produzem linguagem muito mais natural e adaptável, a ponto de muitas vezes enganarem os usuários sobre estarem conversando com uma máquina (um efeito buscado desde o Teste de Turing). Ironicamente, ELIZA nos anos 60 já provocou um precursor desse fenômeno – o chamado Efeito ELIZA, em que pessoas atribuem compreensão ou sentimentos a respostas de computador que, na verdade, são superficiais. Hoje, em chatbots GPT, esse efeito se intensifica pela qualidade das respostas, mas a distinção fundamental permanece: ELIZA seguia scripts sem compreender, enquanto LLMs inferem padrões e significados de forma estatística, sem entendimento consciente, mas atingindo resultados que simulam compreensão de maneira muito mais convincente. 
 
@@ -634,8 +639,9 @@ Quando uma correspondência (match) é encontrada, uma resposta associada à reg
 
 Na ausência de correspondência com qualquer regra específica, o sistema seleciona aleatoriamente uma resposta genérica a partir de um conjunto predefinido (denominado, por exemplo, \texttt{respostas\_padrao}), tal como \textit{``I see.''}.
 
-% Usando \paragraph para um subtítulo menos proeminente, ou use \subsubsection se preferir
-\section{Exemplo de Interação}
+% Usando  para um subtítulo menos proeminente, ou use \subsubsection se preferir
+Exemplo de Interação:
+
 
 \begin{lstlisting}
 Usuário: Hello
@@ -654,7 +660,9 @@ Usuário: My mother tried to help.
 Bot: Tell me more about your family.
 \end{lstlisting}
 
-Observa-se na interação que o chatbot inicialmente respondeu à saudação (\textit{``Hello...''}) com base na regra 1. Em seguida, a entrada \textit{``I am sad''} ativou a regra 2, resultando em uma resposta que incorpora o termo \textit{``sad''}. A interação prossegue com o sistema respondendo a entradas iniciadas por \textit{``Because...''} (regra 8) e \textit{``Maybe...''} (regra 7), entre outras. Cada resposta gerada foi determinada pela regra correspondente ativada e pelo conteúdo específico da sentença do usuário, mimetizando o comportamento baseado em padrões do sistema ELIZA original \cite{Abdul-Kader2015}.
+Observa-se na interação que o chatbot inicialmente respondeu à saudação (\textit{``Hello...''}) com base na regra 1. Em seguida, a entrada \textit{``I am sad''} ativou a regra 2, resultando em uma resposta que incorpora o termo \textit{``sad''}. 
+A interação prossegue com o sistema respondendo a entradas iniciadas por \textit{``Because...''} (regra 8) e \textit{``Maybe...''} (regra 7), entre outras. 
+Cada resposta gerada foi determinada pela regra correspondente ativada e pelo conteúdo específico da sentença do usuário, mimetizando o comportamento baseado em padrões do sistema ELIZA original \cite{Abdul-Kader2015}.
 
 %%%%%%%%%%%%%%%%
 %%%%CAPITULO%%%%
@@ -665,7 +673,9 @@ Language}
 
 \section{Introdução}
 
-O Artificial Intelligence Markup Language (AIML) é uma especificação baseada em XML, proposta por \cite{Wallace2009}, destinada à programação de agentes conversacionais, comumente denominados chatbots. A concepção da linguagem prioriza o minimalismo, característica que simplifica o processo de criação de bases de conhecimento por indivíduos sem experiência prévia em programação \cite{Wallace2009}. A arquitetura fundamental de um interpretador AIML genérico é ilustrada na Figura~\ref{fig:interpretador}.
+O Artificial Intelligence Markup Language (AIML) é uma especificação baseada em XML, proposta por \cite{Wallace2009}, destinada à programação de agentes conversacionais, comumente denominados chatbots. 
+A concepção da linguagem prioriza o minimalismo, característica que simplifica o processo de criação de bases de conhecimento por indivíduos sem experiência prévia em programação \cite{Wallace2009}. 
+A arquitetura fundamental de um interpretador AIML genérico é ilustrada na Figura~\ref{fig:interpretador}.
 
 \begin{figure}
     \centering
@@ -678,10 +688,14 @@ O Artificial Intelligence Markup Language (AIML) é uma especificação baseada 
 	Adaptado de \cite{Silva2007}}
 \end{figure}
 
-A técnica central empregada pelo AIML é a correspondência de padrões (\emph{pattern matching}). Este método é amplamente utilizado no desenvolvimento de chatbots, particularmente em sistemas orientados a perguntas e respostas \cite{Abdul-Kader2015}. Uma das metas de projeto do AIML é possibilitar a fusão de bases de conhecimento de múltiplos chatbots especializados em domínios distintos. Teoricamente, um interpretador poderia agregar essas bases, eliminando automaticamente categorias redundantes para formar um \emph{chatbot} mais abrangente \cite{Wallace2000}.
+A técnica central empregada pelo AIML é a correspondência de padrões (\emph{pattern matching}). Este método é amplamente utilizado no desenvolvimento de chatbots, particularmente em sistemas orientados a perguntas e respostas \cite{Abdul-Kader2015}.
+Uma das metas de projeto do AIML é possibilitar a fusão de bases de conhecimento de múltiplos chatbots especializados em domínios distintos.
+Teoricamente, um interpretador poderia agregar essas bases, eliminando automaticamente categorias redundantes para formar um \emph{chatbot} mais abrangente \cite{Wallace2000}.
 
 AIML é frequentemente associado aos chatbots de terceira geração \cite{Maria2010} e estima-se sua adoção em mais de 50.000 implementações em diversos idiomas. 
-Extensões da linguagem foram propostas, como o iAIML, que introduziu novas \emph{tags} e incorporou o conceito de intenção com base nos princípios da Teoria da Análise da Conversação (TAC) \cite{Neves2005}. Adicionalmente, ferramentas baseadas na Web foram desenvolvidas para apoiar a construção de bases de conhecimento AIML \cite{Krassmann2017}. Um exemplo proeminente é o \emph{chatbot} ALICE, cuja implementação em AIML compreendia aproximadamente 16.000 categorias, cada uma potencialmente contendo múltiplas \emph{tags} XML aninhadas \cite{Wallace2000}. Uma representação visual desta estrutura de conhecimento é apresentada na Figura~\ref{fig:representacaovisual}.
+Extensões da linguagem foram propostas, como o iAIML, que introduziu novas \emph{tags} e incorporou o conceito de intenção com base nos princípios da Teoria da Análise da Conversação (TAC) \cite{Neves2005}. 
+Adicionalmente, ferramentas baseadas na Web foram desenvolvidas para apoiar a construção de bases de conhecimento AIML \cite{Krassmann2017}. Um exemplo proeminente é o \emph{chatbot} ALICE, cuja implementação em AIML compreendia aproximadamente 16.000 categorias, cada uma potencialmente contendo múltiplas \emph{tags} XML aninhadas \cite{Wallace2000}. 
+Uma representação visual desta estrutura de conhecimento é apresentada na Figura~\ref{fig:representacaovisual}.
 
 \begin{figure}
     \centering
@@ -694,7 +708,9 @@ Extensões da linguagem foram propostas, como o iAIML, que introduziu novas \emp
 	Retirado de \cite{Wallace2003}}
 \end{figure}
 
-\cite{Wallace2000} estabeleceu analogias entre o funcionamento de interpretadores AIML e a teoria do Raciocínio Baseado em Casos (RBC). Nessa perspectiva, as categorias AIML funcionam como "casos", onde o algoritmo identifica o padrão que melhor se alinha à entrada do usuário. Cada categoria estabelece um vínculo direto entre um padrão de estímulo e um modelo de resposta. Consequentemente, chatbots AIML inserem-se na tradição da robótica minimalista, reativa ou de estímulo-resposta \cite{Wallace2000}, conforme esquematizado na Figura~\ref{fig:teoriaestimulo}. Vale notar que a própria técnica de RBC já foi integrada a interpretadores AIML como um mecanismo para consultar fontes de dados externas e expandir a base de conhecimento do agente \cite{Kraus2008}.
+\cite{Wallace2000} estabeleceu analogias entre o funcionamento de interpretadores AIML e a teoria do Raciocínio Baseado em Casos (RBC). Nessa perspectiva, as categorias AIML funcionam como "casos", onde o algoritmo identifica o padrão que melhor se alinha à entrada do usuário. 
+Cada categoria estabelece um vínculo direto entre um padrão de estímulo e um modelo de resposta. Consequentemente, chatbots AIML inserem-se na tradição da robótica minimalista, reativa ou de estímulo-resposta \cite{Wallace2000}, conforme esquematizado na Figura~\ref{fig:teoriaestimulo}. 
+Vale notar que a própria técnica de RBC já foi integrada a interpretadores AIML como um mecanismo para consultar fontes de dados externas e expandir a base de conhecimento do agente \cite{Kraus2008}.
 
 \begin{figure}
     \centering
@@ -707,21 +723,25 @@ Extensões da linguagem foram propostas, como o iAIML, que introduziu novas \emp
 	Retirado de \cite{Lima2017}}
 \end{figure}
 
-Os chatbots que utilizam AIML são classificados como sistemas "baseados em recuperação" (retrieval-based). Tais modelos operam a partir de um repositório de respostas predefinidas, selecionando a mais apropriada com base na entrada do usuário e no contexto conversacional, guiando assim o fluxo da interação. Esta abordagem é frequentemente empregada na construção de chatbots destinados a operar em domínios de conhecimento restritos \cite{Borah2019}.
+Os chatbots que utilizam AIML são classificados como sistemas "baseados em recuperação" (retrieval-based). 
+Tais modelos operam a partir de um repositório de respostas predefinidas, selecionando a mais apropriada com base na entrada do usuário e no contexto conversacional, guiando assim o fluxo da interação. 
+Esta abordagem é frequentemente empregada na construção de chatbots destinados a operar em domínios de conhecimento restritos \cite{Borah2019}.
 
-A Figura~\ref{fig:exemplodeumabase} demonstra a estrutura elementar de um arquivo AIML. A \emph{tag} \texttt{<category>} encapsula a unidade básica de conhecimento. Internamente, a \emph{tag} \texttt{<pattern>} define o padrão de entrada a ser reconhecido (no exemplo, o caractere curinga \texttt{*}, que corresponde a qualquer entrada), enquanto a \emph{tag} \texttt{<template>} contém a resposta associada. No exemplo ilustrado, o \emph{chatbot} responderia "Hello!" a qualquer interação. Uma visão abstrata da árvore de conhecimento resultante pode ser observada na Figura~\ref{fig:representacaovisualabstrata}. O AIML padrão suporta transições baseadas primariamente em correspondência de padrões, uma limitação inerente, embora extensões específicas de interpretadores possam permitir a integração de outras técnicas de processamento.
+A Figura~\ref{fig:exemplodeumabase} demonstra a estrutura elementar de um arquivo AIML. A \emph{tag} \texttt{<category>} encapsula a unidade básica de conhecimento. 
+Internamente, a \emph{tag} \texttt{<pattern>} define o padrão de entrada a ser reconhecido (no exemplo, o caractere curinga \texttt{*}, que corresponde a qualquer entrada), enquanto a \emph{tag} \texttt{<template>} contém a resposta associada. No exemplo ilustrado, o \emph{chatbot} responderia "Hello!" a qualquer interação. Uma visão abstrata da árvore de conhecimento resultante pode ser observada na Figura~\ref{fig:representacaovisualabstrata}. 
+O AIML padrão suporta transições baseadas primariamente em correspondência de padrões, uma limitação inerente, embora extensões específicas de interpretadores possam permitir a integração de outras técnicas de processamento.
 
 \begin{figure}
 	\centering
 	\caption{Exemplo de uma base de conhecimento em AIML}
-	\begin{verbatim}
-		<aiml>
-		<category>
-			<pattern>*</pattern>
-			<template>Hello!</template>
-		</category>
-		</aiml
-	\end{verbatim}	
+	\begin{lstlisting}
+<aiml>
+<category>
+	<pattern>*</pattern>
+	<template>Hello!</template>
+</category>
+</aiml>
+	\end{lstlisting}	
 	\label{fig:exemplodeumabase}
 	\vspace{0.2cm} % Espaçamento opcional
     {\footnotesize 
@@ -770,9 +790,9 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 \textbf{Descrição:} Tag raiz que engloba todo o conteúdo AIML. 
 
 \begin{lstlisting}
-	<aiml version="1.0">
-		<!-- Categorias aqui -->
-	</aiml>
+<aiml version="1.0">
+	<!-- Categorias aqui -->
+</aiml>
 \end{lstlisting}
 
 \paragraph{\texttt{<category>}} 
@@ -780,10 +800,10 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 \textbf{Descrição:} Unidade básica de conhecimento, contendo um padrão e uma resposta. 
 
 \begin{lstlisting}
-	<category>
-		<pattern>OLÁ</pattern>
-		<template>Oi! Como posso ajudar você hoje?</template>
-	</category>
+<category>
+	<pattern>OLÁ</pattern>
+	<template>Oi! Como posso ajudar você hoje?</template>
+</category>
 \end{lstlisting}
 
 \paragraph{\texttt{<pattern>}} 
@@ -791,10 +811,10 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 \textbf{Descrição:} Define o padrão de entrada do usuário, com curingas como \texttt{*} e \texttt{\_}. 
 
 \begin{lstlisting}
-	<category>
-		<pattern>EU GOSTO DE *</pattern>
-		<template>Que bom que você gosta de <star/>!</template>
-	</category>
+<category>
+	<pattern>EU GOSTO DE *</pattern>
+	<template>Que bom que você gosta de <star/>!</template>
+</category>
 \end{lstlisting}
 
 \paragraph{\texttt{<template>}} 
@@ -802,10 +822,10 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 \textbf{Descrição:} Define a resposta do bot ao padrão correspondente. 
 
 \begin{lstlisting}
-	<category>
-		<pattern>QUAL É O SEU NOME</pattern>
-		<template>Meu nome é neo chatbot.</template>
-	</category> 
+<category>
+	<pattern>QUAL É O SEU NOME</pattern>
+	<template>Meu nome é neo chatbot.</template>
+</category> 
 \end{lstlisting}
 
 \paragraph{\texttt{<star/>}} 
@@ -813,10 +833,10 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 \textbf{Descrição:} Captura o conteúdo do curinga \texttt{*} ou \texttt{\_}. 
 
 \begin{lstlisting}
-	<category>
-		<pattern>MEU NOME É *</pattern>
-		<template>Olá, <star/>!</template>
-	</category>
+<category>
+	<pattern>MEU NOME É *</pattern>
+	<template>Olá, <star/>!</template>
+</category>
 \end{lstlisting}
 
 \paragraph{\texttt{<that>}} 
@@ -879,10 +899,10 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 \textbf{Descrição:} Define e recupera variáveis. 
 
 \begin{lstlisting}
-	<category>
-		<pattern>MEU NOME É *</pattern>
-		<template><set name="nome"><star/></set>Olá, <get name="nome"/>!</template>
-	</category>
+<category>
+	<pattern>MEU NOME É *</pattern>
+	<template><set name="nome"><star/></set>Olá, <get name="nome"/>!</template>
+</category>
 \end{lstlisting}
 
 \paragraph{\texttt{<srai>}} 
@@ -890,10 +910,10 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 \textbf{Descrição:} Redireciona a entrada para outro padrão. 
 
 \begin{lstlisting}
-	<category>
-		<pattern>OI</pattern>
-		<template><srai>OLÁ</srai></template>
-	</category>
+<category>
+	<pattern>OI</pattern>
+	<template><srai>OLÁ</srai></template>
+</category>
 \end{lstlisting}
 
 \paragraph{\texttt{<think>}} 
@@ -901,10 +921,10 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 \textbf{Descrição:} Executa ações sem exibir o conteúdo. 
 
 \begin{lstlisting}
-	<category>
-		<pattern>EU SOU TRISTE</pattern>
-		<template><think><set name="humor">triste</set></think>Sinto muito!</template>
-	</category>
+<category>
+	<pattern>EU SOU TRISTE</pattern>
+	<template><think><set name="humor">triste</set></think>Sinto muito!</template>
+</category>
 \end{lstlisting}
 
 \paragraph{\texttt{<person>}, \texttt{<person2>}, \texttt{<gender>}} 
@@ -912,10 +932,10 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 \textbf{Descrição:} Transforma pronomes ou ajusta gênero. 
 
 \begin{lstlisting}
-	<category>
-		<pattern>EU TE AMO</pattern>
-		<template><person><star/></person> ama você também!</template>
-	</category>
+<category>
+	<pattern>EU TE AMO</pattern>
+	<template><person><star/></person> ama você também!</template>
+</category>
 \end{lstlisting}
 
 \paragraph{\texttt{<formal>}, \texttt{<uppercase>}, \texttt{<lowercase>}} 
@@ -940,6 +960,54 @@ Esta seção descreve as principais tags do AIML, versão 1.0, com explicações
 </category>
 \end{lstlisting}
 
+\section{AIML exemplo em Python}
+
+A seguir um exemplo do uso de um interpretador AIML em Python.
+
+\vspace{\baselineskip}
+\href{https://colab.research.google.com/github/giseldo/chatbotbook/blob/main/notebook/aiml/aiml1_1.ipynb}{
+  \includegraphics{./fig/colab-badge.png}
+}
+
+\begin{lstlisting}
+# pip install aiml
+
+import aiml
+
+# Criar kernel (núcleo do bot)
+kernel = aiml.Kernel()
+
+# Carregar arquivos AIML
+kernel.learn("std-startup.xml")
+kernel.respond("LOAD AIML B")
+
+# Loop de conversa
+while True:
+    user_input = input("Você: ")
+    if user_input.lower() in ["sair", "exit", "quit"]:
+        break
+    response = kernel.respond(user_input)
+    print("Bot:", response)
+\end{lstlisting}
+
+O arquivo std-startup.xml é um ponto de partida e geralmente carrega outros arquivos .aiml.
+
+Estrutura básica de um arquivo .aiml:
+
+\begin{lstlisting}
+<aiml version="1.0.1" encoding="UTF-8">
+  <category>
+    <pattern>OI</pattern>
+    <template>Olá! Como posso te ajudar?</template>
+  </category>
+  
+  <category>
+    <pattern>QUAL SEU NOME</pattern>
+    <template>Eu sou um chatbot em AIML.</template>
+  </category>
+</aiml>
+\end{lstlisting}
+
 %%%%%%%%%%%%%%%%
 %%%%CAPITULO%%%%
 %%%%%%%%%%%%%%%%
@@ -950,20 +1018,35 @@ Neste capítulo, vamos explorar os conceitos básicos de Processamento de Lingua
 
 \section{Introducão}
 
-O \textbf{Processamento de Linguagem Natural (PLN)} é um campo intrinsecamente ligado à inteligência artificial, dedicando-se a equipar computadores com a capacidade de analisar e compreender a linguagem humana. 
+O \textbf{Processamento de Linguagem Natural (PLN)} é um campo  ligado à inteligência artificial, dedicando-se a equipar computadores com a capacidade de analisar e compreender a linguagem humana. 
 
-Em um espectro mais amplo, o PLN engloba uma vasta gama de tarefas. Com PLN é possível manipular e analisar a linguagem natural, seja em sua forma escrita ou falada, com o intuito de concretizar tarefas específicas e úteis. Este processo multifacetado envolve a decomposição da linguagem em unidades menores, a compreensão do seu significado intrínseco e a determinação da resposta ou ação mais adequada.
+Em um espectro mais amplo, o PLN engloba uma vasta gama de tarefas. Com PLN é possível manipular e analisar a linguagem natural, seja em sua forma escrita ou falada, com o intuito de concretizar tarefas específicas e úteis. Este processo envolve a decomposição da linguagem em unidades menores, a compreensão do seu significado intrínseco e a determinação da resposta ou ação mais adequada.
 
-Na construção de \textit{chatbots} sua função primordial reside em processar a entrada bruta do usuário, realizando a limpeza e a preparação dos dados textuais para que o sistema possa interpretar a mensagem e tomar as ações subsequentes apropriadas.
+Na construção de \textit{chatbots} sua função principal reside em processar a entrada bruta do usuário, realizando a limpeza e a preparação dos dados textuais para que o sistema possa interpretar a mensagem e tomar as ações subsequentes apropriadas.
 
 \section{Conceitos Básicos de PLN}
 
 \subsection{Tokenização}
 
-Tokenização é o processo de dividir um texto em unidades menores chamadas "tokens", que podem ser palavras, frases ou até mesmo sentenças. A tokenização é o primeiro passo em muitos algoritmos de PLN, pois permite que os dados textuais sejam manipulados de forma programática.
+Tokenização é o processo de dividir um texto em unidades menores chamadas "tokens", que podem ser palavras, frases ou até mesmo sentenças. A tokenização é o primeiro passo em muitos algoritmos de PLN, pois permite que os dados textuais sejam manipulados de forma 
+programática.
+
+Este processo inicial segmenta o texto em unidades menores denominadas \textit{tokens}, que podem ser palavras, pontuações ou símbolos. A tokenização é um passo preparatório fundamental para qualquer análise linguística subsequente. 
+
+Tokenizar não é só separar por espaços, mas também lidar com pontuações, contrações e outros aspectos que podem afetar a análise. Por exemplo, "não é" pode ser tokenizado como ["não", "é"] ou ["não", "é"], dependendo do contexto e da abordagem adotada. 
+
+Um exemplo simples seria a frase "Eu estou feliz.", que seria tokenizada em ["Eu", "estou", "feliz", "."]. Não necessariamente uma palavra equivale a um token. Em alguns casos, como em palavras compostas ou expressões idiomáticas, um único token pode representar uma ideia ou conceito mais amplo. Por exemplo, "São Paulo" poderia ser considerado um único token em vez de dois ("São" e "Paulo"). 
+
+Existem diferentes abordagens para tokenização, incluindo tokenização baseada em regras, onde padrões específicos são definidos para identificar tokens (geralmente utilizando expressão regular), e tokenização baseada em aprendizado de máquina, onde algoritmos aprendem a segmentar o texto com base em exemplos anteriores.
+
+A tokenização pode ser feita de várias maneiras, dependendo do idioma e do objetivo da análise. Em inglês, por exemplo, a tokenização pode ser mais simples devido à estrutura gramatical, enquanto em idiomas como o chinês, onde não há espaços entre as palavras, a tokenização pode ser mais complexa.
+
+%TODO explicar o que é NLTK
+
+A seguir um exemplo do uso da biblioteca nltk e a tokenização de determinado texto, também chamado de corpus.
 
 \vspace{\baselineskip}
-\href{https://colab.research.google.com/github/giseldo/chatbotbook/blob/main/notebook/pln.ipynb}{
+\href{https://colab.research.google.com/github/giseldo/chatbotbook/blob/main/notebook/pln/pln1_1.ipynb}{
   \includegraphics{./fig/colab-badge.png}
 }
 
@@ -985,75 +1068,25 @@ tokens_sentencas = sent_tokenize(texto)
 print("Tokens de sentenças:", tokens_sentencas)
 \end{lstlisting}
 
-\subsection{Lematização}
-
-Lematização é o processo de reduzir palavras flexionadas ao seu lema, ou forma base. Diferente da stemização, a lematização leva em consideração o contexto e a gramática da palavra para obter a forma correta.
-
-\begin{lstlisting}[language=Python]
-import nltk
-from nltk.stem import WordNetLemmatizer
-
-# Inicializando o lematizador
-lemmatizer = WordNetLemmatizer()
-
-# Exemplo de palavras
-palavras = ["correndo", "correu", "corredores"]
-
-# Lematização das palavras
-lematizadas = [lemmatizer.lemmatize(palavra, pos='v') for palavra in palavras]
-print("Palavras lematizadas:", lematizadas)
+\begin{lstlisting}
+Tokens de palavras: ['Chatbots', 'estão', 'se', 'tornando', 'cada', 'vez', 'mais', 'populares', '.', 'Eles', 'podem', 'realizar', 'muitas', 'tarefas', 'automaticamente', '.']
+Tokens de sentenças: ['Chatbots estão se tornando cada vez mais populares.', 'Eles podem realizar muitas tarefas automaticamente.']
 \end{lstlisting}
 
-\subsection{Stemização}
 
-A stemização é o processo de reduzir as palavras às suas raízes ou "stems". É uma técnica mais simples que a lematização e, geralmente, não considera o contexto, o que pode levar a resultados menos precisos.
+SpaCy é uma biblioteca poderosa para PLN que oferece uma interface fácil de usar e é altamente otimizada para processamento rápido. É possível também utilizar a biblioteca spacy, conforme códigos a seguir:
 
-\begin{lstlisting}[language=Python]
-from nltk.stem import PorterStemmer
-
-# Inicializando o stemizador
-stemmer = PorterStemmer()
-
-# Exemplo de palavras
-palavras = ["correndo", "correu", "corredores"]
-
-# Stemização das palavras
-stems = [stemmer.stem(palavra) for palavra in palavras]
-print("Stems das palavras:", stems)
-\end{lstlisting}
-
-\subsection{Stopwords}
-
-Stopwords são palavras comuns em um idioma (como "o", "a", "e", "de", "que", etc.) que geralmente são removidas durante o pré-processamento de texto, pois não contribuem significativamente para o significado do texto.
+\vspace{\baselineskip}
+\href{https://colab.research.google.com/github/giseldo/chatbotbook/blob/main/notebook/pln/pln1_1_2.ipynb}{
+  \includegraphics{./fig/colab-badge.png}
+}
 
 \begin{lstlisting}[language=Python]
-from nltk.corpus import stopwords
+# pip install spacy
 
-# Carregar stopwords para o idioma português
-stop_words = set(stopwords.words('portuguese'))
+# import os
+# os.system("python -m spacy download pt_core_news_sm")
 
-# Exemplo de texto
-texto = "Chatbots estão se tornando cada vez mais populares."
-
-# Removendo stopwords
-tokens_sem_stopwords = [palavra for palavra in word_tokenize(texto) if palavra.lower() not in stop_words]
-print("Texto sem stopwords:", tokens_sem_stopwords)
-\end{lstlisting}
-
-\section{Implementação com SpaCy}
-
-SpaCy é uma biblioteca poderosa para PLN que oferece uma interface fácil de usar e é altamente otimizada para processamento rápido. Vamos ver como realizar tokenização, lematização e remoção de stopwords utilizando SpaCy.
-
-\subsection{Instalação do SpaCy}
-Primeiro, você precisa instalar o SpaCy e baixar o modelo de linguagem em português.
-
-\begin{verbatim}
-pip install spacy
-python -m spacy download pt_core_news_sm
-\end{verbatim}
-
-\subsection{Tokenização com SpaCy}
-\begin{lstlisting}[language=Python]
 import spacy
 
 # Carregar o modelo de linguagem em português
@@ -1070,73 +1103,198 @@ tokens = [token.text for token in doc]
 print("Tokens:", tokens)
 \end{lstlisting}
 
-\subsection{Lematização com SpaCy}
+\begin{lstlisting}
+Tokens: ['Chatbots', 'estão', 'se', 'tornando', 'cada', 'vez', 'mais', 'populares', '.']
+\end{lstlisting}
+
+
+\subsection{Lematização}
+
+Lematização é o processo de reduzir palavras flexionadas ao seu lema, ou forma base. Diferente da stemização, a lematização leva em consideração o contexto e a gramática da palavra para obter a forma correta.
+
+\vspace{\baselineskip}
+\href{https://colab.research.google.com/github/giseldo/chatbotbook/blob/main/notebook/pln/pln1_2.ipynb}{
+  \includegraphics{./fig/colab-badge.png}
+}
+
 \begin{lstlisting}[language=Python]
-# Lematização
+# pip install nltk
+
+# import nltk
+# nltk.download('wordnet')
+
+import nltk
+from nltk.stem import WordNetLemmatizer
+
+# Inicializando o lematizador
+lemmatizer = WordNetLemmatizer()
+
+# Exemplo de palavras
+palavras = ["correndo", "correu", "corredores"]
+
+# Lematização das palavras
+lematizadas = [lemmatizer.lemmatize(palavra, pos='v') for palavra in palavras]
+print("Palavras lematizadas:", lematizadas)
+\end{lstlisting}
+
+\begin{lstlisting}
+Palavras lematizadas: ['correndo', 'correu', 'corredores']
+\end{lstlisting}
+
+Com spacy
+
+\vspace{\baselineskip}
+\href{https://colab.research.google.com/github/giseldo/chatbotbook/blob/main/notebook/pln/pln1_2_2.ipynb}{
+  \includegraphics{./fig/colab-badge.png}
+}
+
+\begin{lstlisting}[language=Python]
+import spacy
+
+# Carregar o modelo de linguagem em português
+nlp = spacy.load("pt_core_news_sm")
+
+# Exemplo de texto
+texto = "Chatbots estão se tornando cada vez mais populares."
+
+# Processando o texto
+doc = nlp(texto)
+
+tokens = [token.text for token in doc]
+print("Tokens:", tokens)
+
 lematizadas = [token.lemma_ for token in doc]
 print("Palavras lematizadas:", lematizadas)
 \end{lstlisting}
 
-\subsection{Remoção de Stopwords com SpaCy}
+\begin{lstlisting}
+Tokens: ['Chatbots', 'estão', 'se', 'tornando', 'cada', 'vez', 'mais', 'populares', '.']
+Palavras lematizadas: ['chatbots', 'estar', 'se', 'tornar', 'cada', 'vez', 'mais', 'popular', '.']
+\end{lstlisting}
+
+\subsection{Stemização}
+
+A stemização é o processo de reduzir as palavras às suas raízes ou "stems". É uma técnica mais simples que a lematização e, geralmente, não considera o contexto, o que pode levar a resultados menos precisos.
+
+\vspace{\baselineskip}
+\href{https://colab.research.google.com/github/giseldo/chatbotbook/blob/main/notebook/pln/pln1_3.ipynb}{
+  \includegraphics{./fig/colab-badge.png}
+}
+
 \begin{lstlisting}[language=Python]
+from nltk.stem import PorterStemmer
+
+# Inicializando o stemizador
+stemmer = PorterStemmer()
+
+# Exemplo de palavras
+palavras = ["correndo", "correu", "corredores"]
+
+# Stemização das palavras
+stems = [stemmer.stem(palavra) for palavra in palavras]
+print("Stems das palavras:", stems)
+\end{lstlisting}
+
+\begin{lstlisting}
+Stems das palavras: ['correndo', 'correu', 'corredor']
+\end{lstlisting}
+
+\subsection{Stopwords}
+
+Stopwords são palavras comuns em um idioma (como "o", "a", "e", "de", "que", etc.) que geralmente são removidas durante o pré-processamento de texto, pois não contribuem significativamente para o significado do texto. A remoção dessas palavras pode melhorar a eficácia de certos algoritmos de PLN, focando nas palavras mais informativas do texto.
+
+\vspace{\baselineskip}
+\href{https://colab.research.google.com/github/giseldo/chatbotbook/blob/main/notebook/pln/pln1_4.ipynb}{
+  \includegraphics{./fig/colab-badge.png}
+}
+
+\begin{lstlisting}[language=Python]
+# pip install nltk
+
+# import nltk
+# nltk.download('stopwords')
+
+from nltk import word_tokenize
+from nltk.corpus import stopwords
+
+# Carregar stopwords para o idioma português
+stop_words = set(stopwords.words('portuguese'))
+
+# Exemplo de texto
+texto = "Chatbots estão se tornando cada vez mais populares."
+
+# Removendo stopwords
+tokens_sem_stopwords = [palavra for palavra in word_tokenize(texto) if palavra.lower() not in stop_words]
+print("Texto sem stopwords:", tokens_sem_stopwords)
+\end{lstlisting}
+
+\begin{lstlisting}
+Texto sem stopwords: ['Chatbots', 'tornando', 'cada', 'vez', 'populares', '.']
+\end{lstlisting}
+
+com Spacy: \\
+
+\begin{lstlisting}[language=Python]
+import spacy
+
+# Carregar o modelo de linguagem em português
+nlp = spacy.load("pt_core_news_sm")
+
+# Exemplo de texto
+texto = "Chatbots estão se tornando cada vez mais populares."
+
+# Processando o texto
+doc = nlp(texto)
+
+tokens = [token.text for token in doc]
+print("Tokens:", tokens)
+
 # Removendo stopwords
 tokens_sem_stopwords = [token.text for token in doc if not token.is_stop]
 print("Texto sem stopwords:", tokens_sem_stopwords)
 \end{lstlisting}
 	
+\subsection{Marcação Morfossintática (POS Tagging)}
+
+Esta técnica consiste em atribuir a cada \textit{token} em um texto uma categoria gramatical, como substantivo, verbo, adjetivo, advérbio, etc.. A marcação POS é crucial para identificar entidades e compreender a estrutura gramatical das frases. Por exemplo, na frase "Eu estou aprendendo como construir chatbots", a marcação POS poderia identificar "Eu" como um pronome (PRON), "estou aprendendo" como um verbo (VERB) e "chatbots" como um substantivo (NOUN).
+
+\subsection{Reconhecimento de Entidades Nomeadas (NER)}
+
+O NER é a tarefa de identificar e classificar entidades nomeadas em um texto, como nomes de pessoas (PERSON), organizações (ORG), localizações geográficas (GPE, LOC), datas (DATE), valores monetários (MONEY), etc.. Por exemplo, na frase "Google tem sua sede em Mountain View, Califórnia, com uma receita de 109.65 bilhões de dólares americanos", o NER identificaria "Google" como uma organização (ORG), "Mountain View" e "Califórnia" como localizações geográficas (GPE) e "109.65 bilhões de dólares americanos" como um valor monetário (MONEY). Essa capacidade é vital para que \textit{chatbots} compreendam os detalhes relevantes nas \textit{utterances} dos usuários.
+
+\subsection{Análise de Dependências (Dependency Parsing)}
+
+Esta técnica examina as relações gramaticais entre as palavras em uma frase, revelando a estrutura sintática e as dependências entre os \textit{tokens}. A análise de dependências pode ajudar a entender quem está fazendo o quê a quem. Por exemplo, na frase "Reserve um voo de Bangalore para Goa", a análise de dependências pode identificar "Bangalore" e "Goa" como modificadores de "voo" através das preposições "de" e "para", respectivamente, e "Reserve" como a raiz da ação. Essa análise é útil para extrair informações sobre as intenções do usuário, mesmo em frases mais complexas.
+
+\subsection{Identificação de Grupos Nominais (Noun Chunks)}
+
+Esta técnica visa identificar sequências contínuas de palavras que atuam como um sintagma nominal. Grupos nominais representam entidades ou conceitos chave em uma frase. Um exemplo seria na frase "Boston Dynamics está se preparando para produzir milhares de cães robóticos", onde "Boston Dynamics" e "milhares de cães robóticos" seriam identificados como grupos nominais.
+
+\subsection{Busca por Similaridade}
+
+Utilizando vetores de palavras (\textit{word embeddings}), como os gerados pelo algoritmo GloVe, é possível calcular a similaridade semântica entre palavras ou frases. Essa técnica permite que \textit{chatbots} reconheçam que palavras diferentes podem ter significados relacionados. Por exemplo, "carro" e "caminhão" seriam considerados mais similares do que "carro" e "google". Isso é útil para lidar com a variedade de expressões que os usuários podem usar para expressar a mesma intenção.
+
+\subsection{Expressões Regulares}
+
+São padrões de texto que podem ser usados para corresponder a sequências específicas de caracteres. Embora não sejam uma técnica de PLN no mesmo sentido que as outras, as expressões regulares são ferramentas poderosas para identificar padrões em texto, como números de telefone, endereços de e-mail ou formatos específicos de entrada.
+
+\subsection{Classificação de Texto}
+
+Uma técnica de aprendizado de máquina que atribui um texto a uma ou mais categorias predefinidas. No contexto de \textit{chatbots}, a classificação de texto é fundamental para a detecção de intenção, onde as categorias representam as diferentes intenções do usuário. Algoritmos como o \textit{Naïve Bayes} são modelos estatísticos populares para essa tarefa, baseados no teorema de Bayes e em fortes suposições de independência entre as características. O treinamento desses classificadores requer um \textit{corpus} de dados rotulados, onde cada \textit{utterance} (entrada do usuário) é associada a uma intenção específica.
+
 
 \section{Entendimento de Linguagem Natural (ULN) como Subconjunto do PLN}
 
-O \textbf{Entendimento de Linguagem Natural (ULN)} é apresentado nas fontes como um subdomínio específico dentro do universo mais vasto do PLN. Enquanto o PLN abarca um conjunto diversificado de operações sobre a linguagem, o ULN se concentra de maneira particular na habilidade da máquina de apreender e interpretar a linguagem natural tal como ela é comunicada pelos seres humanos. 
+O \textbf{Entendimento de Linguagem Natural (ULN)} é um subdomínio específico dentro do universo mais vasto do PLN. Enquanto o PLN abarca um conjunto diversificado de operações sobre a linguagem, o ULN se concentra de maneira particular na habilidade da máquina de apreender e interpretar a linguagem natural tal como ela é comunicada pelos seres humanos. 
 Em outras palavras, o ULN é o ramo do PLN dedicado à extração de significado e à identificação da intenção por trás do texto inserido pelo usuário. As aplicações do ULN são extensas e incluem funcionalidades cruciais para \textit{chatbots}, como a capacidade de responder a perguntas, realizar buscas em linguagem natural, identificar relações entre entidades, analisar o sentimento expresso no texto, sumarizar informações textuais e auxiliar em processos de descoberta legal.
 
 % A relação entre PLN e ULN é frequentemente ilustrada como um diagrama de Venn, onde o ULN se posiciona como um subconjunto do PLN. Essa representação sublinha que, embora o PLN englobe diversas técnicas de processamento da linguagem que não necessariamente envolvem a compreensão em profundidade do significado, o ULN se dedica especificamente à interpretação semântica do texto para que as máquinas possam, em alguma medida, "pensar" de maneira similar aos humanos.
 
 \section{Técnicas Fundamentais de PLN para Chatbots}
 
-A construção de \textit{chatbots} eficazes repousa sobre o emprego de diversas técnicas de PLN, cada uma contribuindo para a capacidade do sistema de interagir de forma inteligente com os usuários. As fontes detalham algumas dessas técnicas essenciais:
+A construção de \textit{chatbots} eficazes repousa sobre o emprego de diversas técnicas de PLN, cada uma contribuindo para a capacidade do sistema de interagir de forma inteligente com os usuários. 
 
-\subsection{Tokenização}
 
-Este é o processo inicial de segmentar um texto em unidades menores denominadas \textit{tokens}, que podem ser palavras, pontuações ou símbolos. A tokenização é um passo preparatório fundamental para qualquer análise linguística subsequente. 
-
-Tokenizar não é só separar por espaços, mas também lidar com pontuações, contrações e outros aspectos que podem afetar a análise. Por exemplo, "não é" pode ser tokenizado como ["não", "é"] ou ["não", "é"], dependendo do contexto e da abordagem adotada. 
-
-Um exemplo simples seria a frase "Eu estou feliz.", que seria tokenizada em ["Eu", "estou", "feliz", "."]. Não necessariamente uma palavra equivale a um token. Em alguns casos, como em palavras compostas ou expressões idiomáticas, um único token pode representar uma ideia ou conceito mais amplo. Por exemplo, "São Paulo" poderia ser considerado um único token em vez de dois ("São" e "Paulo"). 
-
-% A tokenização é aplicada em várias etapas do processamento de linguagem natural, como na análise de sentimentos, onde a identificação de palavras-chave é crucial. Além disso, a tokenização é essencial para o treinamento de modelos de linguagem, pois permite que o sistema compreenda e processe o texto de maneira mais eficiente. 
-
-Existem diferentes abordagens para tokenização, incluindo tokenização baseada em regras, onde padrões específicos são definidos para identificar tokens (geralmente utilizando expressão regular), e tokenização baseada em aprendizado de máquina, onde algoritmos aprendem a segmentar o texto com base em exemplos anteriores.
-
-A tokenização pode ser feita de várias maneiras, dependendo do idioma e do objetivo da análise. Em inglês, por exemplo, a tokenização pode ser mais simples devido à estrutura gramatical, enquanto em idiomas como o chinês, onde não há espaços entre as palavras, a tokenização pode ser mais complexa.
-
-\subsection{Marcação Morfossintática (POS Tagging)}
-
-Esta técnica consiste em atribuir a cada \textit{token} em um texto uma categoria gramatical, como substantivo, verbo, adjetivo, advérbio, etc.. A marcação POS é crucial para identificar entidades e compreender a estrutura gramatical das frases. Por exemplo, na frase "Eu estou aprendendo como construir chatbots", a marcação POS poderia identificar "Eu" como um pronome (PRON), "estou aprendendo" como um verbo (VERB) e "chatbots" como um substantivo (NOUN).
-
-\section{Stemming e Lemmatização}
-Ambas as técnicas visam reduzir palavras flexionadas à sua forma base. O \textit{stemming} é um processo mais heurístico que remove sufixos, podendo nem sempre resultar em uma palavra válida. Já a \textit{lemmatização} é um processo algorítmico que considera o significado da palavra para determinar seu \textit{lema}, ou seja, sua forma canônica. Por exemplo, a palavra "correndo" poderia ser reduzida ao stem "corr" pelo \textit{stemming} e ao lema "correr" pela \textit{lemmatização}. A lematização é geralmente preferível em aplicações que exigem maior precisão semântica. A remoção de sufixos é um objetivo comum dessas técnicas.
-
-\subsection{Reconhecimento de Entidades Nomeadas (NER)}
-O NER é a tarefa de identificar e classificar entidades nomeadas em um texto, como nomes de pessoas (PERSON), organizações (ORG), localizações geográficas (GPE, LOC), datas (DATE), valores monetários (MONEY), etc.. Por exemplo, na frase "Google tem sua sede em Mountain View, Califórnia, com uma receita de 109.65 bilhões de dólares americanos", o NER identificaria "Google" como uma organização (ORG), "Mountain View" e "Califórnia" como localizações geográficas (GPE) e "109.65 bilhões de dólares americanos" como um valor monetário (MONEY). Essa capacidade é vital para que \textit{chatbots} compreendam os detalhes relevantes nas \textit{utterances} dos usuários.
-
-\subsection{Remoção de Palavras de Parada (Stop Words)}
-Palavras de parada são vocábulos de alta frequência que geralmente não carregam muito significado contextual, como "a", "o", "de", "para", "que". A remoção dessas palavras pode melhorar a eficácia de certos algoritmos de PLN, focando nas palavras mais informativas do texto.
-
-\subsection{Análise de Dependências (Dependency Parsing)}
-Esta técnica examina as relações gramaticais entre as palavras em uma frase, revelando a estrutura sintática e as dependências entre os \textit{tokens}. A análise de dependências pode ajudar a entender quem está fazendo o quê a quem. Por exemplo, na frase "Reserve um voo de Bangalore para Goa", a análise de dependências pode identificar "Bangalore" e "Goa" como modificadores de "voo" através das preposições "de" e "para", respectivamente, e "Reserve" como a raiz da ação. Essa análise é útil para extrair informações sobre as intenções do usuário, mesmo em frases mais complexas.
-
-\subsection{Identificação de Grupos Nominais (Noun Chunks)}
-Esta técnica visa identificar sequências contínuas de palavras que atuam como um sintagma nominal. Grupos nominais representam entidades ou conceitos chave em uma frase. Um exemplo seria na frase "Boston Dynamics está se preparando para produzir milhares de cães robóticos", onde "Boston Dynamics" e "milhares de cães robóticos" seriam identificados como grupos nominais.
-
-\subsection{Busca por Similaridade}
-Utilizando vetores de palavras (\textit{word embeddings}), como os gerados pelo algoritmo GloVe, é possível calcular a similaridade semântica entre palavras ou frases. Essa técnica permite que \textit{chatbots} reconheçam que palavras diferentes podem ter significados relacionados. Por exemplo, "carro" e "caminhão" seriam considerados mais similares do que "carro" e "google". Isso é útil para lidar com a variedade de expressões que os usuários podem usar para expressar a mesma intenção.
-
-\subsection{Expressões Regulares}
-São padrões de texto que podem ser usados para corresponder a sequências específicas de caracteres. Embora não sejam uma técnica de PLN no mesmo sentido que as outras, as expressões regulares são ferramentas poderosas para identificar padrões em texto, como números de telefone, endereços de e-mail ou formatos específicos de entrada.
-
-\subsection{Classificação de Texto}
-Uma técnica de aprendizado de máquina que atribui um texto a uma ou mais categorias predefinidas. No contexto de \textit{chatbots}, a classificação de texto é fundamental para a detecção de intenção, onde as categorias representam as diferentes intenções do usuário. Algoritmos como o \textit{Naïve Bayes} são modelos estatísticos populares para essa tarefa, baseados no teorema de Bayes e em fortes suposições de independência entre as características. O treinamento desses classificadores requer um \textit{corpus} de dados rotulados, onde cada \textit{utterance} (entrada do usuário) é associada a uma intenção específica.
 
 \section{Ferramentas e Bibliotecas de PLN Populares}
 
@@ -1153,15 +1311,15 @@ Uma técnica de aprendizado de máquina que atribui um texto a uma ou mais categ
     \item \textbf{Rasa NLU}: Um componente de código aberto do framework Rasa para construir \textit{chatbots}, focado em entendimento de linguagem natural. Rasa NLU permite treinar modelos personalizados para classificação de intenção e extração de entidades, oferecendo flexibilidade e controle sobre os dados.
 \end{itemize}
 
-\section{O Papel Crucial do PLN na Construção de Chatbots}
+\section{O Papel do PLN na Construção de Chatbots}
 
 No cerne da funcionalidade de um \textit{chatbot} reside a sua capacidade de compreender as mensagens dos usuários e responder de forma adequada. O PLN desempenha um papel central nesse processo, permitindo que o \textit{chatbot}:
 
 \begin{itemize}
-    \item \textbf{Detecte a Intenção do Usuário}: Identificar o objetivo por trás da mensagem do usuário é o primeiro passo crucial. Isso é frequentemente abordado como um problema de classificação de texto, onde o \textit{chatbot} tenta classificar a \textit{utterance} do usuário em uma das intenções predefinidas. As fontes mencionam o uso de técnicas de aprendizado de máquina, como o algoritmo \textit{Naïve Bayes}, para construir esses classificadores. Plataformas como LUIS.ai e Rasa NLU simplificam significativamente o processo de treinamento e implantação desses modelos de intenção.
+    \item \textbf{Detecte a Intenção do Usuário}: Identificar o objetivo por trás da mensagem do usuário é o primeiro passo. Isso é frequentemente abordado como um problema de classificação de texto, onde o \textit{chatbot} tenta classificar a \textit{utterance} do usuário em uma das intenções predefinidas. Para detecção da intenção é possível utilziar técnicas de aprendizado de máquina, como o algoritmo \textit{Naïve Bayes}, para construir esses classificadores. Plataformas como LUIS.ai e Rasa NLU simplificam significativamente o processo de treinamento e implantação desses modelos de intenção.
     \item \textbf{Extraia Entidades Relevantes}: Além da intenção geral, as mensagens dos usuários frequentemente contêm detalhes específicos, conhecidos como entidades, que são essenciais para atender à solicitação. Por exemplo, em "Reserve um voo de Londres para Nova York amanhã", a intenção é reservar um voo, e as entidades são a cidade de origem ("Londres"), a cidade de destino ("Nova York") e a data ("amanhã"). As técnicas de NER e os modelos de extração de entidades fornecidos por ferramentas como spaCy, NLTK, CoreNLP, LUIS.ai e Rasa NLU são fundamentais para identificar e extrair essas informações cruciais.
     \item \textbf{Processe Linguagem Variada e Informal}: Os usuários podem se comunicar com \textit{chatbots} usando uma ampla gama de vocabulário, gramática e estilo, incluindo erros de digitação, abreviações e linguagem informal. As técnicas de PLN, como stemming, lematização e busca por similaridade, ajudam o \textit{chatbot} a lidar com essa variabilidade e a compreender a essência da mensagem, mesmo que não seja expressa de forma perfeitamente gramatical.
-    \item \textbf{Mantenha o Contexto da Conversa}: Em conversas mais longas, o significado de uma \textit{utterance} pode depender do que foi dito anteriormente. Embora as fontes não detalhem profundamente o gerenciamento de contexto, subentendem que o PLN, juntamente com outras técnicas de gerenciamento de diálogo, contribui para a capacidade do \textit{chatbot} de lembrar informações e entender referências implícitas.
+    \item \textbf{Mantenha o Contexto da Conversa}: Em conversas mais longas, o significado de uma \textit{utterance} pode depender do que foi dito anteriormente. O PLN, juntamente com outras técnicas de gerenciamento de diálogo, contribui para a capacidade do \textit{chatbot} de lembrar informações e entender referências implícitas.
 \end{itemize}
 
 \section{PLN na Arquitetura de Chatbots}
@@ -1340,7 +1498,7 @@ Em resumo, os Modelos de Linguagem de Grande Escala representam um marco signifi
 
 Retrieval Augmented Generation (RAG) é uma abordagem inovadora que combina duas técnicas fundamentais na área de processamento de linguagem natural: recuperação de informações e geração de texto. A ideia central do RAG é aprimorar a capacidade de um modelo de linguagem ao integrá-lo com um sistema de recuperação que busca informações relevantes de uma base de dados ou de um conjunto de documentos.
 
-Na prática, o RAG opera em duas etapas principais. Primeiro, quando uma consulta ou pergunta é feita, um mecanismo de recuperação é acionado para identificar e extrair informações pertinentes de um repositório de dados. Isso pode incluir documentos, artigos, ou qualquer outro tipo de conteúdo textual que possa fornecer contexto e detalhes adicionais sobre o tema em questão. Essa fase é crucial, pois garante que o modelo de linguagem tenha acesso a informações atualizadas e específicas, em vez de depender apenas do conhecimento prévio que foi incorporado durante seu treinamento.
+Na prática, o RAG opera em duas etapas principais. Primeiro, quando uma consulta ou pergunta é feita, um mecanismo de recuperação é acionado para identificar e extrair informações pertinentes de um repositório de dados. Isso pode incluir documentos, artigos, ou qualquer outro tipo de conteúdo textual que possa fornecer contexto e detalhes adicionais sobre o tema em questão. Essa fase garante que o modelo de linguagem tenha acesso a informações atualizadas e específicas, em vez de depender apenas do conhecimento prévio que foi incorporado durante seu treinamento.
 
 Em seguida, na segunda etapa, o modelo de linguagem utiliza as informações recuperadas para gerar uma resposta mais rica e contextualizada. Essa geração não se limita a reproduzir o conteúdo recuperado, mas sim a integrar esses dados de forma coesa, criando uma resposta que não apenas responde à pergunta, mas também fornece uma narrativa mais completa e informativa. Isso resulta em respostas que são mais precisas e relevantes, pois são fundamentadas em dados concretos e atualizados.
 
@@ -1897,7 +2055,7 @@ Este é um parágrafo com texto em negrito.
 
 Frameworks populares para desenvolvimento de chatbots, como Rasa, frequentemente integram o uso de expressões regulares para aprimorar a extração de entidades. 
 Por exemplo, em Rasa, as regex podem ser definidas nos dados de treinamento para ajudar o sistema a reconhecer padrões específicos como nomes de ruas ou códigos de produtos. 
-Essa abordagem permite melhorar a precisão do reconhecimento de entidades, um componente crucial para a compreensão da intenção do usuário.
+Essa abordagem permite melhorar a precisão do reconhecimento de entidades, um componente importante para a compreensão da intenção do usuário.
 
 \section{Tópicos Avançados}
 Embora os fundamentos das regex sejam suficientes para muitas tarefas, existem construções mais avançadas que podem ser úteis em cenários complexos. Alguns exemplos incluem:
@@ -1917,7 +2075,7 @@ No contexto de um fluxo de trabalho de chatbot, as expressões regulares são fr
 \section{Conclusão}
 As expressões regulares representam uma ferramenta essencial para o processamento de texto em chatbots, oferecendo uma maneira eficaz de extrair informações específicas, validar formatos de entrada e realizar tarefas básicas de limpeza de texto. Através do módulo \texttt{re} em Python, os desenvolvedores têm à disposição um conjunto de funcionalidades poderosas para manipular strings com base em padrões definidos.
 
-No entanto, é crucial entender as limitações das regex, especialmente no que diz respeito à compreensão da linguagem natural em sua totalidade. Para tarefas que exigem análise semântica e contextual, técnicas avançadas de PLN são necessárias. As expressões regulares, portanto, encontram seu melhor uso como parte de um fluxo de trabalho mais amplo, onde complementam outras abordagens para criar chatbots robustos e eficientes.
+No entanto, é preciso entender as limitações das regex, especialmente no que diz respeito à compreensão da linguagem natural em sua totalidade. Para tarefas que exigem análise semântica e contextual, técnicas avançadas de PLN são necessárias. As expressões regulares, portanto, encontram seu melhor uso como parte de um fluxo de trabalho mais amplo, onde complementam outras abordagens para criar chatbots robustos e eficientes.
 
 Encorajamos o leitor a praticar a criação de diferentes padrões de regex e a experimentar com os exemplos fornecidos neste capítulo. A familiaridade com as expressões regulares é uma habilidade valiosa para qualquer pessoa envolvida no desenvolvimento de chatbots e no processamento de linguagem natural em geral.
 
@@ -2000,7 +2158,7 @@ Attention mask é uma lista de 1s e 0s que indica quais tokens devem ser conside
 	
 \chapter{Vetorização de Texto e Representação}
 
-A vetorização de texto é um passo crucial no Processamento de Linguagem Natural (PLN), pois permite transformar dados textuais em uma forma que os modelos de aprendizado de máquina podem entender e processar. Neste capítulo, exploraremos várias técnicas de vetorização, incluindo One-Hot Encoding, Bag of Words, e TF-IDF (Term Frequency-Inverse Document Frequency), juntamente com implementações práticas em Python.
+A vetorização de texto é um passo importante no Processamento de Linguagem Natural (PLN), pois permite transformar dados textuais em uma forma que os modelos de aprendizado de máquina podem entender e processar. Neste capítulo, exploraremos várias técnicas de vetorização, incluindo One-Hot Encoding, Bag of Words, e TF-IDF (Term Frequency-Inverse Document Frequency), juntamente com implementações práticas em Python.
 
 \section{Conceitos de Vetorização}
 
@@ -3623,7 +3781,7 @@ Implantar um chatbot é apenas o início de sua jornada. Para garantir que ele c
 
 \section{A Importância da Manutenção Contínua}
 
-Um chatbot que não é mantido adequadamente pode rapidamente se tornar obsoleto, irrelevante ou até prejudicial para a experiência do usuário. A manutenção contínua é crucial para:
+Um chatbot que não é mantido adequadamente pode rapidamente se tornar obsoleto, irrelevante ou até prejudicial para a experiência do usuário. A manutenção contínua é necessário para:
 
 \begin{itemize}
 	\item \textbf{Atualizar Conhecimento}: Adaptar o chatbot a novas informações, gírias ou mudanças de contexto.
@@ -3813,7 +3971,7 @@ A manutenção e atualização contínua de chatbots são essenciais para garant
 	\vspace{5mm}
 	\textbf{Resposta correta:} A
 	
-	\item \textbf{Qual das seguintes abordagens é crucial para garantir a segurança contínua dos chatbots em produção?}
+	\item \textbf{Qual das seguintes abordagens é necessária para garantir a segurança contínua dos chatbots em produção?}
 	\begin{enumerate}[label=\alph*)]
 		\item A) Aplicar patches de segurança regularmente e garantir a conformidade com regulamentos de proteção de dados.
 		\item B) Reduzir o uso de autenticação para facilitar o acesso dos usuários.
@@ -4105,7 +4263,7 @@ O assistente virtual foi construído utilizando LLaMA devido à sua eficiência 
 \subsection{Desafios e Soluções}
 
 \begin{itemize}
-	\item \textbf{Desafio: Garantir Segurança e Privacidade}: Devido à natureza sensível dos dados de saúde mental, garantir a privacidade e a segurança era crucial.
+	\item \textbf{Desafio: Garantir Segurança e Privacidade}: Devido à natureza sensível dos dados de saúde mental é necessário garantir a privacidade e a segurança dos dados.
 	\item \textbf{Solução: Implementação de Criptografia e Conformidade com GDPR}: Todas as interações foram criptografadas e o sistema foi desenvolvido para estar em conformidade com o GDPR, garantindo que os dados dos usuários fossem protegidos.
 	\item \textbf{Desafio: Manter a Relevância das Recomendações}: O assistente precisava oferecer conselhos que fossem realmente úteis e baseados em melhores práticas de TCC.
 	\item \textbf{Solução: Aprendizado Contínuo e Feedback do Usuário}: Implementou-se um sistema de aprendizado contínuo que ajusta as recomendações com base no feedback dos usuários e nos resultados de suas interações.
@@ -4142,7 +4300,7 @@ Este chatbot foi implementado utilizando um modelo GPT finamente ajustado para v
 
 \subsection{Resultados e Lições Aprendidas}
 
-O chatbot educacional ajudou a melhorar a fluência e a confiança dos alunos em suas habilidades de conversação. A capacidade de corrigir erros em tempo real e fornecer feedback construtivo foi especialmente apreciada pelos usuários. A principal lição foi que, para chatbots educacionais, é crucial equilibrar a correção técnica com uma abordagem motivadora e de suporte.
+O chatbot educacional ajudou a melhorar a fluência e a confiança dos alunos em suas habilidades de conversação. A capacidade de corrigir erros em tempo real e fornecer feedback construtivo foi especialmente apreciada pelos usuários. A principal lição foi que, para chatbots educacionais, é necessário equilibrar a correção técnica com uma abordagem motivadora e de suporte.
 
 \section{Conclusão dos Casos de Estudo}
 
@@ -4223,7 +4381,7 @@ Os casos de estudo apresentados neste capítulo mostram como as técnicas discut
 	\vspace{5mm}
 	\textbf{Resposta correta:} B
 	
-	\item \textbf{Por que a proteção de dados é crucial ao desenvolver e implantar chatbots?}
+	\item \textbf{Por que a proteção de dados é importante ao desenvolver e implantar chatbots?}
 	\begin{enumerate}[label=\alph*)]
 		\item A) Para garantir que o chatbot funcione corretamente em diferentes idiomas.
 		\item B) Para proteger a privacidade dos usuários e garantir a conformidade com regulamentações como o GDPR.
@@ -4463,7 +4621,7 @@ As considerações éticas discutidas neste capítulo são essenciais para o des
 	\vspace{5mm}
 	\textbf{Resposta correta:} A
 	
-	\item \textbf{Qual das seguintes abordagens é crucial para garantir a segurança contínua dos chatbots em produção?}
+	\item \textbf{Qual das seguintes abordagens é necessária para garantir a segurança contínua dos chatbots em produção?}
 	\begin{enumerate}[label=\alph*)]
 		\item A) Aplicar patches de segurança regularmente e garantir a conformidade com regulamentos de proteção de dados.
 		\item B) Reduzir o uso de autenticação para facilitar o acesso dos usuários.
@@ -4489,7 +4647,7 @@ As tecnologias de Processamento de Linguagem Natural (PLN) e Inteligência Artif
 
 \subsection{Inteligência Artificial Explicável (XAI)}
 
-Com o aumento da complexidade dos modelos de linguagem, a necessidade de Inteligência Artificial Explicável (XAI) se torna mais premente. XAI visa tornar os sistemas de IA mais transparentes e compreensíveis para os seres humanos, o que é crucial para garantir a confiança do usuário em decisões automatizadas.
+Com o aumento da complexidade dos modelos de linguagem, a necessidade de Inteligência Artificial Explicável (XAI) se torna mais premente. XAI visa tornar os sistemas de IA mais transparentes e compreensíveis para os seres humanos, o que é importante para garantir a confiança do usuário em decisões automatizadas.
 
 \begin{itemize}
 	\item \textbf{Exemplo de Aplicação}: Desenvolver chatbots que possam explicar como chegaram a uma determinada resposta, oferecendo aos usuários uma visão dos processos de tomada de decisão do modelo.
@@ -4561,7 +4719,7 @@ A pesquisa em sistemas colaborativos, onde humanos e chatbots trabalham juntos p
 
 \subsection{Chatbots para a Inclusão Digital}
 
-Com bilhões de pessoas ainda desconectadas do mundo digital, chatbots podem desempenhar um papel crucial na inclusão digital. Desenvolver chatbots que funcionem em ambientes de baixa conectividade e que sejam acessíveis para pessoas com baixa alfabetização digital é uma área importante de pesquisa.
+Com bilhões de pessoas ainda desconectadas do mundo digital, chatbots podem realizar inclusão digital. Desenvolver chatbots que funcionem em ambientes de baixa conectividade e que sejam acessíveis para pessoas com baixa alfabetização digital é uma área importante de pesquisa.
 
 \begin{itemize}
 	\item \textbf{Exemplo de Aplicação}: Chatbots que operam em redes de baixa largura de banda e que utilizam interfaces de voz para alcançar comunidades rurais ou subrepresentadas.
