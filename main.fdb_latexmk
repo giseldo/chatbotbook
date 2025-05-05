@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1746418479.07972 "main.aux" "main.bbl" "main" 1746419519.28103 0
+["bibtex main"] 1746420354.87477 "main.aux" "main.bbl" "main" 1746420366.05538 0
   "./ref.bib" 1745380904 268644 f78cc6c6cbd5babe9d3f5bbd6e1a599b ""
   "C:/Users/gisel/AppData/Local/Programs/MiKTeX/bibtex/bst/natbib/plainnat.bst" 1284455456 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "main.aux" 1746419514 51960 5edd1a26469a45ea25f75987dc070148 "pdflatex"
+  "main.aux" 1746420364 51647 bdb999f9751003b71acc34db24bac678 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1746419489.95011 "c:/Projetos Livros/Livro Chatbotbook/main.tex" "main.pdf" "main" 1746419519.28449 0
+["pdflatex"] 1746420355.3831 "c:/Projetos Livros/Livro Chatbotbook/main.tex" "main.pdf" "main" 1746420366.05633 0
   "C:/Users/gisel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1745380712 398160 69285722c4aacf1940676e8a83d7782c ""
   "C:/Users/gisel/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1440.pk" 1745098888 16968 c2325b7efe7411b36c778e38509f83af ""
   "C:/Users/gisel/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1723928429 24265374 d9f20010c4ccf005291dee566f651bcf ""
@@ -232,7 +232,7 @@
   "C:/Users/gisel/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/gisel/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/gisel/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/Projetos Livros/Livro Chatbotbook/main.tex" 1746419486 296688 5134bc6fffb31910bb9624d1b61ec97a ""
+  "c:/Projetos Livros/Livro Chatbotbook/main.tex" 1746420336 296608 efc7cb6407d5fd0cfcf294ca3bb54b80 ""
   "capa.pdf" 1746412076 11397 fc4b548ded76b300ffe9a8d2a0dcaaf7 ""
   "fig/aimlbase.png" 1745276251 35622 aebd5b4f74667c6a7171abc0d1bb5f0b ""
   "fig/chat_chatgpt_pizza.png" 1745265345 257776 b84d29e27ba8293f89b67e25bda0e859 ""
@@ -249,11 +249,11 @@
   "fig/original_agente.png" 1745265345 22288 a66fbd9ed5043b8f18a4b99100124271 ""
   "fig/tipo_objetivo.png" 1745265345 12684 5877bdf85b57aa44916c6b0087fab3b6 ""
   "fig/trends.png" 1745265345 51576 ca652a44bf2ada566f21f01079f0f073 ""
-  "main.aux" 1746419514 51960 5edd1a26469a45ea25f75987dc070148 "pdflatex"
-  "main.bbl" 1746418479 12700 fde62095454802e8be9f3464508d18ef "bibtex main"
-  "main.out" 1746419514 53430 d93e672a014a51817fc18557edea203e "pdflatex"
-  "main.tex" 1746419486 296688 5134bc6fffb31910bb9624d1b61ec97a ""
-  "main.toc" 1746419514 26062 19ae2c49fbd0d6b126becdb9d78afafa "pdflatex"
+  "main.aux" 1746420364 51647 bdb999f9751003b71acc34db24bac678 "pdflatex"
+  "main.bbl" 1746420355 12700 fde62095454802e8be9f3464508d18ef "bibtex main"
+  "main.out" 1746420364 52358 b07d00dd865c7383e98eea9ebb134b76 "pdflatex"
+  "main.tex" 1746420336 296608 efc7cb6407d5fd0cfcf294ca3bb54b80 ""
+  "main.toc" 1746420364 25790 55da23f05a060b214ab5725453dad5bc "pdflatex"
   (generated)
   "main.aux"
   "main.log"

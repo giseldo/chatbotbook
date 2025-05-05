@@ -469,28 +469,32 @@ DOES THAT HAVE ANYTHING TO DO WITH THE FACT THAT YOUR BOYFRIEND MADE YOU COME HE
 
 % Fonte: Buscar a Fonte do Algoritmo Adaptado por Giseldo Neo
 
-\section{Processamento de Entradas e Palavras-Chave}
+\section{Processamento}
 
 % \marginnote{Pattern Matching}
 O funcionamento do ELIZA baseia-se em correspondência de padrões por palavras-chave. Técnica também chamado casamento de padrão, em inglês \textit{pattner matching} seu paradigma também se encaixa na técnica baseado em regras (ou \textit{rule-based}). 
-A cada turno, o texto de entrada do usuário é analisado em busca de palavras-chave predefinidas. 
-O ELIZA fazia uma varredura da sentença da esquerda para a direita, identificando se alguma palavra correspondia a uma palavra\-chave do script. 
-Caso encontrasse, ELIZA selecionava a palavra-chave mais “importante” (havia um peso de prioridade associado a cada palavra-chave) e ignorava o restante da entrada.
+A cada turno do diálogo, o texto de entrada do usuário é analisado em busca de palavras-chave predefinidas. 
+O ELIZA faz uma varredura da sentença da esquerda para a direita, identificando se alguma palavra correspondia a uma palavra\-chave do script. 
+Caso encontre uma palavra chave no script, ELIZA empilha essa palavra até o final da frase. Depois ele selecionava a palavra-chave mais “importante” até encontrar uma pontuação. Para isso ele manten uma lista de peso associado a cada palavra-chave.
 
 Por exemplo, o script DOCTOR, definia palavras-chave como “ALIKE” ou “SAME” com alta prioridade; assim, na frase “Men are all alike.” o programa detectava a palavra “ALIKE” e disparava uma resposta associada a ela (no caso: “In what way?”). 
 Se múltiplas palavras-chave aparecessem, ELIZA escolhia aquela de maior peso para formular a resposta.
 
-Primeiro o texto de entrada digitado pelo usuário era separado em palavras, em um técnica que hoje chamamos de tokenização de palavras. A palavra-chave era identificada, comparando-a sequencialmente até o fim das palavras existentes, ou até ser encontrado uma pontuação. Caso fosse encontrado uma pontuação (ponto final ou vírgula), o texto após a pontuação era ignorado se já tivesse sido identificado uma palavra-chave. Assim cada processamento da resposta foca em apenas uma única afirmação (ou frase) do usuário. Se várias palavras-chave fossem encontradas antes da pontuação, a de maior peso era selecionada.
+Primeiro o texto de entrada digitado pelo usuário era separado em palavras, em um técnica que hoje chamamos de tokenização de palavras, mas que ainda não existia na época. 
+A palavra-chave era identificada, comparando-a sequencialmente até o fim das palavras existentes, ou até ser encontrado uma pontuação. 
+Caso fosse encontrado uma pontuação (ponto final ou vírgula), o texto após a pontuação era ignorado se já tivesse sido identificado uma palavra-chave. Assim cada processamento da resposta utiliza uma única frase do usuário. 
+Se várias palavras-chave fossem encontradas antes da pontuação, a de maior peso era selecionada.
 
-Por exemplo, o usuário entra com o texto: “I am sick. but, today is raining”. Se houvesse uma palavra-chave no script rankeando a palavra “SICK" com alta prioridade, a entrada processada seria somente “I am sick”, o restante depois da pontuação (neste caso, o ponto) seria gnorado pelo programa.
+Por exemplo, o usuário entra com o texto: ``I am sick. but, today is raining''. 
+Se houvesse uma palavra-chave no script rankeando a palavra ``SICK'' com alta prioridade, a entrada processada seria somente ``I am sick'', o restante depois da pontuação (neste caso, o ponto) seria gnorado pelo programa.
 
-Se nenhuma palavra-chave fosse encontrada na entrada, ELIZA recorria a frases genéricas programadas, chamadas de respostas vazias ou sem conteúdo. Nesses casos, o chatbot emitia mensagens do tipo “I see.” ou “Please, go on.” . Esse mecanismo evitava silêncio quando o usuário dizia algo fora do escopo do script.
+Se nenhuma palavra-chave fosse encontrada na entrada, ELIZA recorria a frases genéricas programadas, chamadas de respostas vazias ou sem conteúdo. Nesses casos, o chatbot emitia mensagens do tipo ``I see.'' ou ``Please, go on.'' . Esse mecanismo evitava silêncio quando o usuário dizia algo fora do escopo do script.
 
 Além disso, a implementação original incluía uma estrutura de memória: algumas declarações recentes do usuário eram armazenadas e, se uma entrada subsequente não contivesse novas keywords, ELIZA poderia recuperar um tópico anterior e introduzi-lo na conversa.
-Por exemplo, se o usuário mencionasse família em um momento e depois fizesse uma afirmação vaga, o programa poderia responder retomando o assunto da família (“DOES THAT HAVE ANYTHING TO DO WITH YOUR FAMILY?”).
+Por exemplo, se o usuário mencionasse família (em ingles family) em um momento e depois fizesse uma afirmação vaga, o programa poderia responder retomando o assunto da família (“DOES THAT HAVE ANYTHING TO DO WITH YOUR FAMILY?”).
 Essa estratégia dava uma pseudo-continuidade ao diálogo, simulando que o sistema “lembrava” de informações fornecidas anteriormente.
 
-\section{Regras de Transformação de Frases}
+\section{Regras de Transformação}
 
 Encontrada a palavra-chave, ELIZA aplicava uma regra de transformação associada a ela para gerar a resposta. As regras são definidas em pares: um padrão de análise (decomposition rule) e um modelo de reconstrução de frase (reassembly rule).
 
@@ -500,7 +504,7 @@ Em seguida, a regra de reassembly correspondente é aplicada, remontando uma sen
 
 De fato, uma parte importante das transformações do ELIZA envolve substituir pronomes (eu/você, meu/seu) para que a resposta faça sentido como uma frase do ponto de vista do computador falando com o usuário. Esse algoritmo de substituição é relativamente simples (por exemplo, “meu” → “seu”, “eu” → “você”, etc.), mas essencial para dar a impressão de entendimento gramatical.
 
-\section{Implementação Original e Variações Modernas}
+\section{Implementação e Variações}
 
 A implementação original de ELIZA foi feita em uma linguagem chamada MAD-SLIP (um dialecto de Lisp) rodando em um mainframe IBM 7094 no sistema CTSS do MIT. O código fonte do programa principal continha o mecanismo de correspondência, enquanto as regras de conversação (script DOCTOR) eram fornecidas separadamente em formato de listas associativas, similar a uma lista em Lisp. Infelizmente, Weizenbaum não publicou o código completo no artigo de 1966 (o que era comum na época), mas décadas depois o código em MAD-SLIP foi recuperado nos arquivos do MIT, comprovando os detalhes de implementação \cite{Lane2025}. De qualquer forma, a arquitetura descrita no artigo influenciou inúmeras reimplementações acadêmicas e didáticas nos anos seguintes.
 
@@ -512,11 +516,9 @@ Em 1995, Richard Wallace desenvolveu o chatbot ALICE (Artificial Linguistic Inte
 
 Outras variações e sucessores notáveis incluem Jabberwacky (1988) – que já aprendia novas frases – e uma profusão de assistentes virtuais e bots de domínio específico nas décadas seguintes \cite{Wallace2000}. Em suma, o legado de ELIZA perdurou por meio de inúmeros chatbots baseados em regras, até a transição para abordagens estatísticas e de aprendizado de máquina no final do século XX.
 
-\section{Comparação com Modelos de Linguagem Modernos}
+\section{Mecanismo de Pesos}
 
 A técnica de ELIZA, baseada em palavras-chave com respostas predefinidas, contrasta fortemente com os métodos de Large Language Models (LLMs) atuais, como o GPT-4, que utilizam redes neurais de milhões (ou trilhões) de parâmetros e mecanismos de atenção.
-
-\subsection{Mecanismo de Pesos: Palavras-Chave vs. Atenção Neural}
 
 No ELIZA, a “importância” de uma palavra era determinada manualmente pelo programador através de pesos ou rankings atribuídos a certas palavras-chave no script. Ou seja, o programa não aprendia quais termos focar – ele seguia uma lista fixa de gatilhos. Por exemplo, termos como “sempre” ou “igual” tinham prioridade alta no script DOCTOR para garantir respostas apropriadas.
 
@@ -528,7 +530,7 @@ Além disso, o “vocabulário” efetivo de um LLM é imenso – um moddelo GPT
 
 Enquanto ELIZA dependia de coincidências exatas de termos para disparar regras, modelos como GPT avaliam similaridades semânticas e contexto histórico graças às representações densas (embeddings) aprendidas durante o treinamento de rede neural.
 
-\subsection{Contextualização e Geração de Linguagem}
+\section{Geração de Texto}
 
 Devido à sua abordagem baseada em regras locais, o ELIZA tinha capacidade de contextualização muito limitada. Cada input do usuário era tratado quase isoladamente: o programa não construía uma representação acumulada da conversa, além de artifícios simples como repetir algo mencionado (a estrutura de memória) ou usar pronomes para manter a ilusão de continuidade. Se o usuário mudasse de tópico abruptamente, o ELIZA não “perceberia” – ele apenas buscaria a próxima palavra-chave disponível ou recorreria a frases genéricas.
 
@@ -542,7 +544,7 @@ Em termos de fluência e variedade, os modelos modernos superam o ELIZA amplamen
 
 Em resumo, os avanços de arquitetura (especialmente o mecanismo de atenção) ampliaram drasticamente a capacidade de contextualização e geração dos chatbots modernos, marcando uma evolução significativa desde o mecanismo simples porém pioneiro de ELIZA.
 
-\section{Implementação de um Chatbot Simples em Python}
+\section{ELIZA em Python v1}
 
 Abaixo está um exemplo básico de implementação de um chatbot inspirado em Eliza utilizando Python:
 
@@ -571,7 +573,7 @@ while True:
 	print("Eliza: ", response)
 \end{lstlisting}
 
-\section{Eliza em Python}
+\section{ELIZA em Python v2}
 
 Apresenta-se, nesta seção, uma implementação simplificada em Python de um chatbot inspirado no paradigma ELIZA. 
 Esta implementação demonstra a utilização de expressões regulares para a identificação de padrões textuais (palavras-chave) na entrada fornecida pelo usuário e a subsequente geração de respostas, fundamentada em regras de transformação predefinidas manualmente.
