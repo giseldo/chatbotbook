@@ -7,7 +7,7 @@
 \usepackage{enumitem} 
 \usepackage{csquotes} 
 \usepackage{natbib}   
-
+ 
 \usepackage{extsizes}
 \usepackage{setspace}
 \onehalfspacing
@@ -56,23 +56,23 @@
 ]{hyperref}
 
 \usepackage{listings}
+
 \lstset{
-	language=Tex,
-	basicstyle=\ttfamily\small\setstretch{0.9},
-	keywordstyle=\color{blue},
-	stringstyle=\color{red},
-	commentstyle=\color{gray},
-	% numbers=left,
-	% numberstyle=\tiny\color{gray},
-	% stepnumber=1,
-	% numbersep=5pt,
-	% backgroundcolor=\color{lightgray!20},
-	frame=single,
-	breaklines=true,
-	showspaces=false,
-	showstringspaces=false,
-	extendedchars=true,
-	inputencoding=utf8,
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue}\bfseries,
+    stringstyle=\color{red},
+    commentstyle=\color{green!50!black},
+    numbers=left,
+    numberstyle=\tiny,
+    stepnumber=1,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    frame=single,
+    breaklines=true,
+    breakatwhitespace=true,
+    tabsize=4,
 	literate={á}{{\'a}}1 {ã}{{\~a}}1 {é}{{\'e}}1 {è}{{\`{e}}}1 {ê}{{\^{e}}}1 {ë}{{\¨{e}}}1 {É}{{\'{E}}}1 {Ê}{{\^{E}}}1 {û}{{\^{u}}}1 {ú}{{\'{u}}}1 {â}{{\^{a}}}1 {à}{{\`{a}}}1 {á}{{\'{a}}}1 {ã}{{\~{a}}}1 {Á}{{\'{A}}}1 {Â}{{\^{A}}}1 {Ã}{{\~{A}}}1 {ç}{{\c{c}}}1 {Ç}{{\c{C}}}1 {õ}{{\~{o}}}1 {ó}{{\'{o}}}1 {ô}{{\^{o}}}1 {Õ}{{\~{O}}}1 {Ó}{{\'{O}}}1 {Ô}{{\^{O}}}1 {î}{{\^{i}}}1 {Î}{{\^{I}}}1 {í}{{\'{i}}}1 {Í}{{\~{Í}}}1,
 }
 
@@ -86,26 +86,26 @@
 
 \begin{document}
 
-% % Remove margens temporariamente e faz a imagem ocupar a página inteira
-% \begin{figure}[p]
-% 	\vspace*{-2cm} % Preenche o espaço vertical no topo
-% 	\hspace*{-4cm} % Compensa a margem esquerda
-% 	\makebox[\paperwidth]{ % Usa \paperwidth para centralizar na página inteira
-% 	  \includegraphics[width=\dimexpr\paperwidth-4cm-2cm,height=\textheight,keepaspectratio=true]{fig/capa.png}
-% 	}
-% 	\vspace*{\fill} % Preenche o espaço vertical no fundo
-% \end{figure}
-
 \newpage
 
+% \begin{figure}[p]
+% 	\centering
+% 	\vspace*{-4cm} % Preenche o espaço vertical no topo
+% 	\hspace*{-3.8cm} % Compensa a margem esquerda
+% 	\makebox[\textwidth]{
+% 	  \includegraphics[width=1.00\paperwidth,height=1.0\paperheight,keepaspectratio=true]{./fig/capa.png}
+% 	}
+% \end{figure}
+
+\clearpage            
+\thispagestyle{empty} 
 \begin{figure}[p]
 	\centering
-	\vspace*{-4cm} % Preenche o espaço vertical no topo
-	\hspace*{-3.8cm} % Compensa a margem esquerda
-	\makebox[\textwidth]{
-	  \includegraphics[width=1.00\paperwidth,height=1.0\paperheight,keepaspectratio=true]{./fig/capa.png}
-	}
+	\vspace*{-1.5in} % Ajusta a posição vertical
+	\hspace*{-0.82in} % Ajusta a posição horizontal
+	\includegraphics[width=\paperwidth, height=\paperheight]{capa.pdf}
 \end{figure}
+\clearpage     
 
 \newpage
 
@@ -129,26 +129,40 @@ O termo ``chatterbot'', sinônimo de ``chatbot'', foi popularizado por Michael M
 Publicações acadêmicas, como os anais da \textit{Virtual Worlds and Simulation Conference} de 1998 \cite{Jacobstein1998}, também ajudaram a consolidar o uso do termo.
 
 % \marginnote{ELIZA}
-O ELIZA, criado em 1966 por Joseph Weizenbaum,  representou um experimento revolucionário na interação humano-computador \cite{Weizenbaum1996}. Seu roteiro (ou script)  mais famoso, DOCTOR, imitava rudimentarmente um psicoterapeuta, utilizando correspondência de padrões simples. Por exemplo, quando um usuário inseria a frase “Estou triste”, o ELIZA respondia “Por que você está triste hoje?”, reformulando a entrada como uma pergunta. Seu funcionamento baseia-se em um conjunto de regras que lhe permitem analisar e compreender a linguagem humana de forma limitada e aproximada. 
+O ELIZA, criado em 1966 por Joseph Weizenbaum,  representou um experimento revolucionário na interação humano-computador \cite{Weizenbaum1996}. Seu roteiro (ou script)  mais famoso, DOCTOR, imitava rudimentarmente um psicoterapeuta, utilizando correspondência de padrões simples. Por exemplo, quando um usuário inseria a frase “Estou triste”, o ELIZA respondia “Por que você está triste hoje?”, reformulando a entrada como uma pergunta. 
+Seu funcionamento baseia-se em um conjunto de regras que lhe permitem analisar e compreender a linguagem humana de forma limitada e aproximada. 
 
-Esse tipo de aplicação do ELIZA (simular um psicólogo muito rudimentar da técnica rogeriana) adequou-se bem a esse domínio, pois dependia de pouco conhecimento sobre o ambiente externo; as regras no script DOCTOR permitiam que o programa respondesse ao usuário com outras perguntas ou simplesmente refletisse a afirmação original. O ELIZA não possuía uma real ``compreensão'' da linguagem humana; ele apenas utilizava palavras-chave e manipulava frases para que a interação parecesse natural. Uma descrição detalhada do funcionamento do ELIZA, com exemplos em Python, será apresentada em seções posteriores deste livro.
+Esse tipo de aplicação do ELIZA em simular um psicólogo muito rudimentar da técnica rogeriana adequou-se bem a esse tipo de diálogo pois dependia de pouco conhecimento sobre o ambiente externo. As regras no script DOCTOR permitiam que o programa respondesse ao usuário com outras perguntas ou simplesmente refletisse a afirmação original. 
+O ELIZA não possuía uma real ``compreensão'' da linguagem humana; ele apenas utilizava palavras-chave e manipulava frases para que a interação parecesse natural. Uma descrição detalhada do funcionamento do ELIZA, com exemplos em Python, será apresentada em seções posteriores deste livro.
 
 % \marginnote{ChatGPT}
-Outro chatbot famoso é o ChatGPT. Desenvolvido pela OpenAI, este é um modelo de linguagem capaz de gerar texto muito semelhante ao criado por humanos. Ele utiliza aprendizagem profunda (deep learning) e redes neurais para gerar sentenças e parágrafos com base nas entradas e informações fornecidas. É capaz de produzir textos coerentes e até mesmo realizar tarefas simples, como responder a perguntas e gerar ideias. Contudo, é importante lembrar que o ChatGPT não possui consciência nem a capacidade de compreender contexto ou emoções. Ele é um exemplo de Modelo de Linguagem Grande (Large Language Model - LLM), baseado na arquitetura conhecida como Transformers, introduzida em 2017 \cite{Vaswani2017}. Esses modelos são treinados com terabytes de texto, utilizando mecanismos de autoatenção que avaliam a relevância de cada palavra em uma frase. Ao contrário das regras manuais do ELIZA, os LLMs extraem padrões linguísticos a partir da vasta quantidade de dados com que a rede neural foi treinada.
+Outro chatbot famoso é o ChatGPT da OpenAI. 
+Ele é um modelo de linguagem capaz de gerar texto muito semelhante ao criado por humanos. 
+Ele utiliza redes neurais, com aprendizagem profunda, para gerar sentenças e parágrafos com base nas entradas e informações fornecidas. 
+Ele produz textos com relativa coerência, responde perguntas, traduz e resume textos. 
+Contudo, o ChatGPT não possui consciência nem a capacidade de compreender contexto ou emoções. 
+
+O chatGPT é um exemplo de Modelo de Linguagem Grande (em inglês Large Language Model - LLM), baseado na arquitetura Transformers, introduzida em 2017 \cite{Vaswani2017}. 
+Modelos deste tipo são treinados com terabytes de texto, utilizando mecanismos de autoatenção que avaliam a relevância de cada palavra em uma frase. 
+Ao contrário das regras manuais do ELIZA, os LLMs extraem padrões linguísticos a partir da vasta quantidade de dados com que a rede neural foi treinada.
 
 % \marginnote{Tipo Conversacional}
-Esses dois chatbots, ELIZA e ChatGPT, são bons representantes do tipo \textbf{conversacional}. 
-Apesar de terem surgido com décadas de diferença — ELIZA em 1966 e ChatGPT em 2022 — e de diferirem bastante na forma como geram suas respostas, ambos compartilham semelhanças em seu objetivo: conversar sobre determinado assunto ou responder perguntas, mantendo o usuário em um diálogo fluido quando necessário. Chatbots com essas características podem ser agrupados, de acordo com o objetivo, como chatbots conversacionais e são utilizados para interagir sobre assuntos gerais.
+Esses dois chatbots, ELIZA e ChatGPT, são bons representantes do tipo de chatbot \textbf{conversacional}. 
+Apesar de terem surgido com décadas de diferença — ELIZA em 1966 e ChatGPT em 2022 — e de diferirem bastante na forma como geram suas respostas, ambos compartilham semelhanças em seu objetivo: conversar sobre determinado assunto ou responder perguntas, mantendo o usuário em um diálogo fluido quando necessário. 
+Chatbots com essas características podem ser agrupados, de acordo com o objetivo, como chatbots conversacionais e são utilizados para interagir sobre assuntos gerais.
 
 % \marginnote{Tipo Orientado a tarefas} 
-Outro tipo de chatbot classificado em relação ao objetivo é o \textbf{orientado a tarefas}. Os chatbots orientados a tarefas executam ações específicas, como abrir uma conta bancária ou pedir uma pizza. Geralmente, as empresas disponibilizam chatbots orientados a tarefas para seus usuários, com regras de negócio embutidas na conversação e com fluxos bem definidos. Normalmente, não se espera pedir uma pizza e, no mesmo chatbot, discutir os estudos sobre Ética do filósofo Immanuel Kant (embora talvez haja quem queira). 
+Outro tipo de chatbot classificado em relação ao objetivo é o chatbot \textbf{orientado a tarefas}. 
+Os chatbots orientados a tarefas executam ações específicas, como abrir uma conta bancária ou pedir uma pizza. 
+Geralmente, as empresas disponibilizam chatbots orientados a tarefas para seus usuários, com regras de negócio embutidas na conversação e com fluxos bem definidos. 
+Normalmente, não se espera pedir uma pizza e, no mesmo chatbot, discutir os estudos sobre Ética do filósofo Immanuel Kant (embora talvez haja quem queira). 
 
-Essas duas classificações, conversacional e orientado a tarefas  (Figura~\ref{fig:tipo}), ainda não são suficientes para uma completa classifição dada diversas caractéristicas e enorme quantidade de chatbots existentes. 
-Existem outras classificações que serão discutidas em seções posteriores.
+Essas duas classificações, conversacional e orientado a tarefas  (Figura~\ref{fig:tipo}), ainda não são suficientes para uma completa classifição. 
+Existem outras classificações que serão discutidas em seções posteriores. Além disso, uma abordagem híbrida, unindo funções dee  chatbots do tipo conversacional e orientado a tarefas, vem sendo utilizada para atender as necessidades dos usuários. 
 
-\begin{figure}[!htbp]
+\begin{figure}[!htb]
 	\centering
-	\caption{Classificação chatbots por objetivo.}
+	\caption{Classificação dchatbots por objetivo.}
 	\includegraphics[width=0.9\linewidth]{./fig/tipo_objetivo.png}
 	\label{fig:tipo}
 \end{figure}
@@ -165,14 +179,15 @@ Nesta figura, os valores representam o interesse relativo de busca ao longo do t
 	{\footnotesize Fonte: Google Trends acesso em 05/04/2025} % Sugestão: Adicionar a fonte e data de acesso para dados do Trends.
 \end{figure}
 
-\section{Chatbots e Agentes: Definições e Distinções}
+\section{Agentes}
 
 % \marginnote{Agente}
-Define-se chatbot como um programa computacional projetado para interagir com usuários por meio de linguagem natural. 
-Por outro lado, o conceito de agente possui uma definição mais ampla: trata-se de uma entidade computacional que percebe seu ambiente por meio de sensores e atua sobre esse ambiente por meio de atuadores \cite{Russel2013}. 
+As definições de chatbot e agentes são usadas indiscriminadamente e podem confundir um pouco. Vamos a uma definição mais precisa.
+Um chatbot é um programa computacional projetado para interagir com usuários por meio de linguagem natural. 
+Por outro lado, o conceito de agente possui uma definição mais ampla. Um agente trata-se de uma entidade computacional que percebe seu ambiente por meio de sensores e atua sobre esse ambiente por meio de atuadores \cite{Russel2013}. 
 A Figura~\ref{fig:agente} ilustra uma arquitetura conceitual de alto nível para um agente.
 
-\begin{figure}
+\begin{figure}[!htb]
 	\centering
 	\caption{Arquitetura conceitual de um agente.}
 	\includegraphics[width=0.7\linewidth]{./fig/original_agente.png}
@@ -184,7 +199,7 @@ A Figura~\ref{fig:agente} ilustra uma arquitetura conceitual de alto nível para
 
 Nesse contexto, um chatbot (Figura~\ref{fig:chatbot}) pode ser considerado uma instanciação específica de um agente, cujo propósito primário é a interação conversacional em linguagem natural.
 
-\begin{figure}
+\begin{figure}[!htb]
 	\centering
 	\caption{Representação esquemática de um chatbot.}
 	\includegraphics[width=0.7\linewidth]{./fig/chatbot.png}
@@ -192,12 +207,12 @@ Nesse contexto, um chatbot (Figura~\ref{fig:chatbot}) pode ser considerado uma i
 
 \end{figure}
 
-Com o advento de modelos de linguagem avançados, como os baseados na arquitetura \textit{Generative Pre-trained Transformer} (GPT), a exemplo do ChatGPT, observou-se uma recontextualização do termo ``agente'' no domínio dos sistemas conversacionais. Nessa abordagem mais recente, um sistema focado predominantemente na geração de texto conversacional tende a ser denominado ``chatbot''. 
+Com o advento de modelos de linguagem, como os baseados na arquitetura \textit{Generative Pre-trained Transformer} (GPT), a exemplo do ChatGPT, observou-se uma recontextualização do termo ``agente'' no domínio dos sistemas conversacionais. 
+Nessa abordagem mais recente, um sistema focado predominantemente na geração de texto conversacional tende a ser denominado ``chatbot''. 
 Em contraste, o termo ``agente'' é frequentemente reservado para sistemas que, além da capacidade conversacional, integram e utilizam ferramentas externas (por exemplo, acesso à internet, execução de código, interação com APIs) para realizar tarefas complexas e interagir proativamente com o ambiente digital. 
 Um sistema capaz de realizar uma compra online, processar um pagamento e confirmar um endereço de entrega por meio do navegador do usuário seria, portanto, classificado como um agente, diferentemente de chatbots mais simples como ELIZA, ou mesmo versões mais simples do chatGPT (GPT-2), cujo foco era estritamente o diálogo.
 
-
-\section{Gerenciamento do Diálogo e Fluxo Conversacional}
+\section{Fluxo Conversacional}
 
 Um chatbot responde a uma entrada do usuário. Porém, essa interação textual mediada por chatbots não se constitui em uma mera justaposição aleatória de turnos de conversação ou pares isolados de estímulo-resposta. Pelo contrário, espera-se que a conversação exiba coerência e mantenha relações lógicas e semânticas entre os turnos consecutivos. O estudo da estrutura e organização da conversa humana é abordado por disciplinas como a Análise da Conversação.
 
@@ -232,10 +247,10 @@ Um outro tipo de fluxo para um chatbot que vende roupas está representada na Fi
 	Retirado de \cite{Raj2019}.}
 \end{figure}
 
-\section{Depois do ELIZA}
+\section{Histórico}
 
 % \marginnote{AIML}
-Um marco significativo na evolução dos chatbots foi o ALICE, que introduziu a Artificial Intelligence Markup Language (AIML), uma linguagem de marcação baseada em XML \cite{Wallace2000}. 
+Um marco significativo na evolução dos chatbots depois do ELIZA foi o ALICE, que introduziu a Artificial Intelligence Markup Language (AIML), uma linguagem de marcação baseada em XML \cite{Wallace2000}. 
 A AIML estabeleceu um paradigma para a construção de agentes conversacionais ao empregar algoritmos de correspondência de padrões. 
 Essa abordagem utiliza modelos pré-definidos para mapear as entradas do usuário a respostas correspondentes, permitindo a definição modular de blocos de conhecimento \cite{Wallace2000}.
 
@@ -295,7 +310,7 @@ Especificamente no caso do AIML, a construção e a visualização de fluxos de 
 
 % TODO : Rasa PRO
 
-\section{Exercícios de Múltipla Escolha}
+\section{Exercícios}
 
 \begin{enumerate}
 
@@ -350,14 +365,15 @@ Especificamente no caso do AIML, a construção e a visualização de fluxos de 
 %%%%CAPITULO%%%%
 %%%%%%%%%%%%%%%%
 
-\chapter{Eliza: O Primeiro Chatbot}
+\chapter{Eliza}
 
 \section{Introdução}
 
 o ELIZA foi um dos primeiros programas de processamento de linguagem natural e foi apresentado em 1966 por Joseph Weizenbaum no MIT \cite{Weizenbaum1996}.
 
 % \marginnote{SCRIPT}
-O conjunto de padrões e respostas predefinidas constitui o que Weizenbaum chamou de “roteiro” (ou script) de conversa. O mecanismo do ELIZA separa o motor genérico de processamento (o algoritmo de busca de palavras-chave e aplicação de regras) dos dados do script em si. Isso significa que ELIZA podia em teoria simular diferentes personalidades ou tópicos apenas carregando um script diferente, sem alterar o código do programa (veja na Figura~\ref{fig:elizaeditor}). Também foi codificado um editor de texto para as alterações do próprio Script.
+O conjunto de padrões e respostas predefinidas constitui o que Weizenbaum chamou de “roteiro” (ou script) de conversa. O mecanismo do ELIZA separa o motor de processamento, sendo o algoritmo de busca de palavras-chave e aplicação de regras, dos dados do script em si. 
+Isso significa que ELIZA podia em teoria simular diferentes personalidades ou tópicos apenas carregando um script diferente, sem alterar o código do programa (veja na Figura~\ref{fig:elizaeditor}). Também foi codificado um editor de texto para as alterações do próprio Script.
 
 \begin{figure}[!htbp]
 	\centering	
@@ -367,14 +383,16 @@ O conjunto de padrões e respostas predefinidas constitui o que Weizenbaum chamo
 \end{figure}
 
 % \marginnote{SCRIPT DOCTOR}
-Um destes scripts (o DOCTOR) o deixou famoso. 
+Um destes roteiros, o script DOCTOR, deixou o ELIZA famoso. 
 Com este script carregado, o ELIZA simulava precariamente um psicoterapeuta (do estilo Rogeriano), refletindo as palavras do usuário de volta em forma de pergunta. 
-A primeira linha do script é a introdução do chatbot, a primeira palavra que ele escrever para o usuário. 
-START é um comando técnico do script, serve para indicar que a seguir virão as regras. REMEMBER 5 estabelece que a prioridade da palavra REMEMBER é 5, ou seja, se o usuário disser algo que contenha a palavra REMEMBER, o ELIZA irá responder com uma das perguntas definidas entre parênteses. 
-A seguir estão as regras de transformação de frases (decomposition rule e reassembly rule) associadas à palavra-chave REMEMBER. O exemplo abaixo mostra um trecho do script DOCTOR:
+% A primeira linha do script é a introdução do chatbot, a primeira palavra que ele escrever para o usuário. 
+% START é um comando técnico do script, serve para indicar que a seguir virão as regras. 
 
-\begin{lstlisting}
-		
+
+Veja na lista~\ref{lst:script} uma parte do conteúdo do DOCTOR. A primeira linha REMEMBER 5 estabelece que a prioridade da palavra REMEMBER é 5, caso o usuário entre com uma frase com a palavra REMEMBER, o ELIZA irá responder com uma das perguntas definidas nos parênteses, dentro do nível da palavra REMENBER. 
+A segunda lista dentro do REMEMBER são as regras de transformação de frases (decomposition rule e reassembly rule) associadas à palavra-chave REMEMBER. O mesmo se repete para a palavra IF que tem um peso difernte de REMEMBER.
+
+\begin{lstlisting}[caption=Roteiro Script Doctor, label=lst:script]
 (REMEMBER 5 
 	(
 		(0 YOU REMEMBER 0) 
@@ -403,13 +421,14 @@ A seguir estão as regras de transformação de frases (decomposition rule e rea
 		(WHAT DO YOU THINK ABOUT 3) 
 		(REALLY, 2 3)
 	)
-) 
+.... continua
 	
 \end{lstlisting}
 
-A seguir é apresentado um exemplo de diálogo (retirado do artigo original) entre um usuário humano e ELIZA, mostrando as respostas em letras maiúsculas. Nesse exemplo, o usuário faz afirmações pessoais (“Men are all alike.”, “Well, my boyfriend made me come here.”) e ELIZA responde com perguntas ou reformulações (“IN WHAT WAY”, “YOUR BOYFRIEND MADE YOU COME HERE?”), reutilizando termos do próprio usuário. Esse estilo reflexivo encoraja o usuário a continuar falando sem fornecer respostas diretas.
+Na lista~\ref{lst:exemplodialogoeliza} é apresentado um exemplo de diálogo (retirado do artigo original) entre um usuário humano e ELIZA, mostrando as respostas em letras maiúsculas. 
+Nesse exemplo, o usuário faz afirmações pessoais (“Men are all alike.”, “Well, my boyfriend made me come here.”) e ELIZA responde com perguntas ou reformulações (“IN WHAT WAY”, “YOUR BOYFRIEND MADE YOU COME HERE?”), reutilizando termos do próprio usuário. Esse estilo reflexivo encoraja o usuário a continuar falando sem fornecer respostas diretas.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Clean, caption=Exemplo de diálogo do ELIZA, label=lst:exemplodialogoeliza]
 Men are all alike. 
 IN WHAT WAY 
 They're always bugging us about something or other. 
@@ -527,7 +546,7 @@ Em resumo, os avanços de arquitetura (especialmente o mecanismo de atenção) a
 
 Abaixo está um exemplo básico de implementação de um chatbot inspirado em Eliza utilizando Python:
 
-\begin{lstlisting}[language=Python]
+\begin{lstlisting}[language=Python, caption=Exemplo simples do Eliza,label=lst:eliza_chatbot]
 import re
 
 # Regras de substituição simples
@@ -641,7 +660,6 @@ Na ausência de correspondência com qualquer regra específica, o sistema selec
 
 % Usando  para um subtítulo menos proeminente, ou use \subsubsection se preferir
 Exemplo de Interação:
-
 
 \begin{lstlisting}
 Usuário: Hello
