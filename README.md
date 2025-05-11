@@ -42,6 +42,6 @@ NEO, Giseldo da Silva. Construção de chatbots AIML com a ajuda de uma ferramen
 
 ## Notebooks
 
-
+| col 1 | col 2 |
 |----|----|
 |   col1  |  col2   |
