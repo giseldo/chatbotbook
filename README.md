@@ -37,3 +37,11 @@ NEO, Giseldo da Silva. Construção de chatbots AIML com a ajuda de uma ferramen
 1. Clone o repositório:
    ```sh
    git clone https://github.com/seu-usuario/chatbotbook.git
+   ```
+
+
+## Notebooks
+
+
+|----|----|
+|   col1  |  col2   |
