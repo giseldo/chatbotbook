@@ -42,6 +42,6 @@ NEO, Giseldo da Silva. Construção de chatbots AIML com a ajuda de uma ferramen
 
 ## Notebooks
 
-| col 1 | col 2 |
+| Capítulo | Notebook |
 |----|----|
-|   col1  |  col2   |
+|   Cap2 - Eliza  |  [Notebook](https://github.com/giseldo/chatbotbook/blob/main/notebook/eliza/eliza1.ipynb)   |
